@@ -1,0 +1,108 @@
+{
+	"index": {
+		"header": {
+			"logo": "logo.png",
+			"searchBar": searchElement,
+			"topAd": topAdElement
+		},
+		"mainContent": {
+			"leftHalf": {
+				"ledeStory": ledeElement
+			},
+			"rightHalf": {
+				"quote": quoteElement,
+				"quotePhoto": quotePhotoElement,
+				"ledeStoryTwo": secondLedeElement
+			}
+		},
+		"middleContent": {
+			"farLeft": {
+				"featureStoriesReel": {
+					"featureOne": storyElement,
+					"featureTwo": storyElement,
+					"featureThree": storyElement
+				}
+			},
+			"interiorLeft": {
+				"Dim Sum News": {
+					"dimSumOne": dimSumElement,
+					"dimSumTwo": dimSumElement,
+					"dimSumThree": dimSumElement,
+					"dimSumFour": dimSumElement,
+					"dimSumFive": dimSumElement,
+					"dimSumSix": dimSumElement
+				}
+			},
+			"rightHalf": {
+				"topRightHalf": {
+					"leftHalf": spotifyElement,
+					"rightHalf": facebookElement
+				},
+				"midRightHalf": twitterElement,
+				"bottomRightHalf": largeAdElement
+			}
+		},
+		"bottomContent": {
+			"farLeft": {
+				"musicReel": fiveMusicElements
+			},
+			"interiorLeft": {
+				"movieReel": fiveMovieElements
+			},
+			"interiorRight": {
+				"foodReel": fiveFoodElements
+			},
+			"farRight": {
+				"eventReel": fiveEventElements
+			}
+		},
+		"footer": copyrightElement,
+		"floatingNav": {
+			"nav": [
+				"Home",
+				"Music",
+				"Movies",
+				"People",
+				"About",
+				"Masthead",
+				"Jobs",
+				"Advertise"
+			]
+		}
+	},
+	"single": {
+		"leftSidebar": {
+			"author": {
+				"top": authorPicElement,
+				"belowTop": authorNameElement,
+				"belowBelowTop": authorBioElement
+			},
+			"suggestedAuthorPosts": suggestedAuthorPosts,
+			"socialMediaIcons": socialMediaElement
+		},
+		"mainContent": {
+			"image": topBodyImage,
+			"title": postTitleElement,
+			"byline": bylineAndDatestampElement,
+			"excerpt": excerptElement,
+			"content": mainBodyContent,
+			"subContent": {
+				"photos": photoElement,
+				"q&a": qAndAElement,
+				"fridayFeatures": fridayFeaturesElement,
+				"mediaReleases": mediaReleasesElement
+			},
+			"bottomAd": bottomAdElement,
+			"footer": copyrightElement,
+			"floatingNav": seeAboveElements
+		},
+		"rightSidebar": {
+			"topAd": topAdElement,
+			"relatedPosts": relatedPostsElement,
+			"moveElement": movieSingleElement,
+			"musicElement": musicSingleElement,
+			"foodElement": foodSingleElement,
+			"eventElement": eventSingleElement
+		}
+	}
+}

@@ -1,0 +1,1102 @@
+/*
+ *	|  _ \| | | |  \/  |  _ \| |   |_ _| \ | |/ ___|
+ *	| | | | | | | |\/| | |_) | |    | ||  \| | |  _ 
+ *	| |_| | |_| | |  | |  __/| |___ | || |\  | |_| |
+ *	|____/ \___/|_|  |_|_|   |_____|___|_| \_|\____|
+ */
+/* -------------------------------------------------------------------------*/
+/* Layout */
+/* line 25, ../sass/screen.scss */
+main,
+header,
+section,
+article,
+aside,
+nav,
+footer,
+figure,
+figcaption {
+  display: block;
+}
+
+/* line 29, ../sass/screen.scss */
+body {
+  margin: 0 auto;
+  background: #019875;
+  *zoom: 1;
+}
+
+/* line 35, ../sass/screen.scss */
+abbr {
+  cursor: help;
+  border-bottom: 1px dotted #019875;
+}
+
+/* line 40, ../sass/screen.scss */
+.container {
+  *zoom: 1;
+  max-width: 24em;
+  _width: 24em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(16.66667%, rgba(100, 100, 225, 0.25)), color-stop(16.66667%, rgba(0, 0, 0, 0)), color-stop(20.83333%, rgba(0, 0, 0, 0)), color-stop(20.83333%, rgba(100, 100, 225, 0.25)), color-stop(37.5%, rgba(100, 100, 225, 0.25)), color-stop(37.5%, rgba(0, 0, 0, 0)), color-stop(41.66667%, rgba(0, 0, 0, 0)), color-stop(41.66667%, rgba(100, 100, 225, 0.25)), color-stop(58.33333%, rgba(100, 100, 225, 0.25)), color-stop(58.33333%, rgba(0, 0, 0, 0)), color-stop(62.5%, rgba(0, 0, 0, 0)), color-stop(62.5%, rgba(100, 100, 225, 0.25)), color-stop(79.16667%, rgba(100, 100, 225, 0.25)), color-stop(79.16667%, rgba(0, 0, 0, 0)), color-stop(83.33333%, rgba(0, 0, 0, 0)), color-stop(83.33333%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 16.66667%, rgba(0, 0, 0, 0) 16.66667%, rgba(0, 0, 0, 0) 20.83333%, rgba(100, 100, 225, 0.25) 20.83333%, rgba(100, 100, 225, 0.25) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 41.66667%, rgba(100, 100, 225, 0.25) 41.66667%, rgba(100, 100, 225, 0.25) 58.33333%, rgba(0, 0, 0, 0) 58.33333%, rgba(0, 0, 0, 0) 62.5%, rgba(100, 100, 225, 0.25) 62.5%, rgba(100, 100, 225, 0.25) 79.16667%, rgba(0, 0, 0, 0) 79.16667%, rgba(0, 0, 0, 0) 83.33333%, rgba(100, 100, 225, 0.25) 83.33333%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 16.66667%, rgba(0, 0, 0, 0) 16.66667%, rgba(0, 0, 0, 0) 20.83333%, rgba(100, 100, 225, 0.25) 20.83333%, rgba(100, 100, 225, 0.25) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 41.66667%, rgba(100, 100, 225, 0.25) 41.66667%, rgba(100, 100, 225, 0.25) 58.33333%, rgba(0, 0, 0, 0) 58.33333%, rgba(0, 0, 0, 0) 62.5%, rgba(100, 100, 225, 0.25) 62.5%, rgba(100, 100, 225, 0.25) 79.16667%, rgba(0, 0, 0, 0) 79.16667%, rgba(0, 0, 0, 0) 83.33333%, rgba(100, 100, 225, 0.25) 83.33333%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 16.66667%, rgba(0, 0, 0, 0) 16.66667%, rgba(0, 0, 0, 0) 20.83333%, rgba(100, 100, 225, 0.25) 20.83333%, rgba(100, 100, 225, 0.25) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 41.66667%, rgba(100, 100, 225, 0.25) 41.66667%, rgba(100, 100, 225, 0.25) 58.33333%, rgba(0, 0, 0, 0) 58.33333%, rgba(0, 0, 0, 0) 62.5%, rgba(100, 100, 225, 0.25) 62.5%, rgba(100, 100, 225, 0.25) 79.16667%, rgba(0, 0, 0, 0) 79.16667%, rgba(0, 0, 0, 0) 83.33333%, rgba(100, 100, 225, 0.25) 83.33333%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 16.66667%, rgba(0, 0, 0, 0) 16.66667%, rgba(0, 0, 0, 0) 20.83333%, rgba(100, 100, 225, 0.25) 20.83333%, rgba(100, 100, 225, 0.25) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 41.66667%, rgba(100, 100, 225, 0.25) 41.66667%, rgba(100, 100, 225, 0.25) 58.33333%, rgba(0, 0, 0, 0) 58.33333%, rgba(0, 0, 0, 0) 62.5%, rgba(100, 100, 225, 0.25) 62.5%, rgba(100, 100, 225, 0.25) 79.16667%, rgba(0, 0, 0, 0) 79.16667%, rgba(0, 0, 0, 0) 83.33333%, rgba(100, 100, 225, 0.25) 83.33333%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-position: left top;
+  -webkit-background-origin: content;
+  -moz-background-origin: content;
+  -ms-background-origin: content-box;
+  -o-background-origin: content-box;
+  background-origin: content-box;
+  -webkit-background-clip: content-box;
+  -moz-background-clip: content-box;
+  background-clip: content-box;
+  background: #fbfffe;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 34em) {
+  /* line 40, ../sass/screen.scss */
+  .container {
+    max-width: 34em;
+  }
+}
+@media (min-width: 44em) {
+  /* line 40, ../sass/screen.scss */
+  .container {
+    max-width: 44em;
+  }
+}
+@media (min-width: 59em) {
+  /* line 40, ../sass/screen.scss */
+  .container {
+    max-width: 59em;
+  }
+}
+
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on January 13, 2013 05:14:26 PM America/New_York */
+@font-face {
+  font-family: 'CaviarDreamsRegular';
+  src: url("css/CaviarDreams-webfont.eot");
+  src: url("css/CaviarDreams-webfont.eot?#iefix") format("embedded-opentype"), url("css/CaviarDreams-webfont.woff") format("woff"), url("css/CaviarDreams-webfont.ttf") format("truetype"), url("css/CaviarDreams-webfont.svg#CaviarDreamsRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on January 13, 2013 05:14:26 PM America/New_York */
+@font-face {
+  font-family: 'CaviarDreamsBold';
+  src: url("css/Caviar_Dreams_Bold-webfont.eot");
+  src: url("css/Caviar_Dreams_Bold-webfont.eot?#iefix") format("embedded-opentype"), url("css/Caviar_Dreams_Bold-webfont.woff") format("woff"), url("css/Caviar_Dreams_Bold-webfont.ttf") format("truetype"), url("css/Caviar_Dreams_Bold-webfont.svg#CaviarDreamsBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* HEADER */
+/* line 50, ../sass/screen.scss */
+.header {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  float: left;
+  margin-right: 4.16667%;
+  display: inline;
+  height: 4em;
+}
+
+/* line 57, ../sass/screen.scss */
+.logo {
+  padding: 0;
+  font: 400 3.1em/0em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
+  color: #333333;
+  text-shadow: 0 0.04em 0 #019875;
+  cursor: pointer;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+/* line 68, ../sass/screen.scss */
+.logo:after {
+  content: " ";
+  position: absolute;
+  top: 0.3em;
+  width: 1.5em;
+  height: 0.7em;
+  background: transparent url(images/menu_icon.png) center center no-repeat;
+}
+
+/* line 78, ../sass/screen.scss */
+.logo:active,
+.logo:hover {
+  color: #fff;
+}
+
+/* line 86, ../sass/screen.scss */
+#searchInput {
+  display: none;
+}
+
+/* line 90, ../sass/screen.scss */
+.topAd {
+  display: none;
+  overflow: hidden;
+}
+
+/* END HEADER */
+/* FLOATING NAV */
+/* line 97, ../sass/screen.scss */
+.floatingNav {
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition-property: height;
+  -moz-transition-property: height;
+  -o-transition-property: height;
+  transition-property: height;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+/* line 106, ../sass/screen.scss */
+.floatingNavOpen {
+  height: 13em;
+}
+
+/* line 110, ../sass/screen.scss */
+.floatingNavClosed {
+  height: 0;
+}
+
+/* line 114, ../sass/screen.scss */
+.floatingNav a {
+  display: block;
+  font: 400 1.5em/1.1em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background: #019875;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+/* line 127, ../sass/screen.scss */
+.floatingNav a:active,
+.floatingNav a:hover {
+  color: #019875;
+  background: #fff;
+}
+
+/* END FLOATING NAV */
+/* MAIN CONTENT */
+/* line 134, ../sass/screen.scss */
+.mainContent {
+  margin: 0.5em auto;
+  padding: 0;
+  width: 100%;
+  float: left;
+  margin-right: 4.16667%;
+  display: inline;
+}
+
+/* line 140, ../sass/screen.scss */
+.ledeStory {
+  margin: 0 auto;
+  padding: 1.25em;
+  height: 16em;
+  box-sizing: border-box;
+  background: transparent url(http://placehold.it/600x330) center center no-repeat;
+}
+
+/* line 149, ../sass/screen.scss */
+.ledeStoryLink, .featureStoriesLink, .dimSumLink, .musicReelLink,
+.movieReelLink,
+.foodReelLink,
+.eventReelLink,
+.secondLedeLink {
+  text-decoration: none;
+}
+
+/* line 153, ../sass/screen.scss */
+.ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
+.movieReelHeader,
+.foodReelHeader,
+.eventReelHeader {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font: 400 2.2em/1.1em Georgia, "Times New Roman", Times, serif;
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 167, ../sass/screen.scss */
+.ledeStoryLink:hover .ledeStoryHeader, .featureStoriesLink:hover .ledeStoryHeader, .dimSumLink:hover .ledeStoryHeader, .musicReelLink:hover .ledeStoryHeader,
+.movieReelLink:hover .ledeStoryHeader,
+.foodReelLink:hover .ledeStoryHeader,
+.eventReelLink:hover .ledeStoryHeader, .ledeStoryLink:hover .secondLedeHeader, .featureStoriesLink:hover .secondLedeHeader, .dimSumLink:hover .secondLedeHeader, .musicReelLink:hover .secondLedeHeader,
+.movieReelLink:hover .secondLedeHeader,
+.foodReelLink:hover .secondLedeHeader,
+.eventReelLink:hover .secondLedeHeader, .ledeStoryLink:hover .featureHeader, .featureStoriesLink:hover .featureHeader, .dimSumLink:hover .featureHeader, .musicReelLink:hover .featureHeader,
+.movieReelLink:hover .featureHeader,
+.foodReelLink:hover .featureHeader,
+.eventReelLink:hover .featureHeader, .ledeStoryLink:hover .dimSumHeader, .featureStoriesLink:hover .dimSumHeader, .dimSumLink:hover .dimSumHeader, .musicReelLink:hover .dimSumHeader,
+.movieReelLink:hover .dimSumHeader,
+.foodReelLink:hover .dimSumHeader,
+.eventReelLink:hover .dimSumHeader, .ledeStoryLink:hover .musicReelHeader, .featureStoriesLink:hover .musicReelHeader, .dimSumLink:hover .musicReelHeader, .musicReelLink:hover .musicReelHeader,
+.movieReelLink:hover .musicReelHeader,
+.foodReelLink:hover .musicReelHeader,
+.eventReelLink:hover .musicReelHeader,
+.ledeStoryLink:hover .movieReelHeader,
+.featureStoriesLink:hover .movieReelHeader,
+.dimSumLink:hover .movieReelHeader,
+.musicReelLink:hover .movieReelHeader,
+.movieReelLink:hover .movieReelHeader,
+.foodReelLink:hover .movieReelHeader,
+.eventReelLink:hover .movieReelHeader,
+.ledeStoryLink:hover .foodReelHeader,
+.featureStoriesLink:hover .foodReelHeader,
+.dimSumLink:hover .foodReelHeader,
+.musicReelLink:hover .foodReelHeader,
+.movieReelLink:hover .foodReelHeader,
+.foodReelLink:hover .foodReelHeader,
+.eventReelLink:hover .foodReelHeader,
+.ledeStoryLink:hover .eventReelHeader,
+.featureStoriesLink:hover .eventReelHeader,
+.dimSumLink:hover .eventReelHeader,
+.musicReelLink:hover .eventReelHeader,
+.movieReelLink:hover .eventReelHeader,
+.foodReelLink:hover .eventReelHeader,
+.eventReelLink:hover .eventReelHeader,
+.ledeStoryLink:hover span,
+.featureStoriesLink:hover span,
+.dimSumLink:hover span,
+.musicReelLink:hover span,
+.movieReelLink:hover span,
+.foodReelLink:hover span,
+.eventReelLink:hover span,
+.secondLedeLink:hover .secondLedeHeader {
+  color: #333333;
+}
+
+/* line 171, ../sass/screen.scss */
+.ledeStoryByline {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font: 400 0.825em/0em Georgia, "Times New Roman", Times, serif;
+  color: #fff;
+  text-align: right;
+}
+
+/* line 180, ../sass/screen.scss */
+.quoteElement {
+  margin: 1em auto 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 186, ../sass/screen.scss */
+.quoteElement:after {
+  content: "\201c";
+  position: absolute;
+  margin: -0.57em 0 0 0.05em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1000%;
+  color: #ed9864;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  z-index: 1;
+}
+
+/* line 198, ../sass/screen.scss */
+.quoteText {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font: 400 100%/127% Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-style: italic;
+  z-index: 2;
+}
+
+/* line 208, ../sass/screen.scss */
+.quoteAuthor {
+  padding: 0;
+  font: 700 80% Georgia, "Times New Roman", Times, serif;
+  text-align: right;
+}
+
+/* line 214, ../sass/screen.scss */
+.quotePhotoElement {
+  display: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 4em;
+  background: transparent url(http://placehold.it/250x150) center center no-repeat;
+}
+
+/* line 223, ../sass/screen.scss */
+.secondLedeElement {
+  margin: 1em auto 0;
+  padding: 0;
+  width: 100%;
+  height: 6em;
+  background: transparent url(http://placehold.it/550x150) center center no-repeat;
+}
+
+/* line 231, ../sass/screen.scss */
+.secondLedeHeader {
+  padding: 3.8% 0 0;
+  font: 400 1.3em/1.2em Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+/* END MAIN CONTENT */
+/* MIDDLE CONTENT */
+/* line 240, ../sass/screen.scss */
+.middleContent {
+  padding: 0;
+  width: 100%;
+}
+
+/* line 256, ../sass/screen.scss */
+.featureStoriesLink:hover .featureOne,
+.featureStoriesLink:active .featureOne,
+.featureStoriesLink:hover .featureFour,
+.featureStoriesLink:active .featureFour,
+.featureStoriesLink:hover .featureTwo,
+.featureStoriesLink:active .featureTwo,
+.featureStoriesLink:hover .featureThree,
+.featureStoriesLink:active .featureThree {
+  background-color: rgba(1, 152, 117, 0.1);
+}
+
+/* line 262, ../sass/screen.scss */
+.featureStoriesReel,
+.dimSumNews,
+.rightHalf {
+  float: left;
+  clear: both;
+  margin: 0 auto 1em;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 273, ../sass/screen.scss */
+.featureOne,
+.featureTwo,
+.featureThree,
+.featureFour {
+  float: left;
+  margin: 0.5em;
+  margin-left: 0;
+  padding: 0;
+  width: 47.5%;
+  height: auto;
+  max-height: 14em;
+  background: transparent url(http://placehold.it/200x90) top center no-repeat;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+/* line 288, ../sass/screen.scss */
+.featureTwo,
+.featureFour {
+  float: right;
+  margin-right: 0;
+}
+
+/* line 293, ../sass/screen.scss */
+.featureHeader {
+  padding-top: 3.4em;
+  height: 2.5em;
+  font: 400 1em/1.3em Tahoma, Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-align: left;
+  font-style: italic;
+  overflow: hidden;
+}
+
+/* line 305, ../sass/screen.scss */
+.featureExcerpt, .dimSumExcerpt, .footerExcerpt,
+.featureByline {
+  margin: 0;
+  padding: 0;
+  font: 400 0.9em/1.1em Tahoma, Helvetica, Arial, sans-serif;
+  color: #333333;
+}
+
+/* line 312, ../sass/screen.scss */
+.featureByline {
+  display: block;
+  margin-top: 0.75em;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+/* line 323, ../sass/screen.scss */
+.dimSumNewsTote, .musicReelTote,
+.movieReelTote,
+.foodReelTote,
+.eventReelTote {
+  margin: 0;
+  padding: 0;
+  font: 400 1.5em "CaviarDreamsBold", "Century Gothic", Arial, sans-serif;
+  border-bottom: 1px solid #333333;
+}
+
+/* line 330, ../sass/screen.scss */
+.dimSumArticle {
+  margin: 1em auto 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #019875;
+}
+
+/* line 338, ../sass/screen.scss */
+.dimSumHeader {
+  height: auto;
+  font: 400 1em/1.3em Tahoma, Helvetica, Arial, sans-serif;
+  color: #333333;
+  text-align: left;
+}
+
+/* line 346, ../sass/screen.scss */
+.dimSumExcerpt {
+  color: #777;
+}
+
+/* line 352, ../sass/screen.scss */
+.dimSumLink:hover .dimSumHeader,
+.dimSumLink:active .dimSumHeader {
+  text-decoration: underline;
+}
+
+/* line 358, ../sass/screen.scss */
+.topRightHalf,
+.midRightHalf,
+.rightHalfAd {
+  margin: 1em auto 0;
+  padding: 0;
+  width: 19em;
+}
+
+/* line 364, ../sass/screen.scss */
+.rightHalfAd {
+  width: 100%;
+  height: 34em;
+  text-align: center;
+}
+
+/* line 370, ../sass/screen.scss */
+#rightHalfAd {
+  width: 100%;
+  height: auto;
+}
+
+/* END MIDDLE CONTENT */
+/* BOTTOM CONTENT */
+/* line 378, ../sass/screen.scss */
+.bottomContent {
+  padding: 0;
+  width: 100%;
+}
+
+/* line 386, ../sass/screen.scss */
+.farLeft,
+.interiorLeft,
+.interiorRight,
+.farRight {
+  float: left;
+  margin: 0 auto 1em;
+  padding: 0;
+  width: 47.5%;
+  min-height: 16em;
+  height: auto;
+  max-height: 25em;
+}
+
+/* line 404, ../sass/screen.scss */
+.interiorLeft,
+.farRight {
+  float: right;
+  margin-right: 0;
+}
+
+/* line 412, ../sass/screen.scss */
+.musicReelTote,
+.movieReelTote,
+.foodReelTote,
+.eventReelTote {
+  padding: 0.5em 0.3em 0.3em;
+  background: #333333;
+  text-align: center;
+  color: #8186d5;
+  border: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+/* line 424, ../sass/screen.scss */
+.movieReelTote {
+  color: #85bdc1;
+}
+
+/* line 428, ../sass/screen.scss */
+.foodReelTote {
+  color: #e1e297;
+}
+
+/* line 432, ../sass/screen.scss */
+.eventReelTote {
+  color: #d66b96;
+}
+
+/* line 437, ../sass/screen.scss */
+.musicReelLink:hover .musicReelTote,
+.musicReelLink:active .musicReelTote {
+  color: #333333;
+  background: #8186d5;
+}
+
+/* line 443, ../sass/screen.scss */
+.movieReelLink:hover .movieReelTote,
+.movieReelLink:active .movieReelTote {
+  color: #333333;
+  background: #85bdc1;
+}
+
+/* line 449, ../sass/screen.scss */
+.foodReelLink:hover .foodReelTote,
+.foodReelLink:active .foodReelTote {
+  color: #333333;
+  background: #e1e297;
+}
+
+/* line 455, ../sass/screen.scss */
+.eventReelLink:hover .eventReelTote,
+.eventReelLink:active .eventReelTote {
+  color: #333333;
+  background: #d66b96;
+}
+
+/* line 463, ../sass/screen.scss */
+.musicReelHeader,
+.movieReelHeader,
+.foodReelHeader,
+.eventReelHeader {
+  padding-top: 0.5em;
+  height: auto;
+  font: 400 1em/1.3em Tahoma, Helvetica, Arial, sans-serif;
+  color: #333333;
+  text-align: left;
+}
+
+/* line 473, ../sass/screen.scss */
+.musicReelLink:hover .musicReelHeader,
+.musicReelLink:active .musicReelHeader {
+  color: #8186d5;
+  text-decoration: underline;
+}
+
+/* line 479, ../sass/screen.scss */
+.movieReelLink:hover .movieReelHeader,
+.movieReelLink:active .movieReelHeader {
+  color: #85bdc1;
+  text-decoration: underline;
+}
+
+/* line 485, ../sass/screen.scss */
+.foodReelLink:hover .foodReelHeader,
+.foodReelLink:active .foodReelHeader {
+  color: #e1e297;
+  text-decoration: underline;
+}
+
+/* line 491, ../sass/screen.scss */
+.eventReelLink:hover .eventReelHeader,
+.eventReelLink:active .eventReelHeader {
+  color: #d66b96;
+  text-decoration: underline;
+}
+
+/* END BOTTOM CONTENT */
+/* FOOTER */
+/* line 498, ../sass/screen.scss */
+.footer {
+  clear: both;
+  margin: 0 auto 1em;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 505, ../sass/screen.scss */
+.footerExcerpt {
+  padding-top: 1em;
+  font-size: 0.75em;
+  text-align: center;
+  border-top: 1px solid #019875;
+}
+
+/* END FOOTER */
+@media (min-width: 34em) {
+  /* line 515, ../sass/screen.scss */
+  .header {
+    height: 5em;
+  }
+
+  /* line 519, ../sass/screen.scss */
+  .logo {
+    font-size: 4.1em;
+  }
+
+  /* line 523, ../sass/screen.scss */
+  .logo:after {
+    top: 0.4em;
+  }
+
+  /* line 527, ../sass/screen.scss */
+  .ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
+  .movieReelHeader,
+  .foodReelHeader,
+  .eventReelHeader {
+    font-size: 3.0em;
+  }
+
+  /* line 531, ../sass/screen.scss */
+  .secondLedeHeader {
+    padding-top: 4.5%;
+    width: 90%;
+    font-size: 1.4em;
+  }
+
+  /* line 540, ../sass/screen.scss */
+  .featureOne,
+  .featureTwo,
+  .featureThree,
+  .featureFour {
+    max-height: 12em;
+    background-image: url(http://placehold.it/270x100);
+  }
+
+  /* line 545, ../sass/screen.scss */
+  .featureHeader {
+    padding-top: 3.0em;
+    font-size: 1.2em;
+  }
+
+  /* line 550, ../sass/screen.scss */
+  .dimSumNewsTote, .musicReelTote,
+  .movieReelTote,
+  .foodReelTote,
+  .eventReelTote {
+    font-size: 2.0em;
+  }
+
+  /* line 554, ../sass/screen.scss */
+  .dimSumHeader {
+    font-size: 1.3em;
+  }
+
+  /* line 558, ../sass/screen.scss */
+  .dimSumExcerpt {
+    font-size: 0.9em;
+  }
+
+  /* line 564, ../sass/screen.scss */
+  .topRightHalf,
+  .midRightHalf,
+  .rightHalfAd {
+    width: 100%;
+    min-width: 28em;
+  }
+
+  /* line 569, ../sass/screen.scss */
+  #spotifyElement {
+    float: left;
+    margin-right: 1em;
+  }
+
+  /* line 574, ../sass/screen.scss */
+  #facebookIframeElement {
+    float: right;
+  }
+
+  /* line 581, ../sass/screen.scss */
+  .musicReelHeader,
+  .movieReelHeader,
+  .foodReelHeader,
+  .eventReelHeader {
+    font-size: 1.5em;
+  }
+
+  /* line 588, ../sass/screen.scss */
+  .farLeft,
+  .interiorLeft,
+  .interiorRight,
+  .farRight {
+    min-height: 20em;
+    max-height: 28em;
+  }
+}
+@media (min-width: 44em) {
+  /* line 595, ../sass/screen.scss */
+  .container {
+    /*@include susy-grid-background;*/
+  }
+
+  /* line 598, ../sass/screen.scss */
+  .header {
+    height: 6em;
+  }
+
+  /* line 602, ../sass/screen.scss */
+  .logo {
+    font-size: 5.1em;
+    width: 54.54545%;
+    float: left;
+    margin-right: 2.27273%;
+  }
+
+  /* line 607, ../sass/screen.scss */
+  .logo:after {
+    content: '';
+    position: relative;
+    top: 0;
+    width: 0;
+    height: 0;
+    background: none;
+  }
+
+  /* line 616, ../sass/screen.scss */
+  #searchBar {
+    display: block;
+    width: 9.09091%;
+    float: left;
+    margin-right: 2.27273%;
+    height: 6em;
+  }
+
+  /* line 622, ../sass/screen.scss */
+  .searchBarIcon {
+    margin-top: 1.2em;
+    padding: 6px;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    border: 2px solid #cccccc;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    border-radius: 32px;
+    background: #019875;
+  }
+
+  /* line 633, ../sass/screen.scss */
+  #searchInput {
+    display: block;
+    width: 2em;
+    margin-left: -99999em;
+  }
+
+  /* line 639, ../sass/screen.scss */
+  .topAd {
+    display: block;
+    width: 31.81818%;
+    float: right;
+    margin-right: 0;
+    height: 6em;
+    overflow: hidden;
+  }
+
+  /* line 646, ../sass/screen.scss */
+  .topAdLink {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* line 651, ../sass/screen.scss */
+  #topAdFrame {
+    width: 12em;
+    height: 6em;
+  }
+
+  /* line 656, ../sass/screen.scss */
+  .floatingNav {
+    position: fixed;
+    bottom: 0.5em;
+    clear: both;
+    max-width: 44em;
+    text-align: center;
+    overflow: hidden;
+    -webkit-transition-property: height;
+    -moz-transition-property: height;
+    -o-transition-property: height;
+    transition-property: height;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    background: red;
+  }
+
+  /* line 670, ../sass/screen.scss */
+  .floatingNavOpen,
+  .floatingNavClosed {
+    height: 3em;
+  }
+
+  /* line 674, ../sass/screen.scss */
+  .floatingNav a {
+    display: inline;
+    font: 400 1.5em/1.1em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background: #019875;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+
+  /* line 687, ../sass/screen.scss */
+  .floatingNav a:active,
+  .floatingNav a:hover {
+    color: #019875;
+    background: #fff;
+  }
+
+  /* line 692, ../sass/screen.scss */
+  .ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
+  .movieReelHeader,
+  .foodReelHeader,
+  .eventReelHeader {
+    font-size: 3.0em;
+  }
+
+  /* line 696, ../sass/screen.scss */
+  .secondLedeHeader {
+    padding-top: 4.5%;
+    width: 90%;
+    font-size: 1.4em;
+  }
+
+  /* line 705, ../sass/screen.scss */
+  .featureOne,
+  .featureTwo,
+  .featureThree,
+  .featureFour {
+    max-height: 12em;
+    background-image: url(http://placehold.it/270x100);
+  }
+
+  /* TODO Need to include a "Read More" or "Go to Feed" or something button that just displays
+  		a list of all posts. Add after Dim Sum News.*/
+  /* line 713, ../sass/screen.scss */
+  .featureHeader {
+    padding-top: 3.0em;
+    font-size: 1.2em;
+  }
+
+  /* line 718, ../sass/screen.scss */
+  .dimSumNewsTote, .musicReelTote,
+  .movieReelTote,
+  .foodReelTote,
+  .eventReelTote {
+    font-size: 2.0em;
+  }
+
+  /* line 722, ../sass/screen.scss */
+  .dimSumHeader {
+    font-size: 1.3em;
+  }
+
+  /* line 726, ../sass/screen.scss */
+  .dimSumExcerpt {
+    font-size: 0.9em;
+  }
+
+  /* line 732, ../sass/screen.scss */
+  .topRightHalf,
+  .midRightHalf,
+  .rightHalfAd {
+    width: 100%;
+    min-width: 28em;
+  }
+
+  /* line 737, ../sass/screen.scss */
+  #spotifyElement {
+    float: left;
+    margin-right: 1em;
+  }
+
+  /* line 742, ../sass/screen.scss */
+  #facebookIframeElement {
+    float: right;
+  }
+
+  /* line 749, ../sass/screen.scss */
+  .musicReelHeader,
+  .movieReelHeader,
+  .foodReelHeader,
+  .eventReelHeader {
+    font-size: 1.5em;
+  }
+
+  /* line 756, ../sass/screen.scss */
+  .farLeft,
+  .interiorLeft,
+  .interiorRight,
+  .farRight {
+    min-height: 20em;
+    max-height: 28em;
+  }
+}
+@media (min-width: 59em) {
+  /* line 763, ../sass/screen.scss */
+  .container {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(6.77966%, rgba(100, 100, 225, 0.25)), color-stop(6.77966%, rgba(0, 0, 0, 0)), color-stop(8.47458%, rgba(0, 0, 0, 0)), color-stop(8.47458%, rgba(100, 100, 225, 0.25)), color-stop(15.25424%, rgba(100, 100, 225, 0.25)), color-stop(15.25424%, rgba(0, 0, 0, 0)), color-stop(16.94915%, rgba(0, 0, 0, 0)), color-stop(16.94915%, rgba(100, 100, 225, 0.25)), color-stop(23.72881%, rgba(100, 100, 225, 0.25)), color-stop(23.72881%, rgba(0, 0, 0, 0)), color-stop(25.42373%, rgba(0, 0, 0, 0)), color-stop(25.42373%, rgba(100, 100, 225, 0.25)), color-stop(32.20339%, rgba(100, 100, 225, 0.25)), color-stop(32.20339%, rgba(0, 0, 0, 0)), color-stop(33.89831%, rgba(0, 0, 0, 0)), color-stop(33.89831%, rgba(100, 100, 225, 0.25)), color-stop(40.67797%, rgba(100, 100, 225, 0.25)), color-stop(40.67797%, rgba(0, 0, 0, 0)), color-stop(42.37288%, rgba(0, 0, 0, 0)), color-stop(42.37288%, rgba(100, 100, 225, 0.25)), color-stop(49.15254%, rgba(100, 100, 225, 0.25)), color-stop(49.15254%, rgba(0, 0, 0, 0)), color-stop(50.84746%, rgba(0, 0, 0, 0)), color-stop(50.84746%, rgba(100, 100, 225, 0.25)), color-stop(57.62712%, rgba(100, 100, 225, 0.25)), color-stop(57.62712%, rgba(0, 0, 0, 0)), color-stop(59.32203%, rgba(0, 0, 0, 0)), color-stop(59.32203%, rgba(100, 100, 225, 0.25)), color-stop(66.10169%, rgba(100, 100, 225, 0.25)), color-stop(66.10169%, rgba(0, 0, 0, 0)), color-stop(67.79661%, rgba(0, 0, 0, 0)), color-stop(67.79661%, rgba(100, 100, 225, 0.25)), color-stop(74.57627%, rgba(100, 100, 225, 0.25)), color-stop(74.57627%, rgba(0, 0, 0, 0)), color-stop(76.27119%, rgba(0, 0, 0, 0)), color-stop(76.27119%, rgba(100, 100, 225, 0.25)), color-stop(83.05085%, rgba(100, 100, 225, 0.25)), color-stop(83.05085%, rgba(0, 0, 0, 0)), color-stop(84.74576%, rgba(0, 0, 0, 0)), color-stop(84.74576%, rgba(100, 100, 225, 0.25)), color-stop(91.52542%, rgba(100, 100, 225, 0.25)), color-stop(91.52542%, rgba(0, 0, 0, 0)), color-stop(93.22034%, rgba(0, 0, 0, 0)), color-stop(93.22034%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+
+  /* line 766, ../sass/screen.scss */
+  .header {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  /* line 769, ../sass/screen.scss */
+  .logo {
+    width: 40.67797%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  /* line 772, ../sass/screen.scss */
+  #searchBar input {
+    width: 6.77966%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  /* line 775, ../sass/screen.scss */
+  #topAd {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+  }
+
+  /* line 778, ../sass/screen.scss */
+  .ledeStory {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  /* line 781, ../sass/screen.scss */
+  .rightHalf {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+  }
+
+  /* line 784, ../sass/screen.scss */
+  .quoteElement {
+    width: 48.27586%;
+    float: left;
+    margin-right: 3.44828%;
+  }
+
+  /* line 787, ../sass/screen.scss */
+  .quotePhotoElement {
+    width: 48.27586%;
+    float: right;
+    margin-right: 0;
+  }
+}
