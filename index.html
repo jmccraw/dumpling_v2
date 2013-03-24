@@ -344,8 +344,9 @@
 			fbWidth + "&amp;height=" + fbHeight +
 			"&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;" +
 			"border_color=%23ccc&amp;header=false&amp;appId=305560679482771");
-		
-		$(window).resize(function() {
+			
+		// Load menu functionality depending on screen size
+		function enableMobileMenu() {
 			// functions for small-screen layouts (mobile)
 			if ($(".container").width() < 704) {
 				// close menu initially
@@ -365,7 +366,13 @@
 			else {
 				$(".floatingNav").removeClass("floatingNavClosed floatingNavOpen");
 			}
+		};
+		
+		$(window).resize(function() {
+			enableMobileMenu();
 		});
+		
+		enableMobileMenu();
 	})();
 	</script>
 </body>
