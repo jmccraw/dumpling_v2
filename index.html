@@ -378,10 +378,12 @@
 		
 			function enableDisableSearch() {
 				if ($("#searchInputPushdown").hasClass("searchInputInvisible")) {
+					$(".searchBarIcon").attr("src", "stylesheets/images/close_icon.png");
 					$("#searchInputPushdown").removeClass().addClass("searchInputVisible");
 					$("#searchInput").focus();
 				}
 				else {
+					$(".searchBarIcon").attr("src", "stylesheets/images/search_icon.png");
 					$("#searchInputPushdown").removeClass().addClass("searchInputInvisible");
 					$("#searchInput").blur();
 				}
