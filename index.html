@@ -379,9 +379,11 @@
 			function enableDisableSearch() {
 				if ($("#searchInputPushdown").hasClass("searchInputInvisible")) {
 					$("#searchInputPushdown").removeClass().addClass("searchInputVisible");
+					$("#searchInput").focus();
 				}
 				else {
 					$("#searchInputPushdown").removeClass().addClass("searchInputInvisible");
+					$("#searchInput").blur();
 				}
 			};
 			
