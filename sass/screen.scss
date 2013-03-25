@@ -742,8 +742,16 @@ abbr {
 		background: #fff;
 	}
 	
+	.ledeStory {
+		@include span-columns(5, $tablet);
+	}
+	
 	.ledeStoryHeader {
-		font-size: 3.0em;
+		font-size: 2.5em;
+	}
+	
+	.rightHalf {
+		@include span-columns(4, $tablet);
 	}
 	
 	.secondLedeHeader {
