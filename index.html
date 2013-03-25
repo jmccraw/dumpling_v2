@@ -31,7 +31,6 @@
 		
 		<section id="searchBar">
 			<img class="searchBarIcon" src="stylesheets/images/search_icon.png" alt="Search Dumpling icon" />
-			<input id="searchInput" type="search" placeholder="Search Dumpling" />
 		</section>
 		
 		<aside class="topAd">
@@ -42,6 +41,12 @@
 		
 	</header>
 	<!-- END HEADER -->
+	
+	<!-- SEARCH INPUT PUSHDOWN -->
+	<aside id="searchInputPushdown" class="searchInputInvisible">
+		<input id="searchInput" type="text" placeholder="Search Dumpling" />
+	</aside>
+	<!-- END SEARCH INPUT PUSHDOWN -->
 	
 		
 	<!-- FLOATING NAV -->
@@ -368,11 +373,37 @@
 			}
 		};
 		
+		// Load the search field (pushdown for tablet and desktop)
+		function loadSearchInputPushdown() {
+		
+			function enableDisableSearch() {
+				if ($("#searchInputPushdown").hasClass("searchInputInvisible")) {
+					$("#searchInputPushdown").removeClass().addClass("searchInputVisible");
+				}
+				else {
+					$("#searchInputPushdown").removeClass().addClass("searchInputInvisible");
+				}
+			};
+			
+			$(".searchBarIcon").click(function() {
+				enableDisableSearch();
+			});
+			
+			$(".container").on("touchstart", ".searchBarIcon", function(e) {
+				// prevent the 300ms click delay for touch
+				if (e.preventDefault) {
+					e.preventDefault();
+				}
+				enableDisableSearch();
+			});
+		};
+		
 		$(window).resize(function() {
 			enableMobileMenu();
 		});
 		
 		enableMobileMenu();
+		loadSearchInputPushdown();
 	})();
 	</script>
 </body>

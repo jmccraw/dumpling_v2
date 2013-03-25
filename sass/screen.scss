@@ -630,10 +630,63 @@ abbr {
 		background: $background-color;
 	}
 	
+	#searchInputPushdown {
+		width: 44em;
+		@include transition-property(all);
+		@include transition-duration(0.3s);
+		@include transition-timing-function(ease-out);
+		background: #fff;
+		overflow: hidden;
+		background: red;
+		clear: both;
+	}
+	
+	.searchInputVisible {
+		padding-top: $gutter-width;
+		padding-bottom: $gutter-width;
+		height: 6.3em;
+	}
+	
+	.searchInputInvisible {
+		padding-top: 0;
+		padding-bottom: 0;
+		height: 0;
+	}
+	
+	@-webkit-keyframes cursorBlink {
+		from { border-left: 0.1em solid $background-color; }
+		to { border-left: 0.1em solid #fff; }
+	}
+	@-moz-keyframes cursorBlink {
+		from { border-left: 0.1em solid $background-color; }
+		to { border-left: 0.1em solid #fff; }
+	}
+	@-o-keyframes cursorBlink {
+		from { border-left: 0.1em solid $background-color; }
+		to { border-left: 0.1em solid #fff; }
+	}
+	@keyframes cursorBlink {
+		from { border-left: 0.1em solid $background-color; }
+		to { border-left: 0.1em solid #fff; }
+	}
+	
 	#searchInput {
 		display: block;
-		width: $gutter-width * 2;
-		margin-left: -99999em;
+		box-sizing: border-box;
+		width: 100%;
+		height: 1.1em;
+		font: 400 6.0em/1.3em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
+		letter-spacing: -0.1em;
+		border-top: none;
+		border-right: none;
+		border-bottom: none;
+		border-left: 0.1em solid $background-color;
+		outline: none;
+		color: $font-color;
+		-webkit-animation: cursorBlink 0.5s ease 0.1s infinite alternate;
+		-moz-animation: cursorBlink 0.3s ease 0.3s infinite alternate;
+		-o-animation: cursorBlink 0.3s ease 0.3s infinite alternate;
+		animation: cursorBlink 0.3s ease 0.3s infinite alternate;
 	}
 
 	.topAd {
