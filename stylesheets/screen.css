@@ -1036,13 +1036,18 @@ abbr {
   }
 
   /* line 745, ../sass/screen.scss */
+  .mainContent {
+    position: relative;
+  }
+
+  /* line 749, ../sass/screen.scss */
   .ledeStory {
     width: 54.54545%;
     float: left;
     margin-right: 2.27273%;
   }
 
-  /* line 749, ../sass/screen.scss */
+  /* line 753, ../sass/screen.scss */
   .ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -1050,21 +1055,33 @@ abbr {
     font-size: 2.5em;
   }
 
-  /* line 753, ../sass/screen.scss */
-  .rightHalf {
+  /* line 757, ../sass/screen.scss */
+  .ledeRightHalf {
+    position: absolute;
     width: 43.18182%;
-    float: left;
-    margin-right: 2.27273%;
+    float: right;
+    margin-right: 0;
+    margin-left: 56.81818%;
   }
 
-  /* line 757, ../sass/screen.scss */
+  /* line 763, ../sass/screen.scss */
+  .quoteElement {
+    height: 6em;
+  }
+
+  /* line 767, ../sass/screen.scss */
+  .secondLedeElement {
+    height: 8em;
+  }
+
+  /* line 771, ../sass/screen.scss */
   .secondLedeHeader {
     padding-top: 4.5%;
     width: 90%;
     font-size: 1.4em;
   }
 
-  /* line 766, ../sass/screen.scss */
+  /* line 780, ../sass/screen.scss */
   .featureOne,
   .featureTwo,
   .featureThree,
@@ -1075,13 +1092,13 @@ abbr {
 
   /* TODO Need to include a "Read More" or "Go to Feed" or something button that just displays
   		a list of all posts. Add after Dim Sum News.*/
-  /* line 774, ../sass/screen.scss */
+  /* line 788, ../sass/screen.scss */
   .featureHeader {
     padding-top: 3.0em;
     font-size: 1.2em;
   }
 
-  /* line 779, ../sass/screen.scss */
+  /* line 793, ../sass/screen.scss */
   .dimSumNewsTote, .musicReelTote,
   .movieReelTote,
   .foodReelTote,
@@ -1089,17 +1106,17 @@ abbr {
     font-size: 2.0em;
   }
 
-  /* line 783, ../sass/screen.scss */
+  /* line 797, ../sass/screen.scss */
   .dimSumHeader {
     font-size: 1.3em;
   }
 
-  /* line 787, ../sass/screen.scss */
+  /* line 801, ../sass/screen.scss */
   .dimSumExcerpt {
     font-size: 0.9em;
   }
 
-  /* line 793, ../sass/screen.scss */
+  /* line 807, ../sass/screen.scss */
   .topRightHalf,
   .midRightHalf,
   .rightHalfAd {
@@ -1107,18 +1124,18 @@ abbr {
     min-width: 28em;
   }
 
-  /* line 798, ../sass/screen.scss */
+  /* line 812, ../sass/screen.scss */
   #spotifyElement {
     float: left;
     margin-right: 1em;
   }
 
-  /* line 803, ../sass/screen.scss */
+  /* line 817, ../sass/screen.scss */
   #facebookIframeElement {
     float: right;
   }
 
-  /* line 810, ../sass/screen.scss */
+  /* line 824, ../sass/screen.scss */
   .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -1126,7 +1143,7 @@ abbr {
     font-size: 1.5em;
   }
 
-  /* line 817, ../sass/screen.scss */
+  /* line 831, ../sass/screen.scss */
   .farLeft,
   .interiorLeft,
   .interiorRight,
@@ -1136,7 +1153,7 @@ abbr {
   }
 }
 @media (min-width: 59em) {
-  /* line 824, ../sass/screen.scss */
+  /* line 838, ../sass/screen.scss */
   .container {
     background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(6.77966%, rgba(100, 100, 225, 0.25)), color-stop(6.77966%, rgba(0, 0, 0, 0)), color-stop(8.47458%, rgba(0, 0, 0, 0)), color-stop(8.47458%, rgba(100, 100, 225, 0.25)), color-stop(15.25424%, rgba(100, 100, 225, 0.25)), color-stop(15.25424%, rgba(0, 0, 0, 0)), color-stop(16.94915%, rgba(0, 0, 0, 0)), color-stop(16.94915%, rgba(100, 100, 225, 0.25)), color-stop(23.72881%, rgba(100, 100, 225, 0.25)), color-stop(23.72881%, rgba(0, 0, 0, 0)), color-stop(25.42373%, rgba(0, 0, 0, 0)), color-stop(25.42373%, rgba(100, 100, 225, 0.25)), color-stop(32.20339%, rgba(100, 100, 225, 0.25)), color-stop(32.20339%, rgba(0, 0, 0, 0)), color-stop(33.89831%, rgba(0, 0, 0, 0)), color-stop(33.89831%, rgba(100, 100, 225, 0.25)), color-stop(40.67797%, rgba(100, 100, 225, 0.25)), color-stop(40.67797%, rgba(0, 0, 0, 0)), color-stop(42.37288%, rgba(0, 0, 0, 0)), color-stop(42.37288%, rgba(100, 100, 225, 0.25)), color-stop(49.15254%, rgba(100, 100, 225, 0.25)), color-stop(49.15254%, rgba(0, 0, 0, 0)), color-stop(50.84746%, rgba(0, 0, 0, 0)), color-stop(50.84746%, rgba(100, 100, 225, 0.25)), color-stop(57.62712%, rgba(100, 100, 225, 0.25)), color-stop(57.62712%, rgba(0, 0, 0, 0)), color-stop(59.32203%, rgba(0, 0, 0, 0)), color-stop(59.32203%, rgba(100, 100, 225, 0.25)), color-stop(66.10169%, rgba(100, 100, 225, 0.25)), color-stop(66.10169%, rgba(0, 0, 0, 0)), color-stop(67.79661%, rgba(0, 0, 0, 0)), color-stop(67.79661%, rgba(100, 100, 225, 0.25)), color-stop(74.57627%, rgba(100, 100, 225, 0.25)), color-stop(74.57627%, rgba(0, 0, 0, 0)), color-stop(76.27119%, rgba(0, 0, 0, 0)), color-stop(76.27119%, rgba(100, 100, 225, 0.25)), color-stop(83.05085%, rgba(100, 100, 225, 0.25)), color-stop(83.05085%, rgba(0, 0, 0, 0)), color-stop(84.74576%, rgba(0, 0, 0, 0)), color-stop(84.74576%, rgba(100, 100, 225, 0.25)), color-stop(91.52542%, rgba(100, 100, 225, 0.25)), color-stop(91.52542%, rgba(0, 0, 0, 0)), color-stop(93.22034%, rgba(0, 0, 0, 0)), color-stop(93.22034%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
@@ -1154,56 +1171,56 @@ abbr {
     background-clip: content-box;
   }
 
-  /* line 827, ../sass/screen.scss */
+  /* line 841, ../sass/screen.scss */
   .header {
     width: 100%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 830, ../sass/screen.scss */
+  /* line 844, ../sass/screen.scss */
   .logo {
     width: 40.67797%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 833, ../sass/screen.scss */
+  /* line 847, ../sass/screen.scss */
   #searchBar input {
     width: 6.77966%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 836, ../sass/screen.scss */
+  /* line 850, ../sass/screen.scss */
   #topAd {
     width: 49.15254%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 839, ../sass/screen.scss */
+  /* line 853, ../sass/screen.scss */
   .ledeStory {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 842, ../sass/screen.scss */
+  /* line 856, ../sass/screen.scss */
   .rightHalf {
     width: 49.15254%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 845, ../sass/screen.scss */
+  /* line 859, ../sass/screen.scss */
   .quoteElement {
     width: 48.27586%;
     float: left;
     margin-right: 3.44828%;
   }
 
-  /* line 848, ../sass/screen.scss */
+  /* line 862, ../sass/screen.scss */
   .quotePhotoElement {
     width: 48.27586%;
     float: right;

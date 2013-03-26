@@ -742,6 +742,10 @@ abbr {
 		background: #fff;
 	}
 	
+	.mainContent {
+		position: relative;
+	}
+	
 	.ledeStory {
 		@include span-columns(5, $tablet);
 	}
@@ -750,8 +754,18 @@ abbr {
 		font-size: 2.5em;
 	}
 	
-	.rightHalf {
-		@include span-columns(4, $tablet);
+	.ledeRightHalf {
+		position: absolute;
+		@include span-columns(4 omega, $tablet);
+		@include pre(5, $tablet);
+	}
+	
+	.quoteElement {
+		height: $column-width + 2;
+	}
+	
+	.secondLedeElement {
+		height: $column-width * 2;
 	}
 	
 	.secondLedeHeader {
