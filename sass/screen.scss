@@ -211,15 +211,6 @@ abbr {
 	text-align: right;
 }
 
-.quotePhotoElement {
-	display: none;
-	padding: 0;
-	margin: 0 auto;
-	width: 100%;
-	height: $column-width;
-	background: transparent url(http://placehold.it/250x150) center center no-repeat;
-}
-
 .secondLedeElement {
 	margin: $gutter-width auto 0;
 	padding: 0;
@@ -766,6 +757,7 @@ abbr {
 	
 	.secondLedeElement {
 		height: $column-width * 2;
+		clear: both;
 	}
 	
 	.secondLedeHeader {
@@ -858,8 +850,5 @@ abbr {
 	}
 	.quoteElement {
 		@include span-columns(3, $computer / 2);
-	}
-	.quotePhotoElement {
-		@include span-columns(3 omega, $computer / 2);
 	}
 }
