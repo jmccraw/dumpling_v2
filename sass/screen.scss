@@ -132,6 +132,7 @@ abbr {
 
 /* MAIN CONTENT */
 .mainContent {
+	position: relative;
 	margin: ($gutter-width / 2) auto;
 	padding: 0;
 	@include span-columns($total-columns);
@@ -229,8 +230,10 @@ abbr {
 
 /* MIDDLE CONTENT */
 .middleContent {
+	position: relative;
 	padding: 0;
 	width: 100%;
+	clear: both;
 }
 
 .featureStoriesLink {
@@ -367,8 +370,10 @@ abbr {
 
 /* BOTTOM CONTENT */
 .bottomContent {
+	position: relative;
 	padding: 0;
 	width: 100%;
+	clear: both;
 }
 
 .farLeft,
@@ -699,6 +704,7 @@ abbr {
 	
 	.floatingNav {
 		position: fixed;
+		padding-top: $gutter-width / 2;
 		bottom: $gutter-width / 2;
 		clear: both;
 		max-width: 44em;
@@ -707,7 +713,7 @@ abbr {
 		@include transition-property(height);
 		@include transition-duration(0.3s);
 		@include transition-timing-function(ease-out);
-		background: red;
+		background: $background-color;
 	}
 	
 	.floatingNavOpen,
@@ -731,10 +737,6 @@ abbr {
 	.floatingNav a:hover {
 		color: $background-color;
 		background: #fff;
-	}
-	
-	.mainContent {
-		position: relative;
 	}
 	
 	.ledeStory {
@@ -766,12 +768,22 @@ abbr {
 		font-size: 1.4em;
 	}
 	
+	.featureStoriesReel {
+		@include span-columns(3, $tablet);
+	}
+	
 	.featureOne,
 	.featureTwo,
 	.featureThree,
 	.featureFour {
 		max-height: $gutter-width * 12;
+		width: 100%;
 		background-image: url(http://placehold.it/270x100);
+	}
+
+	.featureTwo,
+	.featureFour {
+		float: left;
 	}
 	
 	/* TODO Need to include a "Read More" or "Go to Feed" or something button that just displays
@@ -782,16 +794,29 @@ abbr {
 		font-size: 1.2em;
 	}
 	
+	.dimSumNews {
+		position: absolute;
+		@include span-columns(2, $tablet);
+		@include pre(3, $tablet);
+		padding-top: 0.5em;
+	}
+	
 	.dimSumNewsTote {
-		font-size: 2.0em;
+		font-size: 1.2em;
 	}
 	
 	.dimSumHeader {
-		font-size: 1.3em;
+		font-size: 0.9em;
 	}
 	
 	.dimSumExcerpt {
 		font-size: 0.9em;
+	}
+	
+	.rightHalf {
+		position: absolute;
+		@include span-columns(4 omega, $tablet);
+		@include pre(5, $tablet);
 	}
 	
 	.topRightHalf,
