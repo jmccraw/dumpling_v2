@@ -237,6 +237,8 @@ abbr {
   margin: 0 auto;
   padding: 1.25em;
   height: 16em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: transparent url(http://placehold.it/600x330) center center no-repeat;
 }
@@ -928,6 +930,8 @@ abbr {
   /* line 664, ../sass/screen.scss */
   #searchInput {
     display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
     height: 1.1em;
@@ -940,9 +944,9 @@ abbr {
     outline: none;
     color: #333333;
     -webkit-animation: cursorBlink 0.5s ease 0.1s infinite alternate;
-    -moz-animation: cursorBlink 0.3s ease 0.3s infinite alternate;
-    -o-animation: cursorBlink 0.3s ease 0.3s infinite alternate;
-    animation: cursorBlink 0.3s ease 0.3s infinite alternate;
+    -moz-animation: cursorBlink 0.5s ease 0.1s infinite alternate;
+    -o-animation: cursorBlink 0.5s ease 0.1s infinite alternate;
+    animation: cursorBlink 0.5s ease 0.1s infinite alternate;
   }
 
   /* line 683, ../sass/screen.scss */
