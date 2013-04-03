@@ -369,21 +369,23 @@
 			}
 		};
 		
+		
+		// Enable or disable the slide-down search feature
+		function enableDisableSearch() {
+			if ($("#searchInputPushdown").hasClass("searchInputInvisible")) {
+				$(".searchBarIcon").attr("src", "stylesheets/images/close_icon.png");
+				$("#searchInputPushdown").removeClass().addClass("searchInputVisible");
+				$("#searchInput").focus();
+			}
+			else {
+				$(".searchBarIcon").attr("src", "stylesheets/images/search_icon.png");
+				$("#searchInputPushdown").removeClass().addClass("searchInputInvisible");
+				$("#searchInput").blur();
+			}
+		};
+		
 		// Load the search field (pushdown for tablet and desktop)
 		function loadSearchInputPushdown() {
-		
-			function enableDisableSearch() {
-				if ($("#searchInputPushdown").hasClass("searchInputInvisible")) {
-					$(".searchBarIcon").attr("src", "stylesheets/images/close_icon.png");
-					$("#searchInputPushdown").removeClass().addClass("searchInputVisible");
-					$("#searchInput").focus();
-				}
-				else {
-					$(".searchBarIcon").attr("src", "stylesheets/images/search_icon.png");
-					$("#searchInputPushdown").removeClass().addClass("searchInputInvisible");
-					$("#searchInput").blur();
-				}
-			};
 			
 			$(".searchBarIcon").click(function() {
 				enableDisableSearch();
