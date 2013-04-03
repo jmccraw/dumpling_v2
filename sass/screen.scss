@@ -360,9 +360,11 @@ abbr {
 .topRightHalf,
 .midRightHalf,
 .rightHalfAd {
+	position: relative;
 	margin: $gutter-width auto 0;
 	padding: 0;
 	width: $total-columns * $column-width - 1;
+	clear: both;
 }
 
 .rightHalfAd {
@@ -800,9 +802,6 @@ abbr {
 	.featureFour {
 		float: left;
 	}
-	
-	/* TODO Need to include a "Read More" or "Go to Feed" or something button that just displays
-			a list of all posts. Add after Dim Sum News.*/
 	
 	.featureHeader {
 		padding-top: 3.0em;

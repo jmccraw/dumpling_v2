@@ -332,10 +332,18 @@
 		
 		// Load Spotify if a big enough viewport
 		if (document.width > 500) {
-			$("#spotifyElement").attr("width",
-				Math.floor($(".topRightHalf").width() / 2.1)).attr("height",
-				"400").attr("src",
-				"https://embed.spotify.com/?uri=spotify:user:justinmccraw:playlist:5232k8BBvXPEGODNO3mBaC");
+			var width = 0;
+			if (document.width > 703) {
+				width = Math.floor($(".topRightHalf").width());
+			}
+			else {
+				width = Math.floor($(".topRightHalf").width() / 2.1);
+			}
+			$("#spotifyElement").attr({
+				"width": width,
+				"height": "350",
+				"src": "https://embed.spotify.com/?uri=spotify:user:justinmccraw:playlist:5232k8BBvXPEGODNO3mBaC"
+			});
 		}
 		else {
 			$(".topRightHalf").css("display", "none");
