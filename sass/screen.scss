@@ -321,12 +321,17 @@ abbr {
 	border-bottom: 1px solid #333;
 }
 
-.dimSumArticle {
+.dimSumArticle,
+.dimSumReadMore {
 	margin: $gutter-width auto 0;
 	padding: 0;
 	width: 100%;
 	height: auto;
 	border-bottom: 1px solid $background-color;
+}
+
+.dimSumReadMore {
+	margin-top: $gutter-width * 2;
 }
 
 .dimSumHeader {
@@ -335,6 +340,11 @@ abbr {
 	font: 400 1.0em/1.3em $sans-serif-fonts;
 	color: $font-color;
 	text-align: left;
+}
+
+.dimSumReadMoreHeader {
+	background: transparent url(images/dumpling_icon_64x64.png) 95% 0 no-repeat;
+	font-weight: 700 !important;
 }
 
 .dimSumExcerpt {
@@ -551,6 +561,10 @@ abbr {
 		font-size: 1.3em;
 	}
 	
+	.dimSumReadMoreHeader {
+		font-size: 1.2em;
+	}
+	
 	.dimSumExcerpt {
 		font-size: 0.9em;
 	}
@@ -714,6 +728,7 @@ abbr {
 		@include transition-duration(0.3s);
 		@include transition-timing-function(ease-out);
 		background: $background-color;
+		z-index: 100;
 	}
 	
 	.floatingNavOpen,
@@ -807,6 +822,10 @@ abbr {
 	
 	.dimSumHeader {
 		font-size: 0.9em;
+	}
+	
+	.dimSumReadMoreHeader {
+		font-size: 0.8em;
 	}
 	
 	.dimSumExcerpt {
