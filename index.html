@@ -172,10 +172,10 @@
 		<div class="rightHalf">
 			<section class="topRightHalf">
 				<iframe id="spotifyElement" src="" width="0" height="0" frameborder="0" allowtransparency="true" seamless></iframe>
-				<iframe id="facebookIframeElement" src="" scrolling="no" frameborder="0" width="0" height="0" allowTransparency="true" seamless></iframe>
+				<iframe id="facebookIframeElement" src="" scrolling="no" frameborder="0" width="0" allowTransparency="true" seamless></iframe>
 			</section>
 			<section class="midRightHalf">
-				<article class="facebookElement">
+				<article class="twitterElement">
 					<h3>TWITTER</h3>
 				</article>
 			</section>
@@ -340,8 +340,10 @@
 				width = Math.floor($(".topRightHalf").width() / 2.1);
 			}
 			$("#spotifyElement").attr({
-				"width": width,
-				"height": "350",
+				//"width": width - 144,
+				//"height": width - 60,
+				"width": width - 144,
+				"height": 80,
 				"src": "https://embed.spotify.com/?uri=spotify:user:justinmccraw:playlist:5232k8BBvXPEGODNO3mBaC"
 			});
 		}
@@ -350,14 +352,20 @@
 		}
 		
 		// Load the Facebook app
-		var fbWidth = Math.floor($(".topRightHalf").width() / 2.1);
-		var fbHeight = 400;
+		/*var fbWidth = Math.floor($(".topRightHalf").width() / 2.1);
+		var fbHeight = 165;
 		$("#facebookIframeElement").attr("width", fbWidth).attr("height", fbHeight).attr("src",
 			"http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2F" +
 			"www.facebook.com%2FDumplingMag&amp;width=" +
-			fbWidth + "&amp;height=" + fbHeight +
-			"&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;" +
-			"border_color=%23ccc&amp;header=false&amp;appId=305560679482771");
+			fbWidth + "&height=" + fbHeight +
+			"&show_faces=true&colorscheme=light&stream=false&" +
+			"border_color=%23fff&header=false&appId=305560679482771");*/
+		var fbWidth = Math.floor($(".topRightHalf").width()) - 144;
+		$("#facebookIframeElement").attr({
+			"width": fbWidth,
+			"height": 70,
+			"src": "http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2FDumplingMag&send=false&layout=standard&width=304&show_faces=true&font=lucida+grande&colorscheme=light&action=like&height=80&appId=305560679482771"
+		});
 			
 		// Load menu functionality depending on screen size
 		function enableMobileMenu() {
@@ -382,7 +390,6 @@
 			}
 		};
 		
-		
 		// Enable or disable the slide-down search feature
 		function enableDisableSearch() {
 			if ($("#searchInputPushdown").hasClass("searchInputInvisible")) {
@@ -394,6 +401,16 @@
 				$(".searchBarIcon").attr("src", "stylesheets/images/search_icon.png");
 				$("#searchInputPushdown").removeClass().addClass("searchInputInvisible");
 				$("#searchInput").blur();
+			}
+		};
+		
+		// Enables mobile/desktop ads
+		function enableMobileAds() {
+			if ($(".container").width() < 704) {
+				$("#rightHalfAd").attr("src", "http://placehold.it/320");
+			}
+			else {
+				$("#rightHalfAd").attr("src", "http://placehold.it/300x600");
 			}
 		};
 		
@@ -415,9 +432,11 @@
 		
 		$(window).resize(function() {
 			enableMobileMenu();
+			enableMobileAds();
 		});
 		
 		enableMobileMenu();
+		enableMobileAds();
 		loadSearchInputPushdown();
 	})();
 	</script>

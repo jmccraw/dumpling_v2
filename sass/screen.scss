@@ -840,17 +840,28 @@ abbr {
 	.topRightHalf,
 	.midRightHalf,
 	.rightHalfAd {
-		width: 100%;
-		min-width: $column-width * $phone-portrait;
+		width: auto;
+		max-width: $column-width * $phone-portrait;
 	}
 	
 	#spotifyElement {
 		float: left;
+		margin-top: $gutter-width / 2 * -1;
 		margin-right: $gutter-width;
 	}
 	
 	#facebookIframeElement {
-		float: right;
+		float: left;
+		margin-top: $gutter-width;
+	}
+	
+	.twitterElement {
+		margin-top: $gutter-width;
+	}
+	
+	#rightHalfAd {
+		float: left;
+		width: auto;
 	}
 	
 	.musicReelHeader,
