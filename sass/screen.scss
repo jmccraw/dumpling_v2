@@ -583,10 +583,6 @@ abbr {
 		margin-right: $gutter-width;
 	}
 	
-	#facebookIframeElement {
-		float: right;
-	}
-	
 	.musicReelHeader,
 	.movieReelHeader,
 	.foodReelHeader,
@@ -822,7 +818,7 @@ abbr {
 	.dimSumHeader {
 		font-size: 0.9em;
 	}
-	
+
 	.dimSumReadMoreHeader {
 		font-size: 0.8em;
 	}
@@ -848,11 +844,6 @@ abbr {
 		float: left;
 		margin-top: $gutter-width / 2 * -1;
 		margin-right: $gutter-width;
-	}
-	
-	#facebookIframeElement {
-		float: left;
-		margin-top: $gutter-width;
 	}
 	
 	.twitterElement {

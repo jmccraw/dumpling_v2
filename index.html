@@ -172,12 +172,20 @@
 		<div class="rightHalf">
 			<section class="topRightHalf">
 				<iframe id="spotifyElement" src="" width="0" height="0" frameborder="0" allowtransparency="true" seamless></iframe>
-				<iframe id="facebookIframeElement" src="" scrolling="no" frameborder="0" width="0" allowTransparency="true" seamless></iframe>
 			</section>
 			<section class="midRightHalf">
-				<article class="twitterElement">
+				<aside class="facebookElement">
+					<h3>FACEBOOK</h3>
+				</aside>
+				<aside class="twitterElement">
 					<h3>TWITTER</h3>
-				</article>
+				</aside>
+				<aside class="mailElement">
+					<h3>MAIL</h3>
+				</aside>
+				<aside class="rssElement">
+					<h3>RSS</h3>
+				</aside>
 			</section>
 			<a class="rightHalfLink" href="#" title="">
 				<aside class="rightHalfAd">
@@ -351,21 +359,50 @@
 			$(".topRightHalf").css("display", "none");
 		}
 		
-		// Load the Facebook app
-		/*var fbWidth = Math.floor($(".topRightHalf").width() / 2.1);
-		var fbHeight = 165;
-		$("#facebookIframeElement").attr("width", fbWidth).attr("height", fbHeight).attr("src",
-			"http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2F" +
-			"www.facebook.com%2FDumplingMag&amp;width=" +
-			fbWidth + "&height=" + fbHeight +
-			"&show_faces=true&colorscheme=light&stream=false&" +
-			"border_color=%23fff&header=false&appId=305560679482771");*/
-		var fbWidth = Math.floor($(".topRightHalf").width()) - 144;
-		$("#facebookIframeElement").attr({
-			"width": fbWidth,
-			"height": 70,
-			"src": "http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2FDumplingMag&send=false&layout=standard&width=304&show_faces=true&font=lucida+grande&colorscheme=light&action=like&height=80&appId=305560679482771"
-		});
+		// Load the Facebook icon
+		function loadFacebookIcon() {
+			
+		};
+		
+		// Load the Twitter icon
+		function loadTwitterIcon() {
+			
+		};
+		
+		// Load the Mail icon
+		function loadMailIcon() {
+			
+		};
+		
+		// Load the RSS icon
+		function loadRSSIcon() {
+			
+		};
+		
+		/*
+		 * Load the different social media icons
+		 * @param{String} icon A specific icon to load (optional, lowercase)
+		 */
+		function loadSocialIcons(icon) {
+			if (!icon) {
+				loadFacebookIcon();
+				loadTwitterIcon();
+				loadMailIcon();
+				loadRSSIcon();
+			}
+			else if (icon === "facebook") {
+				loadFacebookIcon();
+			}
+			else if (icon === "twitter") {
+				loadTwitterIcon();
+			}
+			else if (icon === "mail") {
+				loadMailIcon();
+			}
+			else if (icon === "rss") {
+				loadRSSIcon();
+			}
+		};
 			
 		// Load menu functionality depending on screen size
 		function enableMobileMenu() {
@@ -437,6 +474,7 @@
 		
 		enableMobileMenu();
 		enableMobileAds();
+		loadSocialIcons();
 		loadSearchInputPushdown();
 	})();
 	</script>
