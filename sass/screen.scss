@@ -367,6 +367,53 @@ abbr {
 	clear: both;
 }
 
+.facebookElement,
+.twitterElement,
+.mailElement,
+.rssElement {
+	float: left;
+	margin: $gutter-width 0.7em $gutter-width 0;
+	width: 64px;
+	height: 64px;
+	@include border-radius(50% 0 50% 50%);
+	cursor: pointer;
+}
+
+.facebookElement:hover,
+.facebookElement:active {
+	background: rgb(24, 100, 240);
+	background: rgba(24, 100, 240, 0.3);
+}
+
+.twitterElement:hover,
+.twitterElement:active {
+	background: rgb(30, 200, 250);
+	background: rgba(30, 200, 250, 0.3);
+}
+
+.mailElement:hover,
+.mailElement:active {
+	background: rgb(200, 20, 30);
+	background: rgba(200, 20, 30, 0.3);
+}
+
+.rssElement:hover,
+.rssElement:active {
+	background: rgb(180, 100, 50);
+	background: rgba(180, 100, 50, 0.3);
+}
+
+.socialIcon {
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+}
+
+.lastElement {
+	margin-right: 0;
+}
+
 .rightHalfAd {
 	width: 100%;
 	height: $gutter-width * 34;
@@ -844,10 +891,6 @@ abbr {
 		float: left;
 		margin-top: $gutter-width / 2 * -1;
 		margin-right: $gutter-width;
-	}
-	
-	.twitterElement {
-		margin-top: $gutter-width;
 	}
 	
 	#rightHalfAd {
