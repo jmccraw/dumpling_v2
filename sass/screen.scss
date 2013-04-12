@@ -377,6 +377,9 @@ abbr {
 	height: 64px;
 	@include border-radius(50% 0 50% 50%);
 	cursor: pointer;
+	@include transition-property(background);
+	@include transition-duration(0.2s);
+	@include transition-timing-function(ease-out);
 }
 
 .facebookElement:hover,
@@ -898,19 +901,33 @@ abbr {
 		width: auto;
 	}
 	
-	.musicReelHeader,
-	.movieReelHeader,
-	.foodReelHeader,
-	.eventReelHeader {
-		font-size: 1.5em;
-	}
-	
 	.farLeft,
 	.interiorLeft,
 	.interiorRight,
 	.farRight {
-		min-height: $column-width * ($phone-portrait - 2);
-		max-height: $phone-portrait * $column-width;
+		margin-top: $gutter-width;
+		width: 25%;
+		min-height: $gutter-width * 15;
+		max-height: $gutter-width * 20;
+	}
+	
+	.interiorLeft,
+	.farRight {
+		float: left;
+	}
+	
+	.musicReelHeader,
+	.movieReelHeader,
+	.foodReelHeader,
+	.eventReelHeader {
+		font-size: 0.9em;
+	}
+	
+	.musicReelArticle,
+	.movieReelArticle,
+	.foodReelArticle,
+	.eventReelArticle {
+		padding: 0 0.5em;
 	}
 }
 
