@@ -79,10 +79,7 @@ abbr {
 	color: #fff;
 }
 
-#searchBar {
-
-}
-
+#searchBar,
 #searchInput {
 	display: none;
 }
@@ -147,7 +144,8 @@ abbr {
 }
 
 .ledeStoryLink,
-.secondLedeLink {
+.secondLedeLink,
+.headerLink {
 	text-decoration: none;
 }
 
@@ -385,19 +383,22 @@ abbr {
 .facebookElement:hover,
 .facebookElement:active {
 	background: rgb(24, 100, 240);
-	background: rgba(24, 100, 240, 0.3);
+	background: rgb(59, 89, 152);
+	background: rgba(59, 89, 152, 0.3);
 }
 
 .twitterElement:hover,
 .twitterElement:active {
 	background: rgb(30, 200, 250);
-	background: rgba(30, 200, 250, 0.3);
+	background: rgb(26, 178, 232);
+	background: rgba(26, 178, 232, 0.3);
 }
 
 .mailElement:hover,
 .mailElement:active {
 	background: rgb(200, 20, 30);
-	background: rgba(200, 20, 30, 0.3);
+	background: rgb(221, 75, 57);
+	background: rgba(221, 75, 57, 0.3);
 }
 
 .rssElement:hover,
@@ -686,6 +687,14 @@ abbr {
 		border: 2px solid #ccc;
 		@include border-radius(32px);
 		background: $background-color;
+		@include transition-property(background);
+		@include transition-duration(0.3s);
+		@include transition-timing-function(ease-out);
+	}
+	
+	.searchBarIcon:hover,
+	.searchBarIcon:active {
+		background: rgba(1, 152, 117, 0.6);
 	}
 	
 	#searchInputPushdown {
@@ -766,10 +775,11 @@ abbr {
 	
 	.floatingNav {
 		position: fixed;
-		padding-top: $gutter-width / 2;
+		padding-top: 0.4em;
 		bottom: $gutter-width / 2;
 		clear: both;
 		max-width: 44em;
+		height: 1.5em;
 		text-align: center;
 		overflow: hidden;
 		@include transition-property(height);
@@ -786,10 +796,12 @@ abbr {
 	
 	.floatingNav a {
 		display: inline;
-		font: 400 1.5em/1.1em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
+		padding: 0.3em 0.2em;
+		font: 400 1.3em/1.1em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
 		color: #fff;
 		text-decoration: none;
 		text-align: center;
+		text-transform: uppercase;
 		background: $background-color;
 		@include transition-property(all);
 		@include transition-duration(0.7s);

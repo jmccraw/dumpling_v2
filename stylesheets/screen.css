@@ -149,12 +149,13 @@ abbr {
   color: #fff;
 }
 
-/* line 86, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
+#searchBar,
 #searchInput {
   display: none;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .topAd {
   display: none;
   overflow: hidden;
@@ -162,7 +163,7 @@ abbr {
 
 /* END HEADER */
 /* FLOATING NAV */
-/* line 97, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .floatingNav {
   clear: both;
   width: 100%;
@@ -181,17 +182,17 @@ abbr {
   transition-timing-function: ease-out;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .floatingNavOpen {
   height: 13em;
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .floatingNavClosed {
   height: 0;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .floatingNav a {
   display: block;
   font: 400 1.5em/1.1em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
@@ -213,7 +214,7 @@ abbr {
   transition-timing-function: ease-out;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .floatingNav a:active,
 .floatingNav a:hover {
   color: #019875;
@@ -222,7 +223,7 @@ abbr {
 
 /* END FLOATING NAV */
 /* MAIN CONTENT */
-/* line 134, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .mainContent {
   position: relative;
   margin: 0.5em auto;
@@ -233,7 +234,7 @@ abbr {
   display: inline;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .ledeStory {
   margin: 0 auto;
   padding: 1.25em;
@@ -244,16 +245,17 @@ abbr {
   background: transparent url(http://placehold.it/600x330) center center no-repeat;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .ledeStoryLink, .featureStoriesLink, .dimSumLink, .musicReelLink,
 .movieReelLink,
 .foodReelLink,
 .eventReelLink,
-.secondLedeLink {
+.secondLedeLink,
+.headerLink {
   text-decoration: none;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
 .movieReelHeader,
 .foodReelHeader,
@@ -269,7 +271,7 @@ abbr {
   text-transform: uppercase;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .ledeStoryLink:hover .ledeStoryHeader, .featureStoriesLink:hover .ledeStoryHeader, .dimSumLink:hover .ledeStoryHeader, .musicReelLink:hover .ledeStoryHeader,
 .movieReelLink:hover .ledeStoryHeader,
 .foodReelLink:hover .ledeStoryHeader,
@@ -318,7 +320,7 @@ abbr {
   color: #333333;
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .ledeStoryByline {
   display: block;
   margin: 0;
@@ -328,14 +330,14 @@ abbr {
   text-align: right;
 }
 
-/* line 181, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .quoteElement {
   margin: 1em auto 0;
   padding: 0;
   width: 100%;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 .quoteElement:after {
   content: "\201c";
   position: absolute;
@@ -348,7 +350,7 @@ abbr {
   z-index: 1;
 }
 
-/* line 199, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .quoteText {
   position: relative;
   margin: 0;
@@ -359,14 +361,14 @@ abbr {
   z-index: 2;
 }
 
-/* line 209, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .quoteAuthor {
   padding: 0;
   font: 700 80% Georgia, "Times New Roman", Times, serif;
   text-align: right;
 }
 
-/* line 215, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 .secondLedeElement {
   margin: 1em auto 0;
   padding: 0;
@@ -375,7 +377,7 @@ abbr {
   background: transparent url(http://placehold.it/550x150) center center no-repeat;
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .secondLedeHeader {
   padding: 3.8% 0 0;
   font: 400 1.3em/1.2em Georgia, "Times New Roman", Times, serif;
@@ -384,7 +386,7 @@ abbr {
 
 /* END MAIN CONTENT */
 /* MIDDLE CONTENT */
-/* line 232, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 .middleContent {
   position: relative;
   padding: 0;
@@ -392,7 +394,7 @@ abbr {
   clear: both;
 }
 
-/* line 250, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 .featureStoriesLink:hover .featureOne,
 .featureStoriesLink:active .featureOne,
 .featureStoriesLink:hover .featureFour,
@@ -404,7 +406,7 @@ abbr {
   background-color: rgba(1, 152, 117, 0.1);
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .featureStoriesReel,
 .dimSumNews,
 .rightHalf {
@@ -415,7 +417,7 @@ abbr {
   width: 100%;
 }
 
-/* line 267, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 .featureOne,
 .featureTwo,
 .featureThree,
@@ -442,14 +444,14 @@ abbr {
   transition-timing-function: ease-out;
 }
 
-/* line 282, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 .featureTwo,
 .featureFour {
   float: right;
   margin-right: 0;
 }
 
-/* line 287, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .featureHeader {
   padding-top: 3.4em;
   height: 2.5em;
@@ -460,7 +462,7 @@ abbr {
   overflow: hidden;
 }
 
-/* line 299, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 .featureExcerpt, .dimSumExcerpt, .footerExcerpt,
 .featureByline {
   margin: 0;
@@ -469,7 +471,7 @@ abbr {
   color: #333333;
 }
 
-/* line 306, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 .featureByline {
   display: block;
   margin-top: 0.75em;
@@ -477,7 +479,7 @@ abbr {
   text-align: right;
 }
 
-/* line 317, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 .dimSumNewsTote, .musicReelTote,
 .movieReelTote,
 .foodReelTote,
@@ -488,7 +490,7 @@ abbr {
   border-bottom: 1px solid #333333;
 }
 
-/* line 325, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 .dimSumArticle,
 .dimSumReadMore {
   margin: 1em auto 0;
@@ -498,12 +500,12 @@ abbr {
   border-bottom: 1px solid #019875;
 }
 
-/* line 333, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 .dimSumReadMore {
   margin-top: 2em;
 }
 
-/* line 337, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 .dimSumHeader {
   height: auto;
   font: 400 1em/1.3em Tahoma, Helvetica, Arial, sans-serif;
@@ -511,24 +513,24 @@ abbr {
   text-align: left;
 }
 
-/* line 345, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 .dimSumReadMoreHeader {
   background: transparent url(images/dumpling_icon_64x64.png) 95% 0 no-repeat;
   font-weight: 700 !important;
 }
 
-/* line 350, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .dimSumExcerpt {
   color: #777;
 }
 
-/* line 356, ../sass/screen.scss */
+/* line 354, ../sass/screen.scss */
 .dimSumLink:hover .dimSumHeader,
 .dimSumLink:active .dimSumHeader {
   text-decoration: underline;
 }
 
-/* line 362, ../sass/screen.scss */
+/* line 360, ../sass/screen.scss */
 .topRightHalf,
 .midRightHalf,
 .rightHalfAd {
@@ -539,7 +541,7 @@ abbr {
   clear: both;
 }
 
-/* line 373, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 .facebookElement,
 .twitterElement,
 .mailElement,
@@ -568,35 +570,38 @@ abbr {
   transition-timing-function: ease-out;
 }
 
-/* line 386, ../sass/screen.scss */
+/* line 384, ../sass/screen.scss */
 .facebookElement:hover,
 .facebookElement:active {
   background: #1864f0;
-  background: rgba(24, 100, 240, 0.3);
+  background: #3b5998;
+  background: rgba(59, 89, 152, 0.3);
 }
 
-/* line 392, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 .twitterElement:hover,
 .twitterElement:active {
   background: #1ec8fa;
-  background: rgba(30, 200, 250, 0.3);
+  background: #1ab2e8;
+  background: rgba(26, 178, 232, 0.3);
 }
 
 /* line 398, ../sass/screen.scss */
 .mailElement:hover,
 .mailElement:active {
   background: #c8141e;
-  background: rgba(200, 20, 30, 0.3);
+  background: #dd4b39;
+  background: rgba(221, 75, 57, 0.3);
 }
 
-/* line 404, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 .rssElement:hover,
 .rssElement:active {
   background: #b46432;
   background: rgba(180, 100, 50, 0.3);
 }
 
-/* line 409, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 .socialIcon {
   padding: 0;
   margin: 0 auto;
@@ -604,19 +609,19 @@ abbr {
   height: auto;
 }
 
-/* line 416, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 .lastElement {
   margin-right: 0;
 }
 
-/* line 420, ../sass/screen.scss */
+/* line 421, ../sass/screen.scss */
 .rightHalfAd {
   width: 100%;
   height: 34em;
   text-align: center;
 }
 
-/* line 426, ../sass/screen.scss */
+/* line 427, ../sass/screen.scss */
 #rightHalfAd {
   width: 100%;
   height: auto;
@@ -624,7 +629,7 @@ abbr {
 
 /* END MIDDLE CONTENT */
 /* BOTTOM CONTENT */
-/* line 434, ../sass/screen.scss */
+/* line 435, ../sass/screen.scss */
 .bottomContent {
   position: relative;
   padding: 0;
@@ -632,7 +637,7 @@ abbr {
   clear: both;
 }
 
-/* line 444, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 .farLeft,
 .interiorLeft,
 .interiorRight,
@@ -646,14 +651,14 @@ abbr {
   max-height: 25em;
 }
 
-/* line 462, ../sass/screen.scss */
+/* line 463, ../sass/screen.scss */
 .interiorLeft,
 .farRight {
   float: right;
   margin-right: 0;
 }
 
-/* line 470, ../sass/screen.scss */
+/* line 471, ../sass/screen.scss */
 .musicReelTote,
 .movieReelTote,
 .foodReelTote,
@@ -677,50 +682,50 @@ abbr {
   transition-timing-function: ease-out;
 }
 
-/* line 482, ../sass/screen.scss */
+/* line 483, ../sass/screen.scss */
 .movieReelTote {
   color: #85bdc1;
 }
 
-/* line 486, ../sass/screen.scss */
+/* line 487, ../sass/screen.scss */
 .foodReelTote {
   color: #e1e297;
 }
 
-/* line 490, ../sass/screen.scss */
+/* line 491, ../sass/screen.scss */
 .eventReelTote {
   color: #d66b96;
 }
 
-/* line 495, ../sass/screen.scss */
+/* line 496, ../sass/screen.scss */
 .musicReelLink:hover .musicReelTote,
 .musicReelLink:active .musicReelTote {
   color: #333333;
   background: #8186d5;
 }
 
-/* line 501, ../sass/screen.scss */
+/* line 502, ../sass/screen.scss */
 .movieReelLink:hover .movieReelTote,
 .movieReelLink:active .movieReelTote {
   color: #333333;
   background: #85bdc1;
 }
 
-/* line 507, ../sass/screen.scss */
+/* line 508, ../sass/screen.scss */
 .foodReelLink:hover .foodReelTote,
 .foodReelLink:active .foodReelTote {
   color: #333333;
   background: #e1e297;
 }
 
-/* line 513, ../sass/screen.scss */
+/* line 514, ../sass/screen.scss */
 .eventReelLink:hover .eventReelTote,
 .eventReelLink:active .eventReelTote {
   color: #333333;
   background: #d66b96;
 }
 
-/* line 521, ../sass/screen.scss */
+/* line 522, ../sass/screen.scss */
 .musicReelHeader,
 .movieReelHeader,
 .foodReelHeader,
@@ -732,28 +737,28 @@ abbr {
   text-align: left;
 }
 
-/* line 531, ../sass/screen.scss */
+/* line 532, ../sass/screen.scss */
 .musicReelLink:hover .musicReelHeader,
 .musicReelLink:active .musicReelHeader {
   color: #8186d5;
   text-decoration: underline;
 }
 
-/* line 537, ../sass/screen.scss */
+/* line 538, ../sass/screen.scss */
 .movieReelLink:hover .movieReelHeader,
 .movieReelLink:active .movieReelHeader {
   color: #85bdc1;
   text-decoration: underline;
 }
 
-/* line 543, ../sass/screen.scss */
+/* line 544, ../sass/screen.scss */
 .foodReelLink:hover .foodReelHeader,
 .foodReelLink:active .foodReelHeader {
   color: #e1e297;
   text-decoration: underline;
 }
 
-/* line 549, ../sass/screen.scss */
+/* line 550, ../sass/screen.scss */
 .eventReelLink:hover .eventReelHeader,
 .eventReelLink:active .eventReelHeader {
   color: #d66b96;
@@ -762,7 +767,7 @@ abbr {
 
 /* END BOTTOM CONTENT */
 /* FOOTER */
-/* line 556, ../sass/screen.scss */
+/* line 557, ../sass/screen.scss */
 .footer {
   clear: both;
   margin: 0 auto 1em;
@@ -770,7 +775,7 @@ abbr {
   width: 100%;
 }
 
-/* line 563, ../sass/screen.scss */
+/* line 564, ../sass/screen.scss */
 .footerExcerpt {
   padding-top: 1em;
   font-size: 0.75em;
@@ -780,22 +785,22 @@ abbr {
 
 /* END FOOTER */
 @media (min-width: 34em) {
-  /* line 573, ../sass/screen.scss */
+  /* line 574, ../sass/screen.scss */
   .header {
     height: 5em;
   }
 
-  /* line 577, ../sass/screen.scss */
+  /* line 578, ../sass/screen.scss */
   .logo {
     font-size: 4.1em;
   }
 
-  /* line 581, ../sass/screen.scss */
+  /* line 582, ../sass/screen.scss */
   .logo:after {
     top: 0.4em;
   }
 
-  /* line 585, ../sass/screen.scss */
+  /* line 586, ../sass/screen.scss */
   .ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -803,14 +808,14 @@ abbr {
     font-size: 3.0em;
   }
 
-  /* line 589, ../sass/screen.scss */
+  /* line 590, ../sass/screen.scss */
   .secondLedeHeader {
     padding-top: 4.5%;
     width: 90%;
     font-size: 1.4em;
   }
 
-  /* line 598, ../sass/screen.scss */
+  /* line 599, ../sass/screen.scss */
   .featureOne,
   .featureTwo,
   .featureThree,
@@ -819,13 +824,13 @@ abbr {
     background-image: url(http://placehold.it/270x100);
   }
 
-  /* line 603, ../sass/screen.scss */
+  /* line 604, ../sass/screen.scss */
   .featureHeader {
     padding-top: 3.0em;
     font-size: 1.2em;
   }
 
-  /* line 608, ../sass/screen.scss */
+  /* line 609, ../sass/screen.scss */
   .dimSumNewsTote, .musicReelTote,
   .movieReelTote,
   .foodReelTote,
@@ -833,22 +838,22 @@ abbr {
     font-size: 2.0em;
   }
 
-  /* line 612, ../sass/screen.scss */
+  /* line 613, ../sass/screen.scss */
   .dimSumHeader {
     font-size: 1.3em;
   }
 
-  /* line 616, ../sass/screen.scss */
+  /* line 617, ../sass/screen.scss */
   .dimSumReadMoreHeader {
     font-size: 1.2em;
   }
 
-  /* line 620, ../sass/screen.scss */
+  /* line 621, ../sass/screen.scss */
   .dimSumExcerpt {
     font-size: 0.9em;
   }
 
-  /* line 626, ../sass/screen.scss */
+  /* line 627, ../sass/screen.scss */
   .topRightHalf,
   .midRightHalf,
   .rightHalfAd {
@@ -856,13 +861,13 @@ abbr {
     min-width: 28em;
   }
 
-  /* line 631, ../sass/screen.scss */
+  /* line 632, ../sass/screen.scss */
   #spotifyElement {
     float: left;
     margin-right: 1em;
   }
 
-  /* line 639, ../sass/screen.scss */
+  /* line 640, ../sass/screen.scss */
   .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -870,7 +875,7 @@ abbr {
     font-size: 1.5em;
   }
 
-  /* line 646, ../sass/screen.scss */
+  /* line 647, ../sass/screen.scss */
   .farLeft,
   .interiorLeft,
   .interiorRight,
@@ -880,17 +885,17 @@ abbr {
   }
 }
 @media (min-width: 44em) {
-  /* line 653, ../sass/screen.scss */
+  /* line 654, ../sass/screen.scss */
   .container {
     /*@include susy-grid-background;*/
   }
 
-  /* line 656, ../sass/screen.scss */
+  /* line 657, ../sass/screen.scss */
   .header {
     height: 6em;
   }
 
-  /* line 660, ../sass/screen.scss */
+  /* line 661, ../sass/screen.scss */
   .logo {
     font-size: 5.1em;
     width: 54.54545%;
@@ -898,7 +903,7 @@ abbr {
     margin-right: 2.27273%;
   }
 
-  /* line 665, ../sass/screen.scss */
+  /* line 666, ../sass/screen.scss */
   .logo:after {
     content: '';
     position: relative;
@@ -908,7 +913,7 @@ abbr {
     background: none;
   }
 
-  /* line 674, ../sass/screen.scss */
+  /* line 675, ../sass/screen.scss */
   #searchBar {
     display: block;
     width: 9.09091%;
@@ -917,7 +922,7 @@ abbr {
     height: 6em;
   }
 
-  /* line 680, ../sass/screen.scss */
+  /* line 681, ../sass/screen.scss */
   .searchBarIcon {
     margin-top: 1.2em;
     padding: 6px;
@@ -931,9 +936,27 @@ abbr {
     -o-border-radius: 32px;
     border-radius: 32px;
     background: #019875;
+    -webkit-transition-property: background;
+    -moz-transition-property: background;
+    -o-transition-property: background;
+    transition-property: background;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
   }
 
-  /* line 691, ../sass/screen.scss */
+  /* line 696, ../sass/screen.scss */
+  .searchBarIcon:hover,
+  .searchBarIcon:active {
+    background: rgba(1, 152, 117, 0.6);
+  }
+
+  /* line 700, ../sass/screen.scss */
   #searchInputPushdown {
     width: 44em;
     -webkit-transition-property: all;
@@ -954,14 +977,14 @@ abbr {
     clear: both;
   }
 
-  /* line 702, ../sass/screen.scss */
+  /* line 711, ../sass/screen.scss */
   .searchInputVisible {
     padding-top: 1em;
     padding-bottom: 1em;
     height: 6.3em;
   }
 
-  /* line 708, ../sass/screen.scss */
+  /* line 717, ../sass/screen.scss */
   .searchInputInvisible {
     padding-top: 0;
     padding-bottom: 0;
@@ -969,54 +992,54 @@ abbr {
   }
 
   @-webkit-keyframes cursorBlink {
-    /* line 715, ../sass/screen.scss */
+    /* line 724, ../sass/screen.scss */
     from {
       border-left: 0.1em solid #019875;
     }
 
-    /* line 716, ../sass/screen.scss */
+    /* line 725, ../sass/screen.scss */
     to {
       border-left: 0.1em solid white;
     }
 }
 
   @-moz-keyframes cursorBlink {
-    /* line 719, ../sass/screen.scss */
+    /* line 728, ../sass/screen.scss */
     from {
       border-left: 0.1em solid #019875;
     }
 
-    /* line 720, ../sass/screen.scss */
+    /* line 729, ../sass/screen.scss */
     to {
       border-left: 0.1em solid white;
     }
 }
 
   @-o-keyframes cursorBlink {
-    /* line 723, ../sass/screen.scss */
+    /* line 732, ../sass/screen.scss */
     from {
       border-left: 0.1em solid #019875;
     }
 
-    /* line 724, ../sass/screen.scss */
+    /* line 733, ../sass/screen.scss */
     to {
       border-left: 0.1em solid white;
     }
 }
 
   @keyframes cursorBlink {
-    /* line 727, ../sass/screen.scss */
+    /* line 736, ../sass/screen.scss */
     from {
       border-left: 0.1em solid #019875;
     }
 
-    /* line 728, ../sass/screen.scss */
+    /* line 737, ../sass/screen.scss */
     to {
       border-left: 0.1em solid white;
     }
 }
 
-  /* line 731, ../sass/screen.scss */
+  /* line 740, ../sass/screen.scss */
   #searchInput {
     display: block;
     -webkit-box-sizing: border-box;
@@ -1038,7 +1061,7 @@ abbr {
     animation: cursorBlink 0.5s ease 0.1s infinite alternate;
   }
 
-  /* line 750, ../sass/screen.scss */
+  /* line 759, ../sass/screen.scss */
   .topAd {
     display: block;
     width: 31.81818%;
@@ -1048,25 +1071,26 @@ abbr {
     overflow: hidden;
   }
 
-  /* line 757, ../sass/screen.scss */
+  /* line 766, ../sass/screen.scss */
   .topAdLink {
     text-decoration: none;
     cursor: pointer;
   }
 
-  /* line 762, ../sass/screen.scss */
+  /* line 771, ../sass/screen.scss */
   #topAdFrame {
     width: 12em;
     height: 6em;
   }
 
-  /* line 767, ../sass/screen.scss */
+  /* line 776, ../sass/screen.scss */
   .floatingNav {
     position: fixed;
-    padding-top: 0.5em;
+    padding-top: 0.4em;
     bottom: 0.5em;
     clear: both;
     max-width: 44em;
+    height: 1.5em;
     text-align: center;
     overflow: hidden;
     -webkit-transition-property: height;
@@ -1085,19 +1109,21 @@ abbr {
     z-index: 100;
   }
 
-  /* line 783, ../sass/screen.scss */
+  /* line 793, ../sass/screen.scss */
   .floatingNavOpen,
   .floatingNavClosed {
     height: 3em;
   }
 
-  /* line 787, ../sass/screen.scss */
+  /* line 797, ../sass/screen.scss */
   .floatingNav a {
     display: inline;
-    font: 400 1.5em/1.1em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
+    padding: 0.3em 0.2em;
+    font: 400 1.3em/1.1em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
     color: #fff;
     text-decoration: none;
     text-align: center;
+    text-transform: uppercase;
     background: #019875;
     -webkit-transition-property: all;
     -moz-transition-property: all;
@@ -1113,21 +1139,21 @@ abbr {
     transition-timing-function: ease-out;
   }
 
-  /* line 800, ../sass/screen.scss */
+  /* line 812, ../sass/screen.scss */
   .floatingNav a:active,
   .floatingNav a:hover {
     color: #019875;
     background: #fff;
   }
 
-  /* line 805, ../sass/screen.scss */
+  /* line 817, ../sass/screen.scss */
   .ledeStory {
     width: 54.54545%;
     float: left;
     margin-right: 2.27273%;
   }
 
-  /* line 809, ../sass/screen.scss */
+  /* line 821, ../sass/screen.scss */
   .ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -1135,7 +1161,7 @@ abbr {
     font-size: 2.5em;
   }
 
-  /* line 813, ../sass/screen.scss */
+  /* line 825, ../sass/screen.scss */
   .ledeRightHalf {
     position: absolute;
     width: 43.18182%;
@@ -1144,32 +1170,32 @@ abbr {
     margin-left: 56.81818%;
   }
 
-  /* line 819, ../sass/screen.scss */
+  /* line 831, ../sass/screen.scss */
   .quoteElement {
     height: 6em;
   }
 
-  /* line 823, ../sass/screen.scss */
+  /* line 835, ../sass/screen.scss */
   .secondLedeElement {
     height: 8em;
     clear: both;
   }
 
-  /* line 828, ../sass/screen.scss */
+  /* line 840, ../sass/screen.scss */
   .secondLedeHeader {
     padding-top: 4.5%;
     width: 90%;
     font-size: 1.4em;
   }
 
-  /* line 834, ../sass/screen.scss */
+  /* line 846, ../sass/screen.scss */
   .featureStoriesReel {
     width: 31.81818%;
     float: left;
     margin-right: 2.27273%;
   }
 
-  /* line 841, ../sass/screen.scss */
+  /* line 853, ../sass/screen.scss */
   .featureOne,
   .featureTwo,
   .featureThree,
@@ -1179,19 +1205,19 @@ abbr {
     background-image: url(http://placehold.it/270x100);
   }
 
-  /* line 848, ../sass/screen.scss */
+  /* line 860, ../sass/screen.scss */
   .featureTwo,
   .featureFour {
     float: left;
   }
 
-  /* line 852, ../sass/screen.scss */
+  /* line 864, ../sass/screen.scss */
   .featureHeader {
     padding-top: 3.0em;
     font-size: 1.2em;
   }
 
-  /* line 857, ../sass/screen.scss */
+  /* line 869, ../sass/screen.scss */
   .dimSumNews {
     position: absolute;
     width: 20.45455%;
@@ -1201,7 +1227,7 @@ abbr {
     padding-top: 0.5em;
   }
 
-  /* line 864, ../sass/screen.scss */
+  /* line 876, ../sass/screen.scss */
   .dimSumNewsTote, .musicReelTote,
   .movieReelTote,
   .foodReelTote,
@@ -1209,22 +1235,22 @@ abbr {
     font-size: 1.2em;
   }
 
-  /* line 868, ../sass/screen.scss */
+  /* line 880, ../sass/screen.scss */
   .dimSumHeader {
     font-size: 0.9em;
   }
 
-  /* line 872, ../sass/screen.scss */
+  /* line 884, ../sass/screen.scss */
   .dimSumReadMoreHeader {
     font-size: 0.8em;
   }
 
-  /* line 876, ../sass/screen.scss */
+  /* line 888, ../sass/screen.scss */
   .dimSumExcerpt {
     font-size: 0.9em;
   }
 
-  /* line 880, ../sass/screen.scss */
+  /* line 892, ../sass/screen.scss */
   .rightHalf {
     position: absolute;
     width: 43.18182%;
@@ -1233,7 +1259,7 @@ abbr {
     margin-left: 56.81818%;
   }
 
-  /* line 888, ../sass/screen.scss */
+  /* line 900, ../sass/screen.scss */
   .topRightHalf,
   .midRightHalf,
   .rightHalfAd {
@@ -1241,20 +1267,20 @@ abbr {
     max-width: 28em;
   }
 
-  /* line 893, ../sass/screen.scss */
+  /* line 905, ../sass/screen.scss */
   #spotifyElement {
     float: left;
     margin-top: -0.5em;
     margin-right: 1em;
   }
 
-  /* line 899, ../sass/screen.scss */
+  /* line 911, ../sass/screen.scss */
   #rightHalfAd {
     float: left;
     width: auto;
   }
 
-  /* line 907, ../sass/screen.scss */
+  /* line 919, ../sass/screen.scss */
   .farLeft,
   .interiorLeft,
   .interiorRight,
@@ -1265,13 +1291,13 @@ abbr {
     max-height: 20em;
   }
 
-  /* line 915, ../sass/screen.scss */
+  /* line 927, ../sass/screen.scss */
   .interiorLeft,
   .farRight {
     float: left;
   }
 
-  /* line 922, ../sass/screen.scss */
+  /* line 934, ../sass/screen.scss */
   .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -1279,7 +1305,7 @@ abbr {
     font-size: 0.9em;
   }
 
-  /* line 929, ../sass/screen.scss */
+  /* line 941, ../sass/screen.scss */
   .musicReelArticle,
   .movieReelArticle,
   .foodReelArticle,
@@ -1288,7 +1314,7 @@ abbr {
   }
 }
 @media (min-width: 59em) {
-  /* line 935, ../sass/screen.scss */
+  /* line 947, ../sass/screen.scss */
   .container {
     background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(6.77966%, rgba(100, 100, 225, 0.25)), color-stop(6.77966%, rgba(0, 0, 0, 0)), color-stop(8.47458%, rgba(0, 0, 0, 0)), color-stop(8.47458%, rgba(100, 100, 225, 0.25)), color-stop(15.25424%, rgba(100, 100, 225, 0.25)), color-stop(15.25424%, rgba(0, 0, 0, 0)), color-stop(16.94915%, rgba(0, 0, 0, 0)), color-stop(16.94915%, rgba(100, 100, 225, 0.25)), color-stop(23.72881%, rgba(100, 100, 225, 0.25)), color-stop(23.72881%, rgba(0, 0, 0, 0)), color-stop(25.42373%, rgba(0, 0, 0, 0)), color-stop(25.42373%, rgba(100, 100, 225, 0.25)), color-stop(32.20339%, rgba(100, 100, 225, 0.25)), color-stop(32.20339%, rgba(0, 0, 0, 0)), color-stop(33.89831%, rgba(0, 0, 0, 0)), color-stop(33.89831%, rgba(100, 100, 225, 0.25)), color-stop(40.67797%, rgba(100, 100, 225, 0.25)), color-stop(40.67797%, rgba(0, 0, 0, 0)), color-stop(42.37288%, rgba(0, 0, 0, 0)), color-stop(42.37288%, rgba(100, 100, 225, 0.25)), color-stop(49.15254%, rgba(100, 100, 225, 0.25)), color-stop(49.15254%, rgba(0, 0, 0, 0)), color-stop(50.84746%, rgba(0, 0, 0, 0)), color-stop(50.84746%, rgba(100, 100, 225, 0.25)), color-stop(57.62712%, rgba(100, 100, 225, 0.25)), color-stop(57.62712%, rgba(0, 0, 0, 0)), color-stop(59.32203%, rgba(0, 0, 0, 0)), color-stop(59.32203%, rgba(100, 100, 225, 0.25)), color-stop(66.10169%, rgba(100, 100, 225, 0.25)), color-stop(66.10169%, rgba(0, 0, 0, 0)), color-stop(67.79661%, rgba(0, 0, 0, 0)), color-stop(67.79661%, rgba(100, 100, 225, 0.25)), color-stop(74.57627%, rgba(100, 100, 225, 0.25)), color-stop(74.57627%, rgba(0, 0, 0, 0)), color-stop(76.27119%, rgba(0, 0, 0, 0)), color-stop(76.27119%, rgba(100, 100, 225, 0.25)), color-stop(83.05085%, rgba(100, 100, 225, 0.25)), color-stop(83.05085%, rgba(0, 0, 0, 0)), color-stop(84.74576%, rgba(0, 0, 0, 0)), color-stop(84.74576%, rgba(100, 100, 225, 0.25)), color-stop(91.52542%, rgba(100, 100, 225, 0.25)), color-stop(91.52542%, rgba(0, 0, 0, 0)), color-stop(93.22034%, rgba(0, 0, 0, 0)), color-stop(93.22034%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
@@ -1306,49 +1332,49 @@ abbr {
     background-clip: content-box;
   }
 
-  /* line 938, ../sass/screen.scss */
+  /* line 950, ../sass/screen.scss */
   .header {
     width: 100%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 941, ../sass/screen.scss */
+  /* line 953, ../sass/screen.scss */
   .logo {
     width: 40.67797%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 944, ../sass/screen.scss */
+  /* line 956, ../sass/screen.scss */
   #searchBar input {
     width: 6.77966%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 947, ../sass/screen.scss */
+  /* line 959, ../sass/screen.scss */
   #topAd {
     width: 49.15254%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 950, ../sass/screen.scss */
+  /* line 962, ../sass/screen.scss */
   .ledeStory {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 953, ../sass/screen.scss */
+  /* line 965, ../sass/screen.scss */
   .rightHalf {
     width: 49.15254%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 956, ../sass/screen.scss */
+  /* line 968, ../sass/screen.scss */
   .quoteElement {
     width: 48.27586%;
     float: left;

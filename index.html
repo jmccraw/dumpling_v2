@@ -26,10 +26,11 @@
 
 	<!-- HEADER -->
 	<header class="header">
-	
-		<h1 class="logo">DUMPLING</h1>
+		<a class="headerLink" href="#">
+			<h1 class="logo">DUMPLING</h1>
+		</a>
 		
-		<section id="searchBar">
+		<section id="searchBar" title="Search Dumpling Magazine">
 			<img class="searchBarIcon" src="stylesheets/images/search_icon.png" alt="Search Dumpling icon" />
 		</section>
 		
@@ -412,7 +413,10 @@
 				$(".floatingNav").addClass("floatingNavClosed");
 				
 				// Drop down menu animation for mobile/mobile-portrait views
-				$(".header").click(function() {
+				$(".header").click(function(evt) {
+					if (evt.preventDefault) {
+						evt.preventDefault();
+					}
 					if ($(".floatingNav").hasClass("floatingNavClosed")) {
 						$(".floatingNav").removeClass("floatingNavClosed").addClass("floatingNavOpen");
 					}
@@ -453,15 +457,18 @@
 		
 		// Load the search field (pushdown for tablet and desktop)
 		function loadSearchInputPushdown() {
-			
-			$(".searchBarIcon").click(function() {
+			// clicks
+			$(".searchBarIcon").click(function(evt) {
+				if (evt.preventDefault) {
+					evt.preventDefault();
+				}
 				enableDisableSearch();
 			});
-			
-			$(".container").on("touchstart", ".searchBarIcon", function(e) {
+			// touches
+			$(".container").on("touchstart", ".searchBarIcon", function(evt) {
 				// prevent the 300ms click delay for touch
-				if (e.preventDefault) {
-					e.preventDefault();
+				if (evt.preventDefault) {
+					evt.preventDefault();
 				}
 				enableDisableSearch();
 			});
