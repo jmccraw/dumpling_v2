@@ -886,16 +886,11 @@ abbr {
 }
 @media (min-width: 44em) {
   /* line 654, ../sass/screen.scss */
-  .container {
-    /*@include susy-grid-background;*/
-  }
-
-  /* line 657, ../sass/screen.scss */
   .header {
     height: 6em;
   }
 
-  /* line 661, ../sass/screen.scss */
+  /* line 658, ../sass/screen.scss */
   .logo {
     font-size: 5.1em;
     width: 54.54545%;
@@ -903,7 +898,7 @@ abbr {
     margin-right: 2.27273%;
   }
 
-  /* line 666, ../sass/screen.scss */
+  /* line 663, ../sass/screen.scss */
   .logo:after {
     content: '';
     position: relative;
@@ -913,7 +908,7 @@ abbr {
     background: none;
   }
 
-  /* line 675, ../sass/screen.scss */
+  /* line 672, ../sass/screen.scss */
   #searchBar {
     display: block;
     width: 9.09091%;
@@ -922,7 +917,7 @@ abbr {
     height: 6em;
   }
 
-  /* line 681, ../sass/screen.scss */
+  /* line 678, ../sass/screen.scss */
   .searchBarIcon {
     margin-top: 1.2em;
     padding: 6px;
@@ -930,11 +925,11 @@ abbr {
     height: 46px;
     cursor: pointer;
     border: 2px solid #cccccc;
-    -webkit-border-radius: 32px;
-    -moz-border-radius: 32px;
-    -ms-border-radius: 32px;
-    -o-border-radius: 32px;
-    border-radius: 32px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
     background: #019875;
     -webkit-transition-property: background;
     -moz-transition-property: background;
@@ -950,13 +945,13 @@ abbr {
     transition-timing-function: ease-out;
   }
 
-  /* line 696, ../sass/screen.scss */
+  /* line 693, ../sass/screen.scss */
   .searchBarIcon:hover,
   .searchBarIcon:active {
     background: rgba(1, 152, 117, 0.6);
   }
 
-  /* line 700, ../sass/screen.scss */
+  /* line 697, ../sass/screen.scss */
   #searchInputPushdown {
     width: 44em;
     -webkit-transition-property: all;
@@ -977,14 +972,14 @@ abbr {
     clear: both;
   }
 
-  /* line 711, ../sass/screen.scss */
+  /* line 708, ../sass/screen.scss */
   .searchInputVisible {
     padding-top: 1em;
     padding-bottom: 1em;
     height: 6.3em;
   }
 
-  /* line 717, ../sass/screen.scss */
+  /* line 714, ../sass/screen.scss */
   .searchInputInvisible {
     padding-top: 0;
     padding-bottom: 0;
@@ -992,54 +987,54 @@ abbr {
   }
 
   @-webkit-keyframes cursorBlink {
-    /* line 724, ../sass/screen.scss */
+    /* line 721, ../sass/screen.scss */
     from {
       border-left: 0.1em solid #019875;
     }
 
-    /* line 725, ../sass/screen.scss */
+    /* line 722, ../sass/screen.scss */
     to {
       border-left: 0.1em solid white;
     }
 }
 
   @-moz-keyframes cursorBlink {
-    /* line 728, ../sass/screen.scss */
+    /* line 725, ../sass/screen.scss */
     from {
       border-left: 0.1em solid #019875;
     }
 
-    /* line 729, ../sass/screen.scss */
+    /* line 726, ../sass/screen.scss */
     to {
       border-left: 0.1em solid white;
     }
 }
 
   @-o-keyframes cursorBlink {
-    /* line 732, ../sass/screen.scss */
+    /* line 729, ../sass/screen.scss */
     from {
       border-left: 0.1em solid #019875;
     }
 
-    /* line 733, ../sass/screen.scss */
+    /* line 730, ../sass/screen.scss */
     to {
       border-left: 0.1em solid white;
     }
 }
 
   @keyframes cursorBlink {
-    /* line 736, ../sass/screen.scss */
+    /* line 733, ../sass/screen.scss */
     from {
       border-left: 0.1em solid #019875;
     }
 
-    /* line 737, ../sass/screen.scss */
+    /* line 734, ../sass/screen.scss */
     to {
       border-left: 0.1em solid white;
     }
 }
 
-  /* line 740, ../sass/screen.scss */
+  /* line 737, ../sass/screen.scss */
   #searchInput {
     display: block;
     -webkit-box-sizing: border-box;
@@ -1061,7 +1056,7 @@ abbr {
     animation: cursorBlink 0.5s ease 0.1s infinite alternate;
   }
 
-  /* line 759, ../sass/screen.scss */
+  /* line 756, ../sass/screen.scss */
   .topAd {
     display: block;
     width: 31.81818%;
@@ -1071,19 +1066,19 @@ abbr {
     overflow: hidden;
   }
 
-  /* line 766, ../sass/screen.scss */
+  /* line 763, ../sass/screen.scss */
   .topAdLink {
     text-decoration: none;
     cursor: pointer;
   }
 
-  /* line 771, ../sass/screen.scss */
+  /* line 768, ../sass/screen.scss */
   #topAdFrame {
     width: 12em;
     height: 6em;
   }
 
-  /* line 776, ../sass/screen.scss */
+  /* line 773, ../sass/screen.scss */
   .floatingNav {
     position: fixed;
     padding-top: 0.4em;
@@ -1109,13 +1104,13 @@ abbr {
     z-index: 100;
   }
 
-  /* line 793, ../sass/screen.scss */
+  /* line 790, ../sass/screen.scss */
   .floatingNavOpen,
   .floatingNavClosed {
     height: 3em;
   }
 
-  /* line 797, ../sass/screen.scss */
+  /* line 794, ../sass/screen.scss */
   .floatingNav a {
     display: inline;
     padding: 0.3em 0.2em;
@@ -1139,21 +1134,21 @@ abbr {
     transition-timing-function: ease-out;
   }
 
-  /* line 812, ../sass/screen.scss */
+  /* line 809, ../sass/screen.scss */
   .floatingNav a:active,
   .floatingNav a:hover {
     color: #019875;
     background: #fff;
   }
 
-  /* line 817, ../sass/screen.scss */
+  /* line 814, ../sass/screen.scss */
   .ledeStory {
     width: 54.54545%;
     float: left;
     margin-right: 2.27273%;
   }
 
-  /* line 821, ../sass/screen.scss */
+  /* line 818, ../sass/screen.scss */
   .ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -1161,7 +1156,7 @@ abbr {
     font-size: 2.5em;
   }
 
-  /* line 825, ../sass/screen.scss */
+  /* line 822, ../sass/screen.scss */
   .ledeRightHalf {
     position: absolute;
     width: 43.18182%;
@@ -1170,32 +1165,32 @@ abbr {
     margin-left: 56.81818%;
   }
 
-  /* line 831, ../sass/screen.scss */
+  /* line 828, ../sass/screen.scss */
   .quoteElement {
     height: 6em;
   }
 
-  /* line 835, ../sass/screen.scss */
+  /* line 832, ../sass/screen.scss */
   .secondLedeElement {
     height: 8em;
     clear: both;
   }
 
-  /* line 840, ../sass/screen.scss */
+  /* line 837, ../sass/screen.scss */
   .secondLedeHeader {
     padding-top: 4.5%;
     width: 90%;
     font-size: 1.4em;
   }
 
-  /* line 846, ../sass/screen.scss */
+  /* line 843, ../sass/screen.scss */
   .featureStoriesReel {
     width: 31.81818%;
     float: left;
     margin-right: 2.27273%;
   }
 
-  /* line 853, ../sass/screen.scss */
+  /* line 850, ../sass/screen.scss */
   .featureOne,
   .featureTwo,
   .featureThree,
@@ -1205,19 +1200,19 @@ abbr {
     background-image: url(http://placehold.it/270x100);
   }
 
-  /* line 860, ../sass/screen.scss */
+  /* line 857, ../sass/screen.scss */
   .featureTwo,
   .featureFour {
     float: left;
   }
 
-  /* line 864, ../sass/screen.scss */
+  /* line 861, ../sass/screen.scss */
   .featureHeader {
     padding-top: 3.0em;
     font-size: 1.2em;
   }
 
-  /* line 869, ../sass/screen.scss */
+  /* line 866, ../sass/screen.scss */
   .dimSumNews {
     position: absolute;
     width: 20.45455%;
@@ -1227,7 +1222,7 @@ abbr {
     padding-top: 0.5em;
   }
 
-  /* line 876, ../sass/screen.scss */
+  /* line 873, ../sass/screen.scss */
   .dimSumNewsTote, .musicReelTote,
   .movieReelTote,
   .foodReelTote,
@@ -1235,22 +1230,22 @@ abbr {
     font-size: 1.2em;
   }
 
-  /* line 880, ../sass/screen.scss */
+  /* line 877, ../sass/screen.scss */
   .dimSumHeader {
     font-size: 0.9em;
   }
 
-  /* line 884, ../sass/screen.scss */
+  /* line 881, ../sass/screen.scss */
   .dimSumReadMoreHeader {
     font-size: 0.8em;
   }
 
-  /* line 888, ../sass/screen.scss */
+  /* line 885, ../sass/screen.scss */
   .dimSumExcerpt {
     font-size: 0.9em;
   }
 
-  /* line 892, ../sass/screen.scss */
+  /* line 889, ../sass/screen.scss */
   .rightHalf {
     position: absolute;
     width: 43.18182%;
@@ -1259,28 +1254,29 @@ abbr {
     margin-left: 56.81818%;
   }
 
-  /* line 900, ../sass/screen.scss */
+  /* line 897, ../sass/screen.scss */
   .topRightHalf,
   .midRightHalf,
   .rightHalfAd {
+    min-width: 10em;
     width: auto;
-    max-width: 28em;
+    max-width: 20em;
   }
 
-  /* line 905, ../sass/screen.scss */
+  /* line 903, ../sass/screen.scss */
   #spotifyElement {
     float: left;
     margin-top: -0.5em;
     margin-right: 1em;
   }
 
-  /* line 911, ../sass/screen.scss */
+  /* line 909, ../sass/screen.scss */
   #rightHalfAd {
     float: left;
     width: auto;
   }
 
-  /* line 919, ../sass/screen.scss */
+  /* line 917, ../sass/screen.scss */
   .farLeft,
   .interiorLeft,
   .interiorRight,
@@ -1291,13 +1287,13 @@ abbr {
     max-height: 20em;
   }
 
-  /* line 927, ../sass/screen.scss */
+  /* line 925, ../sass/screen.scss */
   .interiorLeft,
   .farRight {
     float: left;
   }
 
-  /* line 934, ../sass/screen.scss */
+  /* line 932, ../sass/screen.scss */
   .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -1305,79 +1301,317 @@ abbr {
     font-size: 0.9em;
   }
 
-  /* line 941, ../sass/screen.scss */
+  /* line 939, ../sass/screen.scss */
   .musicReelArticle,
   .movieReelArticle,
   .foodReelArticle,
   .eventReelArticle {
     padding: 0 0.5em;
   }
+
+  /* line 943, ../sass/screen.scss */
+  .footer {
+    margin-bottom: 3em;
+  }
 }
 @media (min-width: 59em) {
-  /* line 947, ../sass/screen.scss */
-  .container {
-    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(6.77966%, rgba(100, 100, 225, 0.25)), color-stop(6.77966%, rgba(0, 0, 0, 0)), color-stop(8.47458%, rgba(0, 0, 0, 0)), color-stop(8.47458%, rgba(100, 100, 225, 0.25)), color-stop(15.25424%, rgba(100, 100, 225, 0.25)), color-stop(15.25424%, rgba(0, 0, 0, 0)), color-stop(16.94915%, rgba(0, 0, 0, 0)), color-stop(16.94915%, rgba(100, 100, 225, 0.25)), color-stop(23.72881%, rgba(100, 100, 225, 0.25)), color-stop(23.72881%, rgba(0, 0, 0, 0)), color-stop(25.42373%, rgba(0, 0, 0, 0)), color-stop(25.42373%, rgba(100, 100, 225, 0.25)), color-stop(32.20339%, rgba(100, 100, 225, 0.25)), color-stop(32.20339%, rgba(0, 0, 0, 0)), color-stop(33.89831%, rgba(0, 0, 0, 0)), color-stop(33.89831%, rgba(100, 100, 225, 0.25)), color-stop(40.67797%, rgba(100, 100, 225, 0.25)), color-stop(40.67797%, rgba(0, 0, 0, 0)), color-stop(42.37288%, rgba(0, 0, 0, 0)), color-stop(42.37288%, rgba(100, 100, 225, 0.25)), color-stop(49.15254%, rgba(100, 100, 225, 0.25)), color-stop(49.15254%, rgba(0, 0, 0, 0)), color-stop(50.84746%, rgba(0, 0, 0, 0)), color-stop(50.84746%, rgba(100, 100, 225, 0.25)), color-stop(57.62712%, rgba(100, 100, 225, 0.25)), color-stop(57.62712%, rgba(0, 0, 0, 0)), color-stop(59.32203%, rgba(0, 0, 0, 0)), color-stop(59.32203%, rgba(100, 100, 225, 0.25)), color-stop(66.10169%, rgba(100, 100, 225, 0.25)), color-stop(66.10169%, rgba(0, 0, 0, 0)), color-stop(67.79661%, rgba(0, 0, 0, 0)), color-stop(67.79661%, rgba(100, 100, 225, 0.25)), color-stop(74.57627%, rgba(100, 100, 225, 0.25)), color-stop(74.57627%, rgba(0, 0, 0, 0)), color-stop(76.27119%, rgba(0, 0, 0, 0)), color-stop(76.27119%, rgba(100, 100, 225, 0.25)), color-stop(83.05085%, rgba(100, 100, 225, 0.25)), color-stop(83.05085%, rgba(0, 0, 0, 0)), color-stop(84.74576%, rgba(0, 0, 0, 0)), color-stop(84.74576%, rgba(100, 100, 225, 0.25)), color-stop(91.52542%, rgba(100, 100, 225, 0.25)), color-stop(91.52542%, rgba(0, 0, 0, 0)), color-stop(93.22034%, rgba(0, 0, 0, 0)), color-stop(93.22034%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-    background-position: left top;
-    -webkit-background-origin: content;
-    -moz-background-origin: content;
-    -ms-background-origin: content-box;
-    -o-background-origin: content-box;
-    background-origin: content-box;
-    -webkit-background-clip: content-box;
-    -moz-background-clip: content-box;
-    background-clip: content-box;
-  }
-
-  /* line 950, ../sass/screen.scss */
+  /* line 949, ../sass/screen.scss */
   .header {
-    width: 100%;
-    float: left;
-    margin-right: 1.69492%;
+    height: 7em;
   }
 
   /* line 953, ../sass/screen.scss */
   .logo {
-    width: 40.67797%;
+    font-size: 6.1em;
+    width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 956, ../sass/screen.scss */
-  #searchBar input {
+  /* line 958, ../sass/screen.scss */
+  #searchBar {
     width: 6.77966%;
     float: left;
     margin-right: 1.69492%;
+    height: 7em;
   }
 
-  /* line 959, ../sass/screen.scss */
-  #topAd {
-    width: 49.15254%;
+  /* line 963, ../sass/screen.scss */
+  .searchBarIcon {
+    margin-top: 1.9em;
+  }
+
+  /* line 967, ../sass/screen.scss */
+  #searchInputPushdown {
+    width: 59em;
+  }
+
+  /* line 971, ../sass/screen.scss */
+  #searchInput {
+    font-size: 6.2em;
+    line-height: 1.1em;
+  }
+
+  /* line 976, ../sass/screen.scss */
+  .searchInputVisible {
+    height: 6.7em;
+  }
+
+  /* line 980, ../sass/screen.scss */
+  .topAd {
+    display: block;
+    width: 40.67797%;
     float: right;
     margin-right: 0;
+    height: 7em;
+    overflow: hidden;
   }
 
-  /* line 962, ../sass/screen.scss */
+  /* line 987, ../sass/screen.scss */
+  .topAdLink {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* line 992, ../sass/screen.scss */
+  #topAdFrame {
+    width: 12em;
+    height: 6em;
+  }
+
+  /* line 997, ../sass/screen.scss */
+  .floatingNav {
+    position: fixed;
+    padding-top: 0.4em;
+    bottom: 0.5em;
+    clear: both;
+    max-width: 44em;
+    height: 1.5em;
+    text-align: center;
+    overflow: hidden;
+    -webkit-transition-property: height;
+    -moz-transition-property: height;
+    -o-transition-property: height;
+    transition-property: height;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    background: #019875;
+    z-index: 100;
+  }
+
+  /* line 1014, ../sass/screen.scss */
+  .floatingNavOpen,
+  .floatingNavClosed {
+    height: 3em;
+  }
+
+  /* line 1018, ../sass/screen.scss */
+  .floatingNav a {
+    display: inline;
+    padding: 0.3em 0.2em;
+    font: 400 1.3em/1.1em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    background: #019875;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+
+  /* line 1033, ../sass/screen.scss */
+  .floatingNav a:active,
+  .floatingNav a:hover {
+    color: #019875;
+    background: #fff;
+  }
+
+  /* line 1038, ../sass/screen.scss */
   .ledeStory {
-    width: 49.15254%;
+    width: 54.54545%;
     float: left;
-    margin-right: 1.69492%;
+    margin-right: 2.27273%;
   }
 
-  /* line 965, ../sass/screen.scss */
-  .rightHalf {
-    width: 49.15254%;
+  /* line 1042, ../sass/screen.scss */
+  .ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
+  .movieReelHeader,
+  .foodReelHeader,
+  .eventReelHeader {
+    font-size: 2.5em;
+  }
+
+  /* line 1046, ../sass/screen.scss */
+  .ledeRightHalf {
+    position: absolute;
+    width: 43.18182%;
     float: right;
     margin-right: 0;
+    margin-left: 56.81818%;
   }
 
-  /* line 968, ../sass/screen.scss */
+  /* line 1052, ../sass/screen.scss */
   .quoteElement {
-    width: 48.27586%;
+    height: 6em;
+  }
+
+  /* line 1056, ../sass/screen.scss */
+  .secondLedeElement {
+    height: 8em;
+    clear: both;
+  }
+
+  /* line 1061, ../sass/screen.scss */
+  .secondLedeHeader {
+    padding-top: 4.5%;
+    width: 90%;
+    font-size: 1.4em;
+  }
+
+  /* line 1067, ../sass/screen.scss */
+  .featureStoriesReel {
+    width: 31.81818%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 2.27273%;
+  }
+
+  /* line 1074, ../sass/screen.scss */
+  .featureOne,
+  .featureTwo,
+  .featureThree,
+  .featureFour {
+    max-height: 12em;
+    width: 100%;
+    background-image: url(http://placehold.it/270x100);
+  }
+
+  /* line 1081, ../sass/screen.scss */
+  .featureTwo,
+  .featureFour {
+    float: left;
+  }
+
+  /* line 1085, ../sass/screen.scss */
+  .featureHeader {
+    padding-top: 3.0em;
+    font-size: 1.2em;
+  }
+
+  /* line 1090, ../sass/screen.scss */
+  .dimSumNews {
+    position: absolute;
+    width: 20.45455%;
+    float: left;
+    margin-right: 2.27273%;
+    margin-left: 34.09091%;
+    padding-top: 0.5em;
+  }
+
+  /* line 1097, ../sass/screen.scss */
+  .dimSumNewsTote, .musicReelTote,
+  .movieReelTote,
+  .foodReelTote,
+  .eventReelTote {
+    font-size: 1.2em;
+  }
+
+  /* line 1101, ../sass/screen.scss */
+  .dimSumHeader {
+    font-size: 0.9em;
+  }
+
+  /* line 1105, ../sass/screen.scss */
+  .dimSumReadMoreHeader {
+    font-size: 0.8em;
+  }
+
+  /* line 1109, ../sass/screen.scss */
+  .dimSumExcerpt {
+    font-size: 0.9em;
+  }
+
+  /* line 1113, ../sass/screen.scss */
+  .rightHalf {
+    position: absolute;
+    width: 43.18182%;
+    float: right;
+    margin-right: 0;
+    margin-left: 56.81818%;
+  }
+
+  /* line 1121, ../sass/screen.scss */
+  .topRightHalf,
+  .midRightHalf,
+  .rightHalfAd {
+    min-width: 10em;
+    width: auto;
+    max-width: 20em;
+  }
+
+  /* line 1127, ../sass/screen.scss */
+  #spotifyElement {
+    float: left;
+    margin-top: -0.5em;
+    margin-right: 1em;
+  }
+
+  /* line 1133, ../sass/screen.scss */
+  #rightHalfAd {
+    float: left;
+    width: auto;
+  }
+
+  /* line 1141, ../sass/screen.scss */
+  .farLeft,
+  .interiorLeft,
+  .interiorRight,
+  .farRight {
+    margin-top: 1em;
+    width: 25%;
+    min-height: 15em;
+    max-height: 20em;
+  }
+
+  /* line 1149, ../sass/screen.scss */
+  .interiorLeft,
+  .farRight {
+    float: left;
+  }
+
+  /* line 1156, ../sass/screen.scss */
+  .musicReelHeader,
+  .movieReelHeader,
+  .foodReelHeader,
+  .eventReelHeader {
+    font-size: 0.9em;
+  }
+
+  /* line 1163, ../sass/screen.scss */
+  .musicReelArticle,
+  .movieReelArticle,
+  .foodReelArticle,
+  .eventReelArticle {
+    padding: 0 0.5em;
+  }
+
+  /* line 1167, ../sass/screen.scss */
+  .footer {
+    margin-bottom: 3em;
   }
 }

@@ -651,9 +651,6 @@ abbr {
 }
 
 @include at-breakpoint($tablet) {
-	.container {
-		/*@include susy-grid-background;*/
-	}
 	.header {
 		height: 6em;
 	}
@@ -685,7 +682,7 @@ abbr {
 		height: 46px;
 		cursor: pointer;
 		border: 2px solid #ccc;
-		@include border-radius(32px);
+		@include border-radius(50%);
 		background: $background-color;
 		@include transition-property(background);
 		@include transition-duration(0.3s);
@@ -898,8 +895,9 @@ abbr {
 	.topRightHalf,
 	.midRightHalf,
 	.rightHalfAd {
+		min-width: 10em;
 		width: auto;
-		max-width: $column-width * $phone-portrait;
+		max-width: $gutter-width * 20;
 	}
 	
 	#spotifyElement {
@@ -941,31 +939,232 @@ abbr {
 	.eventReelArticle {
 		padding: 0 0.5em;
 	}
+	
+	.footer {
+		margin-bottom: $gutter-width * 3;
+	}
 }
 
 @include at-breakpoint($computer) {
-	.container {
-		@include susy-grid-background;
-	}
 	.header {
-		@include span-columns($computer);
+		height: $computer-height;
 	}
+	
 	.logo {
-		@include span-columns(5, $computer);
-	}
-	#searchBar input {
-		@include span-columns(1, $computer);
-	}
-	#topAd {
-		@include span-columns(6 omega, $computer);
-	}
-	.ledeStory {
+		font-size: 6.1em;
 		@include span-columns(6, $computer);
 	}
-	.rightHalf {
-		@include span-columns(6 omega, $computer);
+	
+	#searchBar {
+		@include span-columns(1, $computer);
+		height: $computer-height;
 	}
+	
+	.searchBarIcon {
+		margin-top: 1.9em;
+	}
+	
+	#searchInputPushdown {
+		width: ($column-width * $computer) + $computer - $gutter-width;
+	}
+	
+	#searchInput {
+		font-size: 6.2em;
+		line-height: 1.1em;
+	}
+	
+	.searchInputVisible {
+		height: 6.7em;
+	}
+
+	.topAd {
+		display: block;
+		@include span-columns(5 omega, $computer);
+		height: $computer-height;
+		overflow: hidden;
+	}
+	
+	.topAdLink {
+		text-decoration: none;
+		cursor: pointer;
+	}
+	
+	#topAdFrame {
+		width: $column-width * 3;
+		height: 6em;
+	}
+	
+	.floatingNav {
+		position: fixed;
+		padding-top: 0.4em;
+		bottom: $gutter-width / 2;
+		clear: both;
+		max-width: 44em;
+		height: 1.5em;
+		text-align: center;
+		overflow: hidden;
+		@include transition-property(height);
+		@include transition-duration(0.3s);
+		@include transition-timing-function(ease-out);
+		background: $background-color;
+		z-index: 100;
+	}
+	
+	.floatingNavOpen,
+	.floatingNavClosed {
+		height: 3em;
+	}
+	
+	.floatingNav a {
+		display: inline;
+		padding: 0.3em 0.2em;
+		font: 400 1.3em/1.1em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+		text-transform: uppercase;
+		background: $background-color;
+		@include transition-property(all);
+		@include transition-duration(0.7s);
+		@include transition-timing-function(ease-out);
+	}
+	
+	.floatingNav a:active,
+	.floatingNav a:hover {
+		color: $background-color;
+		background: #fff;
+	}
+	
+	.ledeStory {
+		@include span-columns(5, $tablet);
+	}
+	
+	.ledeStoryHeader {
+		font-size: 2.5em;
+	}
+	
+	.ledeRightHalf {
+		position: absolute;
+		@include span-columns(4 omega, $tablet);
+		@include pre(5, $tablet);
+	}
+	
 	.quoteElement {
-		@include span-columns(3, $computer / 2);
+		height: $column-width + 2;
+	}
+	
+	.secondLedeElement {
+		height: $column-width * 2;
+		clear: both;
+	}
+	
+	.secondLedeHeader {
+		padding-top: 4.5%;
+		width: 90%;
+		font-size: 1.4em;
+	}
+	
+	.featureStoriesReel {
+		@include span-columns(3, $tablet);
+	}
+	
+	.featureOne,
+	.featureTwo,
+	.featureThree,
+	.featureFour {
+		max-height: $gutter-width * 12;
+		width: 100%;
+		background-image: url(http://placehold.it/270x100);
+	}
+
+	.featureTwo,
+	.featureFour {
+		float: left;
+	}
+	
+	.featureHeader {
+		padding-top: 3.0em;
+		font-size: 1.2em;
+	}
+	
+	.dimSumNews {
+		position: absolute;
+		@include span-columns(2, $tablet);
+		@include pre(3, $tablet);
+		padding-top: 0.5em;
+	}
+	
+	.dimSumNewsTote {
+		font-size: 1.2em;
+	}
+	
+	.dimSumHeader {
+		font-size: 0.9em;
+	}
+
+	.dimSumReadMoreHeader {
+		font-size: 0.8em;
+	}
+	
+	.dimSumExcerpt {
+		font-size: 0.9em;
+	}
+	
+	.rightHalf {
+		position: absolute;
+		@include span-columns(4 omega, $tablet);
+		@include pre(5, $tablet);
+	}
+	
+	.topRightHalf,
+	.midRightHalf,
+	.rightHalfAd {
+		min-width: 10em;
+		width: auto;
+		max-width: $gutter-width * 20;
+	}
+	
+	#spotifyElement {
+		float: left;
+		margin-top: $gutter-width / 2 * -1;
+		margin-right: $gutter-width;
+	}
+	
+	#rightHalfAd {
+		float: left;
+		width: auto;
+	}
+	
+	.farLeft,
+	.interiorLeft,
+	.interiorRight,
+	.farRight {
+		margin-top: $gutter-width;
+		width: 25%;
+		min-height: $gutter-width * 15;
+		max-height: $gutter-width * 20;
+	}
+	
+	.interiorLeft,
+	.farRight {
+		float: left;
+	}
+	
+	.musicReelHeader,
+	.movieReelHeader,
+	.foodReelHeader,
+	.eventReelHeader {
+		font-size: 0.9em;
+	}
+	
+	.musicReelArticle,
+	.movieReelArticle,
+	.foodReelArticle,
+	.eventReelArticle {
+		padding: 0 0.5em;
+	}
+	
+	.footer {
+		margin-bottom: $gutter-width * 3;
 	}
 }
