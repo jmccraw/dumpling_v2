@@ -33,6 +33,18 @@ abbr {
 }
 
 /* line 40, ../sass/screen.scss */
+::selection {
+  color: #fff;
+  background: rgba(228, 142, 140, 0.5);
+}
+
+/* line 45, ../sass/screen.scss */
+::-moz-selection {
+  color: #fff;
+  background: rgba(228, 142, 140, 0.5);
+}
+
+/* line 50, ../sass/screen.scss */
 .container {
   *zoom: 1;
   max-width: 24em;
@@ -64,19 +76,19 @@ abbr {
   clear: both;
 }
 @media (min-width: 34em) {
-  /* line 40, ../sass/screen.scss */
+  /* line 50, ../sass/screen.scss */
   .container {
     max-width: 34em;
   }
 }
 @media (min-width: 44em) {
-  /* line 40, ../sass/screen.scss */
+  /* line 50, ../sass/screen.scss */
   .container {
     max-width: 44em;
   }
 }
 @media (min-width: 59em) {
-  /* line 40, ../sass/screen.scss */
+  /* line 50, ../sass/screen.scss */
   .container {
     max-width: 59em;
   }
@@ -101,7 +113,7 @@ abbr {
 }
 
 /* HEADER */
-/* line 50, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .header {
   margin: 0 auto;
   padding: 0;
@@ -112,7 +124,7 @@ abbr {
   height: 4em;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .logo {
   padding: 0;
   font: 400 3.1em/0em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
@@ -133,7 +145,7 @@ abbr {
   transition-timing-function: ease-out;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .logo:after {
   content: " ";
   position: absolute;
@@ -143,19 +155,19 @@ abbr {
   background: transparent url(images/menu_icon.png) center center no-repeat;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .logo:active,
 .logo:hover {
   color: #fff;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 #searchBar,
 #searchInput {
   display: none;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .topAd {
   display: none;
   overflow: hidden;
@@ -163,7 +175,7 @@ abbr {
 
 /* END HEADER */
 /* FLOATING NAV */
-/* line 94, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .floatingNav {
   clear: both;
   width: 100%;
@@ -182,17 +194,17 @@ abbr {
   transition-timing-function: ease-out;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .floatingNavOpen {
   height: 13em;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .floatingNavClosed {
   height: 0;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 .floatingNav a {
   display: block;
   font: 400 1.5em/1.1em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
@@ -214,7 +226,7 @@ abbr {
   transition-timing-function: ease-out;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .floatingNav a:active,
 .floatingNav a:hover {
   color: #019875;
@@ -223,7 +235,7 @@ abbr {
 
 /* END FLOATING NAV */
 /* MAIN CONTENT */
-/* line 131, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .mainContent {
   position: relative;
   margin: 0.5em auto;
@@ -234,7 +246,7 @@ abbr {
   display: inline;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .ledeStory {
   margin: 0 auto;
   padding: 1.25em;
@@ -245,7 +257,7 @@ abbr {
   background: transparent url(http://placehold.it/600x330) center center no-repeat;
 }
 
-/* line 148, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .ledeStoryLink, .featureStoriesLink, .dimSumLink, .musicReelLink,
 .movieReelLink,
 .foodReelLink,
@@ -255,7 +267,7 @@ abbr {
   text-decoration: none;
 }
 
-/* line 152, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
 .movieReelHeader,
 .foodReelHeader,
@@ -271,7 +283,7 @@ abbr {
   text-transform: uppercase;
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .ledeStoryLink:hover .ledeStoryHeader, .featureStoriesLink:hover .ledeStoryHeader, .dimSumLink:hover .ledeStoryHeader, .musicReelLink:hover .ledeStoryHeader,
 .movieReelLink:hover .ledeStoryHeader,
 .foodReelLink:hover .ledeStoryHeader,
@@ -320,7 +332,7 @@ abbr {
   color: #333333;
 }
 
-/* line 170, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .ledeStoryByline {
   display: block;
   margin: 0;
@@ -330,14 +342,14 @@ abbr {
   text-align: right;
 }
 
-/* line 179, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 .quoteElement {
   margin: 1em auto 0;
   padding: 0;
   width: 100%;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .quoteElement:after {
   content: "\201c";
   position: absolute;
@@ -350,7 +362,7 @@ abbr {
   z-index: 1;
 }
 
-/* line 197, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .quoteText {
   position: relative;
   margin: 0;
@@ -361,14 +373,14 @@ abbr {
   z-index: 2;
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 .quoteAuthor {
   padding: 0;
   font: 700 80% Georgia, "Times New Roman", Times, serif;
   text-align: right;
 }
 
-/* line 213, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .secondLedeElement {
   margin: 1em auto 0;
   padding: 0;
@@ -377,7 +389,7 @@ abbr {
   background: transparent url(http://placehold.it/550x150) center center no-repeat;
 }
 
-/* line 221, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 .secondLedeHeader {
   padding: 3.8% 0 0;
   font: 400 1.3em/1.2em Georgia, "Times New Roman", Times, serif;
@@ -386,7 +398,7 @@ abbr {
 
 /* END MAIN CONTENT */
 /* MIDDLE CONTENT */
-/* line 230, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .middleContent {
   position: relative;
   padding: 0;
@@ -394,7 +406,7 @@ abbr {
   clear: both;
 }
 
-/* line 248, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .featureStoriesLink:hover .featureOne,
 .featureStoriesLink:active .featureOne,
 .featureStoriesLink:hover .featureFour,
@@ -406,7 +418,7 @@ abbr {
   background-color: rgba(1, 152, 117, 0.1);
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 .featureStoriesReel,
 .dimSumNews,
 .rightHalf {
@@ -417,7 +429,7 @@ abbr {
   width: 100%;
 }
 
-/* line 265, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 .featureOne,
 .featureTwo,
 .featureThree,
@@ -444,14 +456,14 @@ abbr {
   transition-timing-function: ease-out;
 }
 
-/* line 280, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
 .featureTwo,
 .featureFour {
   float: right;
   margin-right: 0;
 }
 
-/* line 285, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 .featureHeader {
   padding-top: 3.4em;
   height: 2.5em;
@@ -462,7 +474,7 @@ abbr {
   overflow: hidden;
 }
 
-/* line 297, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 .featureExcerpt, .dimSumExcerpt, .footerExcerpt,
 .featureByline {
   margin: 0;
@@ -471,7 +483,7 @@ abbr {
   color: #333333;
 }
 
-/* line 304, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 .featureByline {
   display: block;
   margin-top: 0.75em;
@@ -479,7 +491,7 @@ abbr {
   text-align: right;
 }
 
-/* line 315, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 .dimSumNewsTote, .musicReelTote,
 .movieReelTote,
 .foodReelTote,
@@ -490,7 +502,7 @@ abbr {
   border-bottom: 1px solid #333333;
 }
 
-/* line 323, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 .dimSumArticle,
 .dimSumReadMore {
   margin: 1em auto 0;
@@ -500,12 +512,12 @@ abbr {
   border-bottom: 1px solid #019875;
 }
 
-/* line 331, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 .dimSumReadMore {
   margin-top: 2em;
 }
 
-/* line 335, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 .dimSumHeader {
   height: auto;
   font: 400 1em/1.3em Tahoma, Helvetica, Arial, sans-serif;
@@ -513,24 +525,24 @@ abbr {
   text-align: left;
 }
 
-/* line 343, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 .dimSumReadMoreHeader {
   background: transparent url(images/dumpling_icon_64x64.png) 95% 0 no-repeat;
   font-weight: 700 !important;
 }
 
-/* line 348, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 .dimSumExcerpt {
   color: #777;
 }
 
-/* line 354, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 .dimSumLink:hover .dimSumHeader,
 .dimSumLink:active .dimSumHeader {
   text-decoration: underline;
 }
 
-/* line 360, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 .topRightHalf,
 .midRightHalf,
 .rightHalfAd {
@@ -541,7 +553,7 @@ abbr {
   clear: both;
 }
 
-/* line 371, ../sass/screen.scss */
+/* line 381, ../sass/screen.scss */
 .facebookElement,
 .twitterElement,
 .mailElement,
@@ -570,7 +582,7 @@ abbr {
   transition-timing-function: ease-out;
 }
 
-/* line 384, ../sass/screen.scss */
+/* line 394, ../sass/screen.scss */
 .facebookElement:hover,
 .facebookElement:active {
   background: #1864f0;
@@ -578,7 +590,7 @@ abbr {
   background: rgba(59, 89, 152, 0.3);
 }
 
-/* line 391, ../sass/screen.scss */
+/* line 401, ../sass/screen.scss */
 .twitterElement:hover,
 .twitterElement:active {
   background: #1ec8fa;
@@ -586,7 +598,7 @@ abbr {
   background: rgba(26, 178, 232, 0.3);
 }
 
-/* line 398, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 .mailElement:hover,
 .mailElement:active {
   background: #c8141e;
@@ -594,14 +606,14 @@ abbr {
   background: rgba(221, 75, 57, 0.3);
 }
 
-/* line 405, ../sass/screen.scss */
+/* line 415, ../sass/screen.scss */
 .rssElement:hover,
 .rssElement:active {
   background: #b46432;
   background: rgba(180, 100, 50, 0.3);
 }
 
-/* line 410, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 .socialIcon {
   padding: 0;
   margin: 0 auto;
@@ -609,19 +621,19 @@ abbr {
   height: auto;
 }
 
-/* line 417, ../sass/screen.scss */
+/* line 427, ../sass/screen.scss */
 .lastElement {
   margin-right: 0;
 }
 
-/* line 421, ../sass/screen.scss */
+/* line 431, ../sass/screen.scss */
 .rightHalfAd {
   width: 100%;
   height: 34em;
   text-align: center;
 }
 
-/* line 427, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 #rightHalfAd {
   width: 100%;
   height: auto;
@@ -629,7 +641,7 @@ abbr {
 
 /* END MIDDLE CONTENT */
 /* BOTTOM CONTENT */
-/* line 435, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 .bottomContent {
   position: relative;
   padding: 0;
@@ -637,7 +649,7 @@ abbr {
   clear: both;
 }
 
-/* line 445, ../sass/screen.scss */
+/* line 455, ../sass/screen.scss */
 .farLeft,
 .interiorLeft,
 .interiorRight,
@@ -651,14 +663,14 @@ abbr {
   max-height: 25em;
 }
 
-/* line 463, ../sass/screen.scss */
+/* line 473, ../sass/screen.scss */
 .interiorLeft,
 .farRight {
   float: right;
   margin-right: 0;
 }
 
-/* line 471, ../sass/screen.scss */
+/* line 481, ../sass/screen.scss */
 .musicReelTote,
 .movieReelTote,
 .foodReelTote,
@@ -682,50 +694,50 @@ abbr {
   transition-timing-function: ease-out;
 }
 
-/* line 483, ../sass/screen.scss */
+/* line 493, ../sass/screen.scss */
 .movieReelTote {
   color: #85bdc1;
 }
 
-/* line 487, ../sass/screen.scss */
+/* line 497, ../sass/screen.scss */
 .foodReelTote {
   color: #e1e297;
 }
 
-/* line 491, ../sass/screen.scss */
+/* line 501, ../sass/screen.scss */
 .eventReelTote {
   color: #d66b96;
 }
 
-/* line 496, ../sass/screen.scss */
+/* line 506, ../sass/screen.scss */
 .musicReelLink:hover .musicReelTote,
 .musicReelLink:active .musicReelTote {
   color: #333333;
   background: #8186d5;
 }
 
-/* line 502, ../sass/screen.scss */
+/* line 512, ../sass/screen.scss */
 .movieReelLink:hover .movieReelTote,
 .movieReelLink:active .movieReelTote {
   color: #333333;
   background: #85bdc1;
 }
 
-/* line 508, ../sass/screen.scss */
+/* line 518, ../sass/screen.scss */
 .foodReelLink:hover .foodReelTote,
 .foodReelLink:active .foodReelTote {
   color: #333333;
   background: #e1e297;
 }
 
-/* line 514, ../sass/screen.scss */
+/* line 524, ../sass/screen.scss */
 .eventReelLink:hover .eventReelTote,
 .eventReelLink:active .eventReelTote {
   color: #333333;
   background: #d66b96;
 }
 
-/* line 522, ../sass/screen.scss */
+/* line 532, ../sass/screen.scss */
 .musicReelHeader,
 .movieReelHeader,
 .foodReelHeader,
@@ -737,28 +749,28 @@ abbr {
   text-align: left;
 }
 
-/* line 532, ../sass/screen.scss */
+/* line 542, ../sass/screen.scss */
 .musicReelLink:hover .musicReelHeader,
 .musicReelLink:active .musicReelHeader {
   color: #8186d5;
   text-decoration: underline;
 }
 
-/* line 538, ../sass/screen.scss */
+/* line 548, ../sass/screen.scss */
 .movieReelLink:hover .movieReelHeader,
 .movieReelLink:active .movieReelHeader {
   color: #85bdc1;
   text-decoration: underline;
 }
 
-/* line 544, ../sass/screen.scss */
+/* line 554, ../sass/screen.scss */
 .foodReelLink:hover .foodReelHeader,
 .foodReelLink:active .foodReelHeader {
   color: #e1e297;
   text-decoration: underline;
 }
 
-/* line 550, ../sass/screen.scss */
+/* line 560, ../sass/screen.scss */
 .eventReelLink:hover .eventReelHeader,
 .eventReelLink:active .eventReelHeader {
   color: #d66b96;
@@ -767,7 +779,7 @@ abbr {
 
 /* END BOTTOM CONTENT */
 /* FOOTER */
-/* line 557, ../sass/screen.scss */
+/* line 567, ../sass/screen.scss */
 .footer {
   clear: both;
   margin: 0 auto 1em;
@@ -775,7 +787,7 @@ abbr {
   width: 100%;
 }
 
-/* line 564, ../sass/screen.scss */
+/* line 574, ../sass/screen.scss */
 .footerExcerpt {
   padding-top: 1em;
   font-size: 0.75em;
@@ -785,22 +797,22 @@ abbr {
 
 /* END FOOTER */
 @media (min-width: 34em) {
-  /* line 574, ../sass/screen.scss */
+  /* line 584, ../sass/screen.scss */
   .header {
     height: 5em;
   }
 
-  /* line 578, ../sass/screen.scss */
+  /* line 588, ../sass/screen.scss */
   .logo {
     font-size: 4.1em;
   }
 
-  /* line 582, ../sass/screen.scss */
+  /* line 592, ../sass/screen.scss */
   .logo:after {
     top: 0.4em;
   }
 
-  /* line 586, ../sass/screen.scss */
+  /* line 596, ../sass/screen.scss */
   .ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -808,14 +820,14 @@ abbr {
     font-size: 3.0em;
   }
 
-  /* line 590, ../sass/screen.scss */
+  /* line 600, ../sass/screen.scss */
   .secondLedeHeader {
     padding-top: 4.5%;
     width: 90%;
     font-size: 1.4em;
   }
 
-  /* line 599, ../sass/screen.scss */
+  /* line 609, ../sass/screen.scss */
   .featureOne,
   .featureTwo,
   .featureThree,
@@ -824,13 +836,13 @@ abbr {
     background-image: url(http://placehold.it/270x100);
   }
 
-  /* line 604, ../sass/screen.scss */
+  /* line 614, ../sass/screen.scss */
   .featureHeader {
     padding-top: 3.0em;
     font-size: 1.2em;
   }
 
-  /* line 609, ../sass/screen.scss */
+  /* line 619, ../sass/screen.scss */
   .dimSumNewsTote, .musicReelTote,
   .movieReelTote,
   .foodReelTote,
@@ -838,22 +850,22 @@ abbr {
     font-size: 2.0em;
   }
 
-  /* line 613, ../sass/screen.scss */
+  /* line 623, ../sass/screen.scss */
   .dimSumHeader {
     font-size: 1.3em;
   }
 
-  /* line 617, ../sass/screen.scss */
+  /* line 627, ../sass/screen.scss */
   .dimSumReadMoreHeader {
     font-size: 1.2em;
   }
 
-  /* line 621, ../sass/screen.scss */
+  /* line 631, ../sass/screen.scss */
   .dimSumExcerpt {
     font-size: 0.9em;
   }
 
-  /* line 627, ../sass/screen.scss */
+  /* line 637, ../sass/screen.scss */
   .topRightHalf,
   .midRightHalf,
   .rightHalfAd {
@@ -861,13 +873,13 @@ abbr {
     min-width: 28em;
   }
 
-  /* line 632, ../sass/screen.scss */
+  /* line 642, ../sass/screen.scss */
   #spotifyElement {
     float: left;
     margin-right: 1em;
   }
 
-  /* line 640, ../sass/screen.scss */
+  /* line 650, ../sass/screen.scss */
   .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -875,7 +887,7 @@ abbr {
     font-size: 1.5em;
   }
 
-  /* line 647, ../sass/screen.scss */
+  /* line 657, ../sass/screen.scss */
   .farLeft,
   .interiorLeft,
   .interiorRight,
@@ -885,12 +897,12 @@ abbr {
   }
 }
 @media (min-width: 44em) {
-  /* line 654, ../sass/screen.scss */
+  /* line 664, ../sass/screen.scss */
   .header {
     height: 6em;
   }
 
-  /* line 658, ../sass/screen.scss */
+  /* line 668, ../sass/screen.scss */
   .logo {
     font-size: 5.1em;
     width: 54.54545%;
@@ -898,7 +910,7 @@ abbr {
     margin-right: 2.27273%;
   }
 
-  /* line 663, ../sass/screen.scss */
+  /* line 673, ../sass/screen.scss */
   .logo:after {
     content: '';
     position: relative;
@@ -908,7 +920,7 @@ abbr {
     background: none;
   }
 
-  /* line 672, ../sass/screen.scss */
+  /* line 682, ../sass/screen.scss */
   #searchBar {
     display: block;
     width: 9.09091%;
@@ -917,7 +929,7 @@ abbr {
     height: 6em;
   }
 
-  /* line 678, ../sass/screen.scss */
+  /* line 688, ../sass/screen.scss */
   .searchBarIcon {
     margin-top: 1.2em;
     padding: 6px;
@@ -945,13 +957,13 @@ abbr {
     transition-timing-function: ease-out;
   }
 
-  /* line 693, ../sass/screen.scss */
+  /* line 703, ../sass/screen.scss */
   .searchBarIcon:hover,
   .searchBarIcon:active {
     background: rgba(1, 152, 117, 0.6);
   }
 
-  /* line 697, ../sass/screen.scss */
+  /* line 707, ../sass/screen.scss */
   #searchInputPushdown {
     width: 44em;
     -webkit-transition-property: all;
@@ -972,14 +984,14 @@ abbr {
     clear: both;
   }
 
-  /* line 708, ../sass/screen.scss */
+  /* line 718, ../sass/screen.scss */
   .searchInputVisible {
     padding-top: 1em;
     padding-bottom: 1em;
     height: 6.3em;
   }
 
-  /* line 714, ../sass/screen.scss */
+  /* line 724, ../sass/screen.scss */
   .searchInputInvisible {
     padding-top: 0;
     padding-bottom: 0;
@@ -987,54 +999,54 @@ abbr {
   }
 
   @-webkit-keyframes cursorBlink {
-    /* line 721, ../sass/screen.scss */
+    /* line 731, ../sass/screen.scss */
     from {
       border-left: 0.1em solid #019875;
     }
 
-    /* line 722, ../sass/screen.scss */
+    /* line 732, ../sass/screen.scss */
     to {
       border-left: 0.1em solid white;
     }
 }
 
   @-moz-keyframes cursorBlink {
-    /* line 725, ../sass/screen.scss */
+    /* line 735, ../sass/screen.scss */
     from {
       border-left: 0.1em solid #019875;
     }
 
-    /* line 726, ../sass/screen.scss */
+    /* line 736, ../sass/screen.scss */
     to {
       border-left: 0.1em solid white;
     }
 }
 
   @-o-keyframes cursorBlink {
-    /* line 729, ../sass/screen.scss */
+    /* line 739, ../sass/screen.scss */
     from {
       border-left: 0.1em solid #019875;
     }
 
-    /* line 730, ../sass/screen.scss */
+    /* line 740, ../sass/screen.scss */
     to {
       border-left: 0.1em solid white;
     }
 }
 
   @keyframes cursorBlink {
-    /* line 733, ../sass/screen.scss */
+    /* line 743, ../sass/screen.scss */
     from {
       border-left: 0.1em solid #019875;
     }
 
-    /* line 734, ../sass/screen.scss */
+    /* line 744, ../sass/screen.scss */
     to {
       border-left: 0.1em solid white;
     }
 }
 
-  /* line 737, ../sass/screen.scss */
+  /* line 747, ../sass/screen.scss */
   #searchInput {
     display: block;
     -webkit-box-sizing: border-box;
@@ -1056,7 +1068,7 @@ abbr {
     animation: cursorBlink 0.5s ease 0.1s infinite alternate;
   }
 
-  /* line 756, ../sass/screen.scss */
+  /* line 766, ../sass/screen.scss */
   .topAd {
     display: block;
     width: 31.81818%;
@@ -1066,19 +1078,19 @@ abbr {
     overflow: hidden;
   }
 
-  /* line 763, ../sass/screen.scss */
+  /* line 773, ../sass/screen.scss */
   .topAdLink {
     text-decoration: none;
     cursor: pointer;
   }
 
-  /* line 768, ../sass/screen.scss */
+  /* line 778, ../sass/screen.scss */
   #topAdFrame {
     width: 12em;
     height: 6em;
   }
 
-  /* line 773, ../sass/screen.scss */
+  /* line 783, ../sass/screen.scss */
   .floatingNav {
     position: fixed;
     padding-top: 0.4em;
@@ -1104,13 +1116,13 @@ abbr {
     z-index: 100;
   }
 
-  /* line 790, ../sass/screen.scss */
+  /* line 800, ../sass/screen.scss */
   .floatingNavOpen,
   .floatingNavClosed {
     height: 3em;
   }
 
-  /* line 794, ../sass/screen.scss */
+  /* line 804, ../sass/screen.scss */
   .floatingNav a {
     display: inline;
     padding: 0.3em 0.2em;
@@ -1134,21 +1146,21 @@ abbr {
     transition-timing-function: ease-out;
   }
 
-  /* line 809, ../sass/screen.scss */
+  /* line 819, ../sass/screen.scss */
   .floatingNav a:active,
   .floatingNav a:hover {
     color: #019875;
     background: #fff;
   }
 
-  /* line 814, ../sass/screen.scss */
+  /* line 824, ../sass/screen.scss */
   .ledeStory {
     width: 54.54545%;
     float: left;
     margin-right: 2.27273%;
   }
 
-  /* line 818, ../sass/screen.scss */
+  /* line 828, ../sass/screen.scss */
   .ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -1156,7 +1168,7 @@ abbr {
     font-size: 2.5em;
   }
 
-  /* line 822, ../sass/screen.scss */
+  /* line 832, ../sass/screen.scss */
   .ledeRightHalf {
     position: absolute;
     width: 43.18182%;
@@ -1165,32 +1177,32 @@ abbr {
     margin-left: 56.81818%;
   }
 
-  /* line 828, ../sass/screen.scss */
+  /* line 838, ../sass/screen.scss */
   .quoteElement {
     height: 6em;
   }
 
-  /* line 832, ../sass/screen.scss */
+  /* line 842, ../sass/screen.scss */
   .secondLedeElement {
     height: 8em;
     clear: both;
   }
 
-  /* line 837, ../sass/screen.scss */
+  /* line 847, ../sass/screen.scss */
   .secondLedeHeader {
     padding-top: 4.5%;
     width: 90%;
     font-size: 1.4em;
   }
 
-  /* line 843, ../sass/screen.scss */
+  /* line 853, ../sass/screen.scss */
   .featureStoriesReel {
     width: 31.81818%;
     float: left;
     margin-right: 2.27273%;
   }
 
-  /* line 850, ../sass/screen.scss */
+  /* line 860, ../sass/screen.scss */
   .featureOne,
   .featureTwo,
   .featureThree,
@@ -1200,19 +1212,19 @@ abbr {
     background-image: url(http://placehold.it/270x100);
   }
 
-  /* line 857, ../sass/screen.scss */
+  /* line 867, ../sass/screen.scss */
   .featureTwo,
   .featureFour {
     float: left;
   }
 
-  /* line 861, ../sass/screen.scss */
+  /* line 871, ../sass/screen.scss */
   .featureHeader {
     padding-top: 3.0em;
     font-size: 1.2em;
   }
 
-  /* line 866, ../sass/screen.scss */
+  /* line 876, ../sass/screen.scss */
   .dimSumNews {
     position: absolute;
     width: 20.45455%;
@@ -1222,7 +1234,7 @@ abbr {
     padding-top: 0.5em;
   }
 
-  /* line 873, ../sass/screen.scss */
+  /* line 883, ../sass/screen.scss */
   .dimSumNewsTote, .musicReelTote,
   .movieReelTote,
   .foodReelTote,
@@ -1230,22 +1242,22 @@ abbr {
     font-size: 1.2em;
   }
 
-  /* line 877, ../sass/screen.scss */
+  /* line 887, ../sass/screen.scss */
   .dimSumHeader {
     font-size: 0.9em;
   }
 
-  /* line 881, ../sass/screen.scss */
+  /* line 891, ../sass/screen.scss */
   .dimSumReadMoreHeader {
     font-size: 0.8em;
   }
 
-  /* line 885, ../sass/screen.scss */
+  /* line 895, ../sass/screen.scss */
   .dimSumExcerpt {
     font-size: 0.9em;
   }
 
-  /* line 889, ../sass/screen.scss */
+  /* line 899, ../sass/screen.scss */
   .rightHalf {
     position: absolute;
     width: 43.18182%;
@@ -1254,7 +1266,7 @@ abbr {
     margin-left: 56.81818%;
   }
 
-  /* line 897, ../sass/screen.scss */
+  /* line 907, ../sass/screen.scss */
   .topRightHalf,
   .midRightHalf,
   .rightHalfAd {
@@ -1263,20 +1275,20 @@ abbr {
     max-width: 20em;
   }
 
-  /* line 903, ../sass/screen.scss */
+  /* line 913, ../sass/screen.scss */
   #spotifyElement {
     float: left;
     margin-top: -0.5em;
     margin-right: 1em;
   }
 
-  /* line 909, ../sass/screen.scss */
+  /* line 919, ../sass/screen.scss */
   #rightHalfAd {
     float: left;
     width: auto;
   }
 
-  /* line 917, ../sass/screen.scss */
+  /* line 927, ../sass/screen.scss */
   .farLeft,
   .interiorLeft,
   .interiorRight,
@@ -1287,13 +1299,13 @@ abbr {
     max-height: 20em;
   }
 
-  /* line 925, ../sass/screen.scss */
+  /* line 935, ../sass/screen.scss */
   .interiorLeft,
   .farRight {
     float: left;
   }
 
-  /* line 932, ../sass/screen.scss */
+  /* line 942, ../sass/screen.scss */
   .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -1301,7 +1313,7 @@ abbr {
     font-size: 0.9em;
   }
 
-  /* line 939, ../sass/screen.scss */
+  /* line 949, ../sass/screen.scss */
   .musicReelArticle,
   .movieReelArticle,
   .foodReelArticle,
@@ -1309,18 +1321,18 @@ abbr {
     padding: 0 0.5em;
   }
 
-  /* line 943, ../sass/screen.scss */
+  /* line 953, ../sass/screen.scss */
   .footer {
     margin-bottom: 3em;
   }
 }
 @media (min-width: 59em) {
-  /* line 949, ../sass/screen.scss */
+  /* line 959, ../sass/screen.scss */
   .header {
     height: 7em;
   }
 
-  /* line 953, ../sass/screen.scss */
+  /* line 963, ../sass/screen.scss */
   .logo {
     font-size: 6.1em;
     width: 49.15254%;
@@ -1328,7 +1340,7 @@ abbr {
     margin-right: 1.69492%;
   }
 
-  /* line 958, ../sass/screen.scss */
+  /* line 968, ../sass/screen.scss */
   #searchBar {
     width: 6.77966%;
     float: left;
@@ -1336,194 +1348,124 @@ abbr {
     height: 7em;
   }
 
-  /* line 963, ../sass/screen.scss */
+  /* line 973, ../sass/screen.scss */
   .searchBarIcon {
     margin-top: 1.9em;
   }
 
-  /* line 967, ../sass/screen.scss */
+  /* line 977, ../sass/screen.scss */
   #searchInputPushdown {
     width: 59em;
   }
 
-  /* line 971, ../sass/screen.scss */
+  /* line 981, ../sass/screen.scss */
   #searchInput {
     font-size: 6.2em;
     line-height: 1.1em;
   }
 
-  /* line 976, ../sass/screen.scss */
+  /* line 986, ../sass/screen.scss */
   .searchInputVisible {
     height: 6.7em;
   }
 
-  /* line 980, ../sass/screen.scss */
+  /* line 990, ../sass/screen.scss */
   .topAd {
-    display: block;
     width: 40.67797%;
     float: right;
     margin-right: 0;
     height: 7em;
-    overflow: hidden;
   }
 
-  /* line 987, ../sass/screen.scss */
-  .topAdLink {
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  /* line 992, ../sass/screen.scss */
+  /* line 995, ../sass/screen.scss */
   #topAdFrame {
-    width: 12em;
-    height: 6em;
+    width: 100%;
+    height: 100%;
   }
 
-  /* line 997, ../sass/screen.scss */
+  /* line 1000, ../sass/screen.scss */
   .floatingNav {
-    position: fixed;
-    padding-top: 0.4em;
-    bottom: 0.5em;
-    clear: both;
-    max-width: 44em;
-    height: 1.5em;
-    text-align: center;
-    overflow: hidden;
-    -webkit-transition-property: height;
-    -moz-transition-property: height;
-    -o-transition-property: height;
-    transition-property: height;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    -moz-transition-timing-function: ease-out;
-    -o-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    background: #019875;
-    z-index: 100;
+    max-width: 59em;
   }
 
-  /* line 1014, ../sass/screen.scss */
-  .floatingNavOpen,
-  .floatingNavClosed {
-    height: 3em;
+  /* line 1004, ../sass/screen.scss */
+  .floatingNav a {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  /* line 1009, ../sass/screen.scss */
+  .ledeStory {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  /* line 1013, ../sass/screen.scss */
+  .ledeRightHalf {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+    margin-left: 50.84746%;
   }
 
   /* line 1018, ../sass/screen.scss */
-  .floatingNav a {
-    display: inline;
-    padding: 0.3em 0.2em;
-    font: 400 1.3em/1.1em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    background: #019875;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 0.7s;
-    -moz-transition-duration: 0.7s;
-    -o-transition-duration: 0.7s;
-    transition-duration: 0.7s;
-    -webkit-transition-timing-function: ease-out;
-    -moz-transition-timing-function: ease-out;
-    -o-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-
-  /* line 1033, ../sass/screen.scss */
-  .floatingNav a:active,
-  .floatingNav a:hover {
-    color: #019875;
-    background: #fff;
-  }
-
-  /* line 1038, ../sass/screen.scss */
-  .ledeStory {
-    width: 54.54545%;
-    float: left;
-    margin-right: 2.27273%;
-  }
-
-  /* line 1042, ../sass/screen.scss */
-  .ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
-  .movieReelHeader,
-  .foodReelHeader,
-  .eventReelHeader {
-    font-size: 2.5em;
-  }
-
-  /* line 1046, ../sass/screen.scss */
-  .ledeRightHalf {
-    position: absolute;
-    width: 43.18182%;
-    float: right;
-    margin-right: 0;
-    margin-left: 56.81818%;
-  }
-
-  /* line 1052, ../sass/screen.scss */
   .quoteElement {
-    height: 6em;
-  }
-
-  /* line 1056, ../sass/screen.scss */
-  .secondLedeElement {
-    height: 8em;
-    clear: both;
-  }
-
-  /* line 1061, ../sass/screen.scss */
-  .secondLedeHeader {
-    padding-top: 4.5%;
-    width: 90%;
-    font-size: 1.4em;
-  }
-
-  /* line 1067, ../sass/screen.scss */
-  .featureStoriesReel {
-    width: 31.81818%;
+    width: 48.27586%;
     float: left;
-    margin-right: 2.27273%;
+    margin-right: 3.44828%;
+    height: 7em;
   }
 
-  /* line 1074, ../sass/screen.scss */
+  /* line 1023, ../sass/screen.scss */
+  .secondLedeElement {
+    margin-top: 0;
+  }
+
+  /* line 1027, ../sass/screen.scss */
+  .secondLedeHeader {
+    padding-top: 5%;
+    font-size: 1.5em;
+  }
+
+  /* line 1032, ../sass/screen.scss */
+  .featureStoriesReel {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  /* line 1039, ../sass/screen.scss */
   .featureOne,
   .featureTwo,
   .featureThree,
   .featureFour {
     max-height: 12em;
-    width: 100%;
     background-image: url(http://placehold.it/270x100);
   }
 
-  /* line 1081, ../sass/screen.scss */
+  /* line 1045, ../sass/screen.scss */
   .featureTwo,
   .featureFour {
     float: left;
   }
 
-  /* line 1085, ../sass/screen.scss */
+  /* line 1049, ../sass/screen.scss */
   .featureHeader {
     padding-top: 3.0em;
     font-size: 1.2em;
   }
 
-  /* line 1090, ../sass/screen.scss */
+  /* line 1054, ../sass/screen.scss */
   .dimSumNews {
-    position: absolute;
-    width: 20.45455%;
+    width: 23.72881%;
     float: left;
-    margin-right: 2.27273%;
-    margin-left: 34.09091%;
+    margin-right: 1.69492%;
+    margin-left: 25.42373%;
     padding-top: 0.5em;
   }
 
-  /* line 1097, ../sass/screen.scss */
+  /* line 1060, ../sass/screen.scss */
   .dimSumNewsTote, .musicReelTote,
   .movieReelTote,
   .foodReelTote,
@@ -1531,22 +1473,22 @@ abbr {
     font-size: 1.2em;
   }
 
-  /* line 1101, ../sass/screen.scss */
+  /* line 1064, ../sass/screen.scss */
   .dimSumHeader {
     font-size: 0.9em;
   }
 
-  /* line 1105, ../sass/screen.scss */
+  /* line 1068, ../sass/screen.scss */
   .dimSumReadMoreHeader {
     font-size: 0.8em;
   }
 
-  /* line 1109, ../sass/screen.scss */
+  /* line 1072, ../sass/screen.scss */
   .dimSumExcerpt {
     font-size: 0.9em;
   }
 
-  /* line 1113, ../sass/screen.scss */
+  /* line 1076, ../sass/screen.scss */
   .rightHalf {
     position: absolute;
     width: 43.18182%;
@@ -1555,7 +1497,7 @@ abbr {
     margin-left: 56.81818%;
   }
 
-  /* line 1121, ../sass/screen.scss */
+  /* line 1084, ../sass/screen.scss */
   .topRightHalf,
   .midRightHalf,
   .rightHalfAd {
@@ -1564,20 +1506,20 @@ abbr {
     max-width: 20em;
   }
 
-  /* line 1127, ../sass/screen.scss */
+  /* line 1090, ../sass/screen.scss */
   #spotifyElement {
     float: left;
     margin-top: -0.5em;
     margin-right: 1em;
   }
 
-  /* line 1133, ../sass/screen.scss */
+  /* line 1096, ../sass/screen.scss */
   #rightHalfAd {
     float: left;
     width: auto;
   }
 
-  /* line 1141, ../sass/screen.scss */
+  /* line 1104, ../sass/screen.scss */
   .farLeft,
   .interiorLeft,
   .interiorRight,
@@ -1588,13 +1530,13 @@ abbr {
     max-height: 20em;
   }
 
-  /* line 1149, ../sass/screen.scss */
+  /* line 1112, ../sass/screen.scss */
   .interiorLeft,
   .farRight {
     float: left;
   }
 
-  /* line 1156, ../sass/screen.scss */
+  /* line 1119, ../sass/screen.scss */
   .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -1602,7 +1544,7 @@ abbr {
     font-size: 0.9em;
   }
 
-  /* line 1163, ../sass/screen.scss */
+  /* line 1126, ../sass/screen.scss */
   .musicReelArticle,
   .movieReelArticle,
   .foodReelArticle,
@@ -1610,7 +1552,7 @@ abbr {
     padding: 0 0.5em;
   }
 
-  /* line 1167, ../sass/screen.scss */
+  /* line 1130, ../sass/screen.scss */
   .footer {
     margin-bottom: 3em;
   }
