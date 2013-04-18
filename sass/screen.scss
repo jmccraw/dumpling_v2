@@ -365,6 +365,10 @@ abbr {
 	text-decoration: underline;
 }
 
+.desktopMode {
+	display: none;
+}
+
 .topRightHalf,
 .midRightHalf,
 .rightHalfAd {
@@ -1016,8 +1020,26 @@ abbr {
 	}
 	
 	.quoteElement {
-		@include span-columns(3, 6);
 		height: $column-width + 3;
+	}
+	
+	.quoteElement:after {
+		margin: -0.1em 0 0 -1.5em;
+	}
+	
+	.quoteText {
+		@include span-columns(3, $computer / 2);
+	}
+	
+	.quoteAuthor {
+		@include span-columns(3 omega, $computer / 2);
+		@include pre(3, $computer / 2);
+		position: absolute;
+		padding-top: 1.2em;
+		font-family: "CaviarDreamsBold", "Century Gothic", Arial, sans-serif;
+		font-size: 1.5em;
+		text-align: center;
+		clear: both;
 	}
 	
 	.secondLedeElement {
@@ -1071,6 +1093,10 @@ abbr {
 	
 	.dimSumExcerpt {
 		font-size: 0.9em;
+	}
+	
+	.desktopMode {
+		display: block;
 	}
 	
 	.rightHalf {
