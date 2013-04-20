@@ -389,6 +389,10 @@ abbr {
 	clear: both;
 }
 
+.topRightHalf {
+	margin-top: 0;
+}
+
 .facebookElement,
 .twitterElement,
 .mailElement,
@@ -652,10 +656,14 @@ abbr {
 		width: 100%;
 		min-width: $column-width * $phone-portrait;
 	}
+
+	.topRightHalf {
+		margin-top: -$gutter-width;
+	}
 	
 	#spotifyElement {
 		float: left;
-		margin-right: $gutter-width;
+		margin-bottom: $gutter-width;
 	}
 	
 	.facebookElement,
@@ -934,6 +942,10 @@ abbr {
 		max-width: $gutter-width * 20;
 	}
 	
+	.topRightHalf {
+		margin-top: -0.9em;
+	}
+	
 	#spotifyElement {
 		float: left;
 		margin-top: $gutter-width / 2 * -1;
@@ -944,7 +956,7 @@ abbr {
 	.twitterElement,
 	.mailElement,
 	.rssElement {
-		margin: $gutter-width 0.7em $gutter-width 0;
+		margin: $gutter-width 0.7em 1.3em 0;
 	}
 	
 	.facebookElement {
@@ -1133,16 +1145,16 @@ abbr {
 	
 	.rightHalf {
 		position: absolute;
-		@include span-columns(4 omega, $tablet);
-		@include pre(5, $tablet);
+		@include span-columns(6 omega, $computer);
+		@include pre(6, $computer);
 	}
 	
 	.topRightHalf,
 	.midRightHalf,
 	.rightHalfAd {
-		min-width: 10em;
+		min-width: 13em;
 		width: auto;
-		max-width: $gutter-width * 20;
+		max-width: 28.5em;
 	}
 	
 	#spotifyElement {

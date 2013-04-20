@@ -188,9 +188,6 @@
 		<!-- TODO FIXME DOES THIS MATTER? -->
 		<div class="rightHalf">
 			<section class="topRightHalf">
-				<iframe id="spotifyElement" src="" width="0" height="0" frameborder="0" allowtransparency="true" seamless></iframe>
-			</section>
-			<section class="midRightHalf">
 				<aside class="facebookElement" title="Like Dumpling on Facebook">
 					<img class="socialIcon" src="stylesheets/images/facebook_icon.png" alt="Like Dumpling on Facebook icon" />
 				</aside>
@@ -203,6 +200,9 @@
 				<aside class="rssElement lastElement" title="Subscribe to Dumpling's RSS feed">
 					<img class="socialIcon" src="stylesheets/images/bookmark_icon.png" alt="Subscribe to Dumpling's RSS icon" />
 				</aside>
+			</section>
+			<section class="midRightHalf">
+				<iframe id="spotifyElement" src="" width="0" height="0" frameborder="0" allowtransparency="true" seamless></iframe>
 			</section>
 			<a class="rightHalfLink" href="#" title="">
 				<aside class="rightHalfAd">
@@ -357,23 +357,25 @@
 		
 		// Load Spotify if a big enough viewport
 		if (document.width > 500) {
-			var width = 0;
-			if (document.width > 703) {
-				width = Math.floor($(".topRightHalf").width());
+			var width = Math.floor($(".midRightHalf").width());
+			var height = 80;
+			if ((703 < document.width) && (document.width < 944)) {
+				height = 370;
 			}
-			else {
-				width = Math.floor($(".topRightHalf").width() / 2.1);
+			else if (document.width >= 944) {
+				width = 448;//Math.floor($(".rightHalf").width() / 2.1);
+				height = 370;
 			}
 			$("#spotifyElement").attr({
 				//"width": width - 144,
 				//"height": width - 60,
 				"width": width,// - 144,
-				"height": 80,
+				"height": height,
 				"src": "https://embed.spotify.com/?uri=spotify:user:justinmccraw:playlist:5232k8BBvXPEGODNO3mBaC"
 			});
 		}
 		else {
-			$(".topRightHalf").css("display", "none");
+			$(".midRightHalf").css("display", "none");
 		}
 		
 		// Load the Facebook icon
@@ -467,7 +469,7 @@
 				$("#rightHalfAd").attr("src", "http://placehold.it/320");
 			}
 			else {
-				$("#rightHalfAd").attr("src", "http://placehold.it/304x600");
+				$("#rightHalfAd").attr("src", "http://placehold.it/304x300");
 			}
 		};
 		
