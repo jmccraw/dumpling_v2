@@ -1149,55 +1149,36 @@ abbr {
 		@include pre(6, $computer);
 	}
 	
+	.leftColumnHalf {
+		@include span-columns(2, $computer / 2);
+		position: relative;
+		margin: ($gutter-width / 2) auto 0;
+		padding: 0;
+		clear: both;
+	}
+	
 	.topRightHalf,
 	.midRightHalf,
 	.rightHalfAd {
-		min-width: 13em;
-		width: auto;
-		max-width: 28.5em;
+		position: absolute;
+		@include span-columns(4 omega, $computer / 2);
+		@include pre(2, $computer / 2);
+	}
+	
+	.facebookElement {
+		margin-left: 0.1em;
+	}
+	
+	.midRightHalf {
+		margin-top: 5em;
 	}
 	
 	#spotifyElement {
-		float: left;
-		margin-top: $gutter-width / 2 * -1;
-		margin-right: $gutter-width;
+		margin-top: 0;
+		margin-right: 0;
 	}
 	
-	#rightHalfAd {
-		float: left;
-		width: auto;
-	}
-	
-	.farLeft,
-	.interiorLeft,
-	.interiorRight,
-	.farRight {
-		margin-top: $gutter-width;
-		width: 25%;
-		min-height: $gutter-width * 15;
-		max-height: $gutter-width * 20;
-	}
-	
-	.interiorLeft,
-	.farRight {
-		float: left;
-	}
-	
-	.musicReelHeader,
-	.movieReelHeader,
-	.foodReelHeader,
-	.eventReelHeader {
-		font-size: 0.9em;
-	}
-	
-	.musicReelArticle,
-	.movieReelArticle,
-	.foodReelArticle,
-	.eventReelArticle {
-		padding: 0 0.5em;
-	}
-	
-	.footer {
-		margin-bottom: $gutter-width * 3;
+	.rightHalfAd {
+		margin-top: 30em;
 	}
 }
