@@ -257,17 +257,18 @@ abbr {
   background: transparent url(http://placekitten.com/600/330) center center no-repeat;
 }
 
-/* line 158, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .ledeStoryLink, .featureStoriesLink, .dimSumLink, .musicReelLink,
 .movieReelLink,
 .foodReelLink,
 .eventReelLink,
 .secondLedeLink,
-.headerLink {
+.headerLink,
+.ancillaryLink {
   text-decoration: none;
 }
 
-/* line 162, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
 .movieReelHeader,
 .foodReelHeader,
@@ -284,7 +285,7 @@ abbr {
   text-shadow: 1px 1px 2px #333333;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .ledeStoryLink:hover .ledeStoryHeader, .featureStoriesLink:hover .ledeStoryHeader, .dimSumLink:hover .ledeStoryHeader, .musicReelLink:hover .ledeStoryHeader,
 .movieReelLink:hover .ledeStoryHeader,
 .foodReelLink:hover .ledeStoryHeader,
@@ -334,7 +335,7 @@ abbr {
   text-shadow: 1px 1px 0 white;
 }
 
-/* line 182, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 .ledeStoryByline {
   display: block;
   margin: 0;
@@ -344,14 +345,14 @@ abbr {
   text-align: right;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .quoteElement {
   margin: 1em auto 0;
   padding: 0;
   width: 100%;
 }
 
-/* line 197, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 .quoteElement:after {
   content: "\201c";
   position: absolute;
@@ -364,7 +365,7 @@ abbr {
   z-index: 1;
 }
 
-/* line 209, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .quoteText {
   position: relative;
   margin: 0;
@@ -375,14 +376,14 @@ abbr {
   z-index: 2;
 }
 
-/* line 219, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .quoteAuthor {
   padding: 0;
   font: 700 80% Georgia, "Times New Roman", Times, serif;
   text-align: right;
 }
 
-/* line 225, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .secondLedeElement {
   margin: 1em auto 0;
   padding: 0;
@@ -391,7 +392,7 @@ abbr {
   background: transparent url(http://placekitten.com/550/150) center center no-repeat;
 }
 
-/* line 233, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .secondLedeHeader {
   padding: 3.8% 0 0;
   font: 400 1.3em/1.2em Georgia, "Times New Roman", Times, serif;
@@ -400,7 +401,7 @@ abbr {
 
 /* END MAIN CONTENT */
 /* MIDDLE CONTENT */
-/* line 242, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 .middleContent {
   position: relative;
   padding: 0;
@@ -408,7 +409,7 @@ abbr {
   clear: both;
 }
 
-/* line 260, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 .featureStoriesLink:hover .featureOne,
 .featureStoriesLink:active .featureOne,
 .featureStoriesLink:hover .featureFour,
@@ -420,7 +421,7 @@ abbr {
   background-color: rgba(1, 152, 117, 0.1);
 }
 
-/* line 266, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 .featureStoriesReel,
 .dimSumNews,
 .rightHalf {
@@ -431,7 +432,7 @@ abbr {
   width: 100%;
 }
 
-/* line 277, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .featureOne,
 .featureTwo,
 .featureThree,
@@ -458,21 +459,21 @@ abbr {
   transition-timing-function: ease-out;
 }
 
-/* line 292, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 .featureTwo,
 .featureFour {
   float: right;
   margin-right: 0;
 }
 
-/* line 297, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .featurePhoto {
   position: absolute;
   width: 100%;
   height: auto;
 }
 
-/* line 303, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 .featureHeader {
   position: relative;
   padding-top: 2.9em;
@@ -484,7 +485,7 @@ abbr {
   overflow: hidden;
 }
 
-/* line 316, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 .featureExcerpt, .dimSumExcerpt, .footerExcerpt,
 .featureByline {
   margin: 0;
@@ -493,7 +494,7 @@ abbr {
   color: #333333;
 }
 
-/* line 323, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 .featureByline {
   display: block;
   margin-top: 0.75em;
@@ -501,7 +502,7 @@ abbr {
   text-align: right;
 }
 
-/* line 334, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 .dimSumNewsTote, .musicReelTote,
 .movieReelTote,
 .foodReelTote,
@@ -512,7 +513,7 @@ abbr {
   border-bottom: 1px solid #333333;
 }
 
-/* line 342, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 .dimSumArticle,
 .dimSumReadMore {
   margin: 1em auto 0;
@@ -522,12 +523,12 @@ abbr {
   border-bottom: 1px solid #019875;
 }
 
-/* line 350, ../sass/screen.scss */
+/* line 351, ../sass/screen.scss */
 .dimSumReadMore {
   margin-top: 2em;
 }
 
-/* line 354, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 .dimSumHeader {
   height: auto;
   font: 400 1em/1.3em Tahoma, Helvetica, Arial, sans-serif;
@@ -536,29 +537,31 @@ abbr {
   text-shadow: none;
 }
 
-/* line 363, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 .dimSumReadMoreHeader {
   background: transparent url(images/dumpling_icon_64x64.png) 95% 0 no-repeat;
   font-weight: 700 !important;
 }
 
-/* line 368, ../sass/screen.scss */
+/* line 369, ../sass/screen.scss */
 .dimSumExcerpt {
   color: #777;
 }
 
-/* line 374, ../sass/screen.scss */
+/* line 377, ../sass/screen.scss */
 .dimSumLink:hover .dimSumHeader,
-.dimSumLink:active .dimSumHeader {
+.dimSumLink:active .dimSumHeader,
+.ancillaryLink:hover .ancillaryTitle,
+.ancillaryLink:active .ancillaryTitle {
   text-decoration: underline;
 }
 
-/* line 378, ../sass/screen.scss */
+/* line 381, ../sass/screen.scss */
 .desktopMode {
   display: none;
 }
 
-/* line 384, ../sass/screen.scss */
+/* line 387, ../sass/screen.scss */
 .topRightHalf,
 .midRightHalf,
 .rightHalfAd {
@@ -569,12 +572,12 @@ abbr {
   clear: both;
 }
 
-/* line 392, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 .topRightHalf {
   margin-top: 0;
 }
 
-/* line 399, ../sass/screen.scss */
+/* line 402, ../sass/screen.scss */
 .facebookElement,
 .twitterElement,
 .mailElement,
@@ -603,7 +606,7 @@ abbr {
   transition-timing-function: ease-out;
 }
 
-/* line 412, ../sass/screen.scss */
+/* line 415, ../sass/screen.scss */
 .facebookElement:hover,
 .facebookElement:active {
   background: #1864f0;
@@ -611,7 +614,7 @@ abbr {
   background: rgba(59, 89, 152, 0.3);
 }
 
-/* line 419, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 .twitterElement:hover,
 .twitterElement:active {
   background: #1ec8fa;
@@ -619,7 +622,7 @@ abbr {
   background: rgba(26, 178, 232, 0.3);
 }
 
-/* line 426, ../sass/screen.scss */
+/* line 429, ../sass/screen.scss */
 .mailElement:hover,
 .mailElement:active {
   background: #c8141e;
@@ -627,14 +630,14 @@ abbr {
   background: rgba(221, 75, 57, 0.3);
 }
 
-/* line 433, ../sass/screen.scss */
+/* line 436, ../sass/screen.scss */
 .rssElement:hover,
 .rssElement:active {
   background: #b46432;
   background: rgba(180, 100, 50, 0.3);
 }
 
-/* line 438, ../sass/screen.scss */
+/* line 441, ../sass/screen.scss */
 .socialIcon {
   padding: 0;
   margin: 0 auto;
@@ -642,19 +645,19 @@ abbr {
   height: auto;
 }
 
-/* line 445, ../sass/screen.scss */
+/* line 448, ../sass/screen.scss */
 .lastElement {
   margin-right: 0;
 }
 
-/* line 449, ../sass/screen.scss */
+/* line 452, ../sass/screen.scss */
 .rightHalfAd {
   width: 100%;
   height: 34em;
   text-align: center;
 }
 
-/* line 455, ../sass/screen.scss */
+/* line 458, ../sass/screen.scss */
 #rightHalfAd {
   width: 100%;
   height: auto;
@@ -662,7 +665,7 @@ abbr {
 
 /* END MIDDLE CONTENT */
 /* BOTTOM CONTENT */
-/* line 463, ../sass/screen.scss */
+/* line 466, ../sass/screen.scss */
 .bottomContent {
   position: relative;
   padding: 0;
@@ -670,7 +673,7 @@ abbr {
   clear: both;
 }
 
-/* line 473, ../sass/screen.scss */
+/* line 476, ../sass/screen.scss */
 .farLeft,
 .interiorLeft,
 .interiorRight,
@@ -684,14 +687,14 @@ abbr {
   max-height: 25em;
 }
 
-/* line 491, ../sass/screen.scss */
+/* line 494, ../sass/screen.scss */
 .interiorLeft,
 .farRight {
   float: right;
   margin-right: 0;
 }
 
-/* line 499, ../sass/screen.scss */
+/* line 502, ../sass/screen.scss */
 .musicReelTote,
 .movieReelTote,
 .foodReelTote,
@@ -715,50 +718,50 @@ abbr {
   transition-timing-function: ease-out;
 }
 
-/* line 511, ../sass/screen.scss */
+/* line 514, ../sass/screen.scss */
 .movieReelTote {
   color: #85bdc1;
 }
 
-/* line 515, ../sass/screen.scss */
+/* line 518, ../sass/screen.scss */
 .foodReelTote {
   color: #e1e297;
 }
 
-/* line 519, ../sass/screen.scss */
+/* line 522, ../sass/screen.scss */
 .eventReelTote {
   color: #d66b96;
 }
 
-/* line 524, ../sass/screen.scss */
+/* line 527, ../sass/screen.scss */
 .musicReelLink:hover .musicReelTote,
 .musicReelLink:active .musicReelTote {
   color: #333333;
   background: #8186d5;
 }
 
-/* line 530, ../sass/screen.scss */
+/* line 533, ../sass/screen.scss */
 .movieReelLink:hover .movieReelTote,
 .movieReelLink:active .movieReelTote {
   color: #333333;
   background: #85bdc1;
 }
 
-/* line 536, ../sass/screen.scss */
+/* line 539, ../sass/screen.scss */
 .foodReelLink:hover .foodReelTote,
 .foodReelLink:active .foodReelTote {
   color: #333333;
   background: #e1e297;
 }
 
-/* line 542, ../sass/screen.scss */
+/* line 545, ../sass/screen.scss */
 .eventReelLink:hover .eventReelTote,
 .eventReelLink:active .eventReelTote {
   color: #333333;
   background: #d66b96;
 }
 
-/* line 550, ../sass/screen.scss */
+/* line 553, ../sass/screen.scss */
 .musicReelHeader,
 .movieReelHeader,
 .foodReelHeader,
@@ -771,28 +774,28 @@ abbr {
   text-shadow: none;
 }
 
-/* line 561, ../sass/screen.scss */
+/* line 564, ../sass/screen.scss */
 .musicReelLink:hover .musicReelHeader,
 .musicReelLink:active .musicReelHeader {
   color: #8186d5;
   text-decoration: underline;
 }
 
-/* line 567, ../sass/screen.scss */
+/* line 570, ../sass/screen.scss */
 .movieReelLink:hover .movieReelHeader,
 .movieReelLink:active .movieReelHeader {
   color: #85bdc1;
   text-decoration: underline;
 }
 
-/* line 573, ../sass/screen.scss */
+/* line 576, ../sass/screen.scss */
 .foodReelLink:hover .foodReelHeader,
 .foodReelLink:active .foodReelHeader {
   color: #e1e297;
   text-decoration: underline;
 }
 
-/* line 579, ../sass/screen.scss */
+/* line 582, ../sass/screen.scss */
 .eventReelLink:hover .eventReelHeader,
 .eventReelLink:active .eventReelHeader {
   color: #d66b96;
@@ -801,7 +804,7 @@ abbr {
 
 /* END BOTTOM CONTENT */
 /* FOOTER */
-/* line 586, ../sass/screen.scss */
+/* line 589, ../sass/screen.scss */
 .footer {
   clear: both;
   margin: 0 auto 1em;
@@ -809,7 +812,7 @@ abbr {
   width: 100%;
 }
 
-/* line 593, ../sass/screen.scss */
+/* line 596, ../sass/screen.scss */
 .footerExcerpt {
   padding-top: 1em;
   font-size: 0.75em;
@@ -819,22 +822,22 @@ abbr {
 
 /* END FOOTER */
 @media (min-width: 34em) {
-  /* line 603, ../sass/screen.scss */
+  /* line 606, ../sass/screen.scss */
   .header {
     height: 5em;
   }
 
-  /* line 607, ../sass/screen.scss */
+  /* line 610, ../sass/screen.scss */
   .logo {
     font-size: 4.1em;
   }
 
-  /* line 611, ../sass/screen.scss */
+  /* line 614, ../sass/screen.scss */
   .logo:after {
     top: 0.4em;
   }
 
-  /* line 615, ../sass/screen.scss */
+  /* line 618, ../sass/screen.scss */
   .ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -842,14 +845,14 @@ abbr {
     font-size: 3.0em;
   }
 
-  /* line 619, ../sass/screen.scss */
+  /* line 622, ../sass/screen.scss */
   .secondLedeHeader {
     padding-top: 4.5%;
     width: 90%;
     font-size: 1.4em;
   }
 
-  /* line 628, ../sass/screen.scss */
+  /* line 631, ../sass/screen.scss */
   .featureOne,
   .featureTwo,
   .featureThree,
@@ -857,13 +860,13 @@ abbr {
     max-height: 12em;
   }
 
-  /* line 632, ../sass/screen.scss */
+  /* line 635, ../sass/screen.scss */
   .featureHeader {
     padding-top: 3.8em;
     font-size: 1.2em;
   }
 
-  /* line 637, ../sass/screen.scss */
+  /* line 640, ../sass/screen.scss */
   .dimSumNewsTote, .musicReelTote,
   .movieReelTote,
   .foodReelTote,
@@ -871,22 +874,22 @@ abbr {
     font-size: 2.0em;
   }
 
-  /* line 641, ../sass/screen.scss */
+  /* line 644, ../sass/screen.scss */
   .dimSumHeader {
     font-size: 1.3em;
   }
 
-  /* line 645, ../sass/screen.scss */
+  /* line 648, ../sass/screen.scss */
   .dimSumReadMoreHeader {
     font-size: 1.2em;
   }
 
-  /* line 649, ../sass/screen.scss */
+  /* line 652, ../sass/screen.scss */
   .dimSumExcerpt {
     font-size: 0.9em;
   }
 
-  /* line 655, ../sass/screen.scss */
+  /* line 658, ../sass/screen.scss */
   .topRightHalf,
   .midRightHalf,
   .rightHalfAd {
@@ -894,18 +897,18 @@ abbr {
     min-width: 28em;
   }
 
-  /* line 660, ../sass/screen.scss */
+  /* line 663, ../sass/screen.scss */
   .topRightHalf {
     margin-top: -1em;
   }
 
-  /* line 664, ../sass/screen.scss */
+  /* line 667, ../sass/screen.scss */
   #spotifyElement {
     float: left;
     margin-bottom: 1em;
   }
 
-  /* line 672, ../sass/screen.scss */
+  /* line 675, ../sass/screen.scss */
   .facebookElement,
   .twitterElement,
   .mailElement,
@@ -913,12 +916,12 @@ abbr {
     margin: 1em 3.6em 1em 0;
   }
 
-  /* line 676, ../sass/screen.scss */
+  /* line 679, ../sass/screen.scss */
   .facebookElement {
     margin-left: 3em;
   }
 
-  /* line 683, ../sass/screen.scss */
+  /* line 686, ../sass/screen.scss */
   .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -926,7 +929,7 @@ abbr {
     font-size: 1.5em;
   }
 
-  /* line 690, ../sass/screen.scss */
+  /* line 693, ../sass/screen.scss */
   .farLeft,
   .interiorLeft,
   .interiorRight,
@@ -936,12 +939,12 @@ abbr {
   }
 }
 @media (min-width: 44em) {
-  /* line 697, ../sass/screen.scss */
+  /* line 700, ../sass/screen.scss */
   .header {
     height: 6em;
   }
 
-  /* line 701, ../sass/screen.scss */
+  /* line 704, ../sass/screen.scss */
   .logo {
     font-size: 5.1em;
     width: 54.54545%;
@@ -949,7 +952,7 @@ abbr {
     margin-right: 2.27273%;
   }
 
-  /* line 706, ../sass/screen.scss */
+  /* line 709, ../sass/screen.scss */
   .logo:after {
     content: '';
     position: relative;
@@ -959,7 +962,7 @@ abbr {
     background: none;
   }
 
-  /* line 715, ../sass/screen.scss */
+  /* line 718, ../sass/screen.scss */
   #searchBar {
     display: block;
     width: 9.09091%;
@@ -968,7 +971,7 @@ abbr {
     height: 6em;
   }
 
-  /* line 721, ../sass/screen.scss */
+  /* line 724, ../sass/screen.scss */
   .searchBarIcon {
     margin-top: 1.2em;
     padding: 6px;
@@ -996,13 +999,13 @@ abbr {
     transition-timing-function: ease-out;
   }
 
-  /* line 736, ../sass/screen.scss */
+  /* line 739, ../sass/screen.scss */
   .searchBarIcon:hover,
   .searchBarIcon:active {
     background: rgba(1, 152, 117, 0.6);
   }
 
-  /* line 740, ../sass/screen.scss */
+  /* line 743, ../sass/screen.scss */
   #searchInputPushdown {
     width: 44em;
     -webkit-transition-property: all;
@@ -1023,14 +1026,14 @@ abbr {
     clear: both;
   }
 
-  /* line 751, ../sass/screen.scss */
+  /* line 754, ../sass/screen.scss */
   .searchInputVisible {
     padding-top: 1em;
     padding-bottom: 1em;
     height: 6.3em;
   }
 
-  /* line 757, ../sass/screen.scss */
+  /* line 760, ../sass/screen.scss */
   .searchInputInvisible {
     padding-top: 0;
     padding-bottom: 0;
@@ -1038,54 +1041,54 @@ abbr {
   }
 
   @-webkit-keyframes cursorBlink {
-    /* line 764, ../sass/screen.scss */
+    /* line 767, ../sass/screen.scss */
     from {
       border-left: 0.1em solid #019875;
     }
 
-    /* line 765, ../sass/screen.scss */
+    /* line 768, ../sass/screen.scss */
     to {
       border-left: 0.1em solid white;
     }
 }
 
   @-moz-keyframes cursorBlink {
-    /* line 768, ../sass/screen.scss */
+    /* line 771, ../sass/screen.scss */
     from {
       border-left: 0.1em solid #019875;
     }
 
-    /* line 769, ../sass/screen.scss */
+    /* line 772, ../sass/screen.scss */
     to {
       border-left: 0.1em solid white;
     }
 }
 
   @-o-keyframes cursorBlink {
-    /* line 772, ../sass/screen.scss */
+    /* line 775, ../sass/screen.scss */
     from {
       border-left: 0.1em solid #019875;
     }
 
-    /* line 773, ../sass/screen.scss */
+    /* line 776, ../sass/screen.scss */
     to {
       border-left: 0.1em solid white;
     }
 }
 
   @keyframes cursorBlink {
-    /* line 776, ../sass/screen.scss */
+    /* line 779, ../sass/screen.scss */
     from {
       border-left: 0.1em solid #019875;
     }
 
-    /* line 777, ../sass/screen.scss */
+    /* line 780, ../sass/screen.scss */
     to {
       border-left: 0.1em solid white;
     }
 }
 
-  /* line 780, ../sass/screen.scss */
+  /* line 783, ../sass/screen.scss */
   #searchInput {
     display: block;
     -webkit-box-sizing: border-box;
@@ -1107,7 +1110,7 @@ abbr {
     animation: cursorBlink 0.5s ease 0.1s infinite alternate;
   }
 
-  /* line 799, ../sass/screen.scss */
+  /* line 802, ../sass/screen.scss */
   .topAd {
     display: block;
     width: 31.81818%;
@@ -1117,19 +1120,19 @@ abbr {
     overflow: hidden;
   }
 
-  /* line 806, ../sass/screen.scss */
+  /* line 809, ../sass/screen.scss */
   .topAdLink {
     text-decoration: none;
     cursor: pointer;
   }
 
-  /* line 811, ../sass/screen.scss */
+  /* line 814, ../sass/screen.scss */
   #topAdFrame {
     width: 12em;
     height: 6em;
   }
 
-  /* line 816, ../sass/screen.scss */
+  /* line 819, ../sass/screen.scss */
   .floatingNav {
     position: fixed;
     padding-top: 0.4em;
@@ -1155,13 +1158,13 @@ abbr {
     z-index: 100;
   }
 
-  /* line 833, ../sass/screen.scss */
+  /* line 836, ../sass/screen.scss */
   .floatingNavOpen,
   .floatingNavClosed {
     height: 3em;
   }
 
-  /* line 837, ../sass/screen.scss */
+  /* line 840, ../sass/screen.scss */
   .floatingNav a {
     display: inline;
     padding: 0.3em 0.2em;
@@ -1185,21 +1188,21 @@ abbr {
     transition-timing-function: ease-out;
   }
 
-  /* line 852, ../sass/screen.scss */
+  /* line 855, ../sass/screen.scss */
   .floatingNav a:active,
   .floatingNav a:hover {
     color: #019875;
     background: #fff;
   }
 
-  /* line 857, ../sass/screen.scss */
+  /* line 860, ../sass/screen.scss */
   .ledeStory {
     width: 54.54545%;
     float: left;
     margin-right: 2.27273%;
   }
 
-  /* line 861, ../sass/screen.scss */
+  /* line 864, ../sass/screen.scss */
   .ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -1207,7 +1210,7 @@ abbr {
     font-size: 2.5em;
   }
 
-  /* line 865, ../sass/screen.scss */
+  /* line 868, ../sass/screen.scss */
   .ledeRightHalf {
     position: absolute;
     width: 43.18182%;
@@ -1216,32 +1219,32 @@ abbr {
     margin-left: 56.81818%;
   }
 
-  /* line 871, ../sass/screen.scss */
+  /* line 874, ../sass/screen.scss */
   .quoteElement {
     height: 6em;
   }
 
-  /* line 875, ../sass/screen.scss */
+  /* line 878, ../sass/screen.scss */
   .secondLedeElement {
     height: 8em;
     clear: both;
   }
 
-  /* line 880, ../sass/screen.scss */
+  /* line 883, ../sass/screen.scss */
   .secondLedeHeader {
     padding-top: 4.5%;
     width: 90%;
     font-size: 1.4em;
   }
 
-  /* line 886, ../sass/screen.scss */
+  /* line 889, ../sass/screen.scss */
   .featureStoriesReel {
     width: 31.81818%;
     float: left;
     margin-right: 2.27273%;
   }
 
-  /* line 893, ../sass/screen.scss */
+  /* line 896, ../sass/screen.scss */
   .featureOne,
   .featureTwo,
   .featureThree,
@@ -1250,19 +1253,19 @@ abbr {
     width: 100%;
   }
 
-  /* line 899, ../sass/screen.scss */
+  /* line 902, ../sass/screen.scss */
   .featureTwo,
   .featureFour {
     float: left;
   }
 
-  /* line 903, ../sass/screen.scss */
+  /* line 906, ../sass/screen.scss */
   .featureHeader {
     padding-top: 3.0em;
     font-size: 1.2em;
   }
 
-  /* line 908, ../sass/screen.scss */
+  /* line 911, ../sass/screen.scss */
   .dimSumNews {
     position: absolute;
     width: 20.45455%;
@@ -1272,7 +1275,7 @@ abbr {
     padding-top: 0.5em;
   }
 
-  /* line 915, ../sass/screen.scss */
+  /* line 918, ../sass/screen.scss */
   .dimSumNewsTote, .musicReelTote,
   .movieReelTote,
   .foodReelTote,
@@ -1280,22 +1283,22 @@ abbr {
     font-size: 1.2em;
   }
 
-  /* line 919, ../sass/screen.scss */
+  /* line 922, ../sass/screen.scss */
   .dimSumHeader {
     font-size: 0.9em;
   }
 
-  /* line 923, ../sass/screen.scss */
+  /* line 926, ../sass/screen.scss */
   .dimSumReadMoreHeader {
     font-size: 0.8em;
   }
 
-  /* line 927, ../sass/screen.scss */
+  /* line 930, ../sass/screen.scss */
   .dimSumExcerpt {
     font-size: 0.9em;
   }
 
-  /* line 931, ../sass/screen.scss */
+  /* line 934, ../sass/screen.scss */
   .rightHalf {
     position: absolute;
     width: 43.18182%;
@@ -1304,7 +1307,7 @@ abbr {
     margin-left: 56.81818%;
   }
 
-  /* line 939, ../sass/screen.scss */
+  /* line 942, ../sass/screen.scss */
   .topRightHalf,
   .midRightHalf,
   .rightHalfAd {
@@ -1313,19 +1316,19 @@ abbr {
     max-width: 20em;
   }
 
-  /* line 945, ../sass/screen.scss */
+  /* line 948, ../sass/screen.scss */
   .topRightHalf {
     margin-top: -0.9em;
   }
 
-  /* line 949, ../sass/screen.scss */
+  /* line 952, ../sass/screen.scss */
   #spotifyElement {
     float: left;
     margin-top: -0.5em;
     margin-right: 1em;
   }
 
-  /* line 958, ../sass/screen.scss */
+  /* line 961, ../sass/screen.scss */
   .facebookElement,
   .twitterElement,
   .mailElement,
@@ -1333,18 +1336,18 @@ abbr {
     margin: 1em 0.7em 1.3em 0;
   }
 
-  /* line 962, ../sass/screen.scss */
+  /* line 965, ../sass/screen.scss */
   .facebookElement {
     margin-left: 0;
   }
 
-  /* line 966, ../sass/screen.scss */
+  /* line 969, ../sass/screen.scss */
   #rightHalfAd {
     float: left;
     width: auto;
   }
 
-  /* line 974, ../sass/screen.scss */
+  /* line 977, ../sass/screen.scss */
   .farLeft,
   .interiorLeft,
   .interiorRight,
@@ -1355,13 +1358,13 @@ abbr {
     max-height: 20em;
   }
 
-  /* line 982, ../sass/screen.scss */
+  /* line 985, ../sass/screen.scss */
   .interiorLeft,
   .farRight {
     float: left;
   }
 
-  /* line 989, ../sass/screen.scss */
+  /* line 992, ../sass/screen.scss */
   .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -1369,7 +1372,7 @@ abbr {
     font-size: 0.9em;
   }
 
-  /* line 996, ../sass/screen.scss */
+  /* line 999, ../sass/screen.scss */
   .musicReelArticle,
   .movieReelArticle,
   .foodReelArticle,
@@ -1377,18 +1380,18 @@ abbr {
     padding: 0 0.5em;
   }
 
-  /* line 1000, ../sass/screen.scss */
+  /* line 1003, ../sass/screen.scss */
   .footer {
     margin-bottom: 3em;
   }
 }
 @media (min-width: 59em) {
-  /* line 1006, ../sass/screen.scss */
+  /* line 1009, ../sass/screen.scss */
   .header {
     height: 7em;
   }
 
-  /* line 1010, ../sass/screen.scss */
+  /* line 1013, ../sass/screen.scss */
   .logo {
     font-size: 6.1em;
     width: 49.15254%;
@@ -1396,7 +1399,7 @@ abbr {
     margin-right: 1.69492%;
   }
 
-  /* line 1015, ../sass/screen.scss */
+  /* line 1018, ../sass/screen.scss */
   #searchBar {
     width: 6.77966%;
     float: left;
@@ -1404,28 +1407,28 @@ abbr {
     height: 7em;
   }
 
-  /* line 1020, ../sass/screen.scss */
+  /* line 1023, ../sass/screen.scss */
   .searchBarIcon {
     margin-top: 1.9em;
   }
 
-  /* line 1024, ../sass/screen.scss */
+  /* line 1027, ../sass/screen.scss */
   #searchInputPushdown {
     width: 59em;
   }
 
-  /* line 1028, ../sass/screen.scss */
+  /* line 1031, ../sass/screen.scss */
   #searchInput {
     font-size: 6.2em;
     line-height: 1.1em;
   }
 
-  /* line 1033, ../sass/screen.scss */
+  /* line 1036, ../sass/screen.scss */
   .searchInputVisible {
     height: 6.7em;
   }
 
-  /* line 1037, ../sass/screen.scss */
+  /* line 1040, ../sass/screen.scss */
   .topAd {
     width: 40.67797%;
     float: right;
@@ -1433,31 +1436,31 @@ abbr {
     height: 7em;
   }
 
-  /* line 1042, ../sass/screen.scss */
+  /* line 1045, ../sass/screen.scss */
   #topAdFrame {
     width: 100%;
     height: 100%;
   }
 
-  /* line 1047, ../sass/screen.scss */
+  /* line 1050, ../sass/screen.scss */
   .floatingNav {
     max-width: 59em;
   }
 
-  /* line 1051, ../sass/screen.scss */
+  /* line 1054, ../sass/screen.scss */
   .floatingNav a {
     padding-left: 0.5em;
     padding-right: 0.5em;
   }
 
-  /* line 1056, ../sass/screen.scss */
+  /* line 1059, ../sass/screen.scss */
   .ledeStory {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 1060, ../sass/screen.scss */
+  /* line 1063, ../sass/screen.scss */
   .ledeRightHalf {
     width: 49.15254%;
     float: right;
@@ -1465,24 +1468,24 @@ abbr {
     margin-left: 50.84746%;
   }
 
-  /* line 1065, ../sass/screen.scss */
+  /* line 1068, ../sass/screen.scss */
   .quoteElement {
     height: 7em;
   }
 
-  /* line 1069, ../sass/screen.scss */
+  /* line 1072, ../sass/screen.scss */
   .quoteElement:after {
     margin: -0.1em 0 0 -1.5em;
   }
 
-  /* line 1073, ../sass/screen.scss */
+  /* line 1076, ../sass/screen.scss */
   .quoteText {
     width: 48.27586%;
     float: left;
     margin-right: 3.44828%;
   }
 
-  /* line 1077, ../sass/screen.scss */
+  /* line 1080, ../sass/screen.scss */
   .quoteAuthor {
     width: 48.27586%;
     float: right;
@@ -1496,25 +1499,25 @@ abbr {
     clear: both;
   }
 
-  /* line 1088, ../sass/screen.scss */
+  /* line 1091, ../sass/screen.scss */
   .secondLedeElement {
     margin-top: 0;
   }
 
-  /* line 1092, ../sass/screen.scss */
+  /* line 1095, ../sass/screen.scss */
   .secondLedeHeader {
     padding-top: 5%;
     font-size: 1.5em;
   }
 
-  /* line 1097, ../sass/screen.scss */
+  /* line 1100, ../sass/screen.scss */
   .featureStoriesReel {
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 1104, ../sass/screen.scss */
+  /* line 1107, ../sass/screen.scss */
   .featureOne,
   .featureTwo,
   .featureThree,
@@ -1523,20 +1526,20 @@ abbr {
     width: 14em;
   }
 
-  /* line 1110, ../sass/screen.scss */
+  /* line 1113, ../sass/screen.scss */
   .featureTwo,
   .featureFour {
     float: left;
   }
 
-  /* line 1114, ../sass/screen.scss */
+  /* line 1117, ../sass/screen.scss */
   .featureHeader {
     padding-top: 3.0em;
     font-size: 1.2em;
     z-index: 2;
   }
 
-  /* line 1120, ../sass/screen.scss */
+  /* line 1123, ../sass/screen.scss */
   .dimSumNews {
     width: 23.72881%;
     float: left;
@@ -1545,7 +1548,7 @@ abbr {
     padding-top: 0.5em;
   }
 
-  /* line 1126, ../sass/screen.scss */
+  /* line 1129, ../sass/screen.scss */
   .dimSumNewsTote, .musicReelTote,
   .movieReelTote,
   .foodReelTote,
@@ -1553,27 +1556,27 @@ abbr {
     font-size: 1.2em;
   }
 
-  /* line 1130, ../sass/screen.scss */
+  /* line 1133, ../sass/screen.scss */
   .dimSumHeader {
     font-size: 0.9em;
   }
 
-  /* line 1134, ../sass/screen.scss */
+  /* line 1137, ../sass/screen.scss */
   .dimSumReadMoreHeader {
     font-size: 0.8em;
   }
 
-  /* line 1138, ../sass/screen.scss */
+  /* line 1141, ../sass/screen.scss */
   .dimSumExcerpt {
     font-size: 0.9em;
   }
 
-  /* line 1142, ../sass/screen.scss */
+  /* line 1145, ../sass/screen.scss */
   .desktopMode {
     display: block;
   }
 
-  /* line 1146, ../sass/screen.scss */
+  /* line 1149, ../sass/screen.scss */
   .rightHalf {
     position: absolute;
     width: 49.15254%;
@@ -1582,7 +1585,7 @@ abbr {
     margin-left: 50.84746%;
   }
 
-  /* line 1152, ../sass/screen.scss */
+  /* line 1155, ../sass/screen.scss */
   .leftColumnHalf {
     width: 31.03448%;
     float: left;
@@ -1593,7 +1596,21 @@ abbr {
     clear: both;
   }
 
-  /* line 1162, ../sass/screen.scss */
+  /* line 1163, ../sass/screen.scss */
+  .ancillaryEntry {
+    padding: 0;
+    margin: 0 auto 1em;
+  }
+
+  /* line 1168, ../sass/screen.scss */
+  .ancillaryTitle {
+    margin: 0.2em 0 0;
+    padding: 0;
+    font: 400 0.9em/1.2em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
+    color: #333333;
+  }
+
+  /* line 1177, ../sass/screen.scss */
   .topRightHalf,
   .midRightHalf,
   .rightHalfAd {
@@ -1604,23 +1621,23 @@ abbr {
     margin-left: 34.48276%;
   }
 
-  /* line 1168, ../sass/screen.scss */
+  /* line 1183, ../sass/screen.scss */
   .facebookElement {
     margin-left: 0.1em;
   }
 
-  /* line 1172, ../sass/screen.scss */
+  /* line 1187, ../sass/screen.scss */
   .midRightHalf {
     margin-top: 5em;
   }
 
-  /* line 1176, ../sass/screen.scss */
+  /* line 1191, ../sass/screen.scss */
   #spotifyElement {
     margin-top: 0;
     margin-right: 0;
   }
 
-  /* line 1181, ../sass/screen.scss */
+  /* line 1196, ../sass/screen.scss */
   .rightHalfAd {
     margin-top: 30em;
   }

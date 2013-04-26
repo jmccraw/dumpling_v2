@@ -155,7 +155,8 @@ abbr {
 
 .ledeStoryLink,
 .secondLedeLink,
-.headerLink {
+.headerLink,
+.ancillaryLink {
 	text-decoration: none;
 }
 
@@ -371,7 +372,9 @@ abbr {
 }
 
 .dimSumLink:hover .dimSumHeader,
-.dimSumLink:active .dimSumHeader {
+.dimSumLink:active .dimSumHeader,
+.ancillaryLink:hover .ancillaryTitle,
+.ancillaryLink:active .ancillaryTitle {
 	text-decoration: underline;
 }
 
@@ -1155,6 +1158,18 @@ abbr {
 		margin: ($gutter-width / 2) auto 0;
 		padding: 0;
 		clear: both;
+	}
+	
+	.ancillaryEntry {
+		padding: 0;
+		margin: 0 auto $gutter-width;
+	}
+	
+	.ancillaryTitle {
+		margin: 0.2em 0 0;
+		padding: 0;
+		font: 400 0.9em/1.2em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
+		color: $font-color;
 	}
 	
 	.topRightHalf,
