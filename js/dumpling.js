@@ -1,15 +1,18 @@
 ;(function() {
 	"use strict";
 	
-	// Load Spotify if a big enough viewport
-	function loadSpotify() {
-		if (document.width > 500) {
+	/*
+	 * Load Spotify if a big enough viewport
+	 * @param{Number} width The width of the container
+	 */
+	function loadSpotify(container) {
+		if (container > 500) {
 			var width = Math.floor($(".midRightHalf").width());
 			var height = 80;
-			if ((703 < document.width) && (document.width < 944)) {
+			if ((703 < container) && (container < 944)) {
 				height = 370;
 			}
-			else if (document.width >= 944) {
+			else if (container >= 944) {
 				width = 304;// 448;//Math.floor($(".rightHalf").width() / 2.1);
 				height = 384;
 			}
@@ -78,14 +81,12 @@
 	function enableMobileMenu(width) {
 		// functions for small-screen layouts (mobile)
 		if (width < 704) {
-			console.log("enabling MOBILE");
 			// close menu initially
 			$(".floatingNav").addClass("floatingNavClosed");
 		}
 		// tablet/desktop
 		else {
 			$(".floatingNav").removeClass("floatingNavClosed floatingNavOpen");
-			console.log("disabling MOBILE");
 		}
 	};
 	
@@ -143,7 +144,6 @@
 	
 	// Drop down menu animation for mobile/mobile-portrait views
 	$(".header").click(function(evt) {
-		console.log("header clicked");
 		var nav = $(".floatingNav");
 		if ($(nav).hasClass("floatingNavClosed") || $(nav).hasClass("floatingNavOpen")) {
 			if (evt.preventDefault) {
@@ -164,7 +164,7 @@
 		enableMobileAds(width);
 		loadSocialIcons();
 		loadSearchInputPushdown();
-		loadSpotify();
+		loadSpotify(width);
 	};
 	
 	kickoff();
