@@ -451,7 +451,7 @@ abbr {
 
 .rightHalfAd {
 	width: 100%;
-	height: $gutter-width * 34;
+	height: $gutter-width * 5;
 	text-align: center;
 }
 
@@ -678,6 +678,11 @@ abbr {
 	
 	.facebookElement {
 		margin-left: 3em;
+	}
+	
+	.rightHalfAd {
+		min-width: $column-width * 5;
+		width: 69%;
 	}
 	
 	.musicReelHeader,
