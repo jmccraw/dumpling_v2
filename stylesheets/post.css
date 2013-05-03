@@ -1,0 +1,32 @@
+/* line 3, ../sass/post.scss */
+.articleContainer {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  clear: both;
+}
+
+/* line 10, ../sass/post.scss */
+.articleMainImage {
+  margin-bottom: -1.9em;
+  width: 100%;
+  height: auto;
+}
+
+/* line 16, ../sass/post.scss */
+.articleHeader {
+  position: relative;
+  margin: 0 0 1em;
+  width: 80%;
+  font: 700 2em/1em Georgia, "Times New Roman", Times, serif;
+  color: #333333;
+  text-align: left;
+  background: #fff;
+}
+
+/* line 26, ../sass/post.scss */
+.articleByline {
+  margin: 0 0 1em;
+  font: 400 0.8em/0.4em Georgia, "Times New Roman", Times, serif;
+  color: #333333;
+}

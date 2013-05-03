@@ -26,6 +26,14 @@ figcaption {
 	display: block;
 }
 
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: 700;
+}
+
 body {
 	margin: 0 auto;
 	background: $background-color;
@@ -584,6 +592,10 @@ abbr {
 	text-decoration: underline;
 }
 /* END BOTTOM CONTENT */
+
+/* POST CONTENT */
+@import "post";
+/* END POST CONTENT */
 
 /* FOOTER */
 .footer {

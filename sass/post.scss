@@ -1,0 +1,30 @@
+@import "base";
+
+.articleContainer {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	clear: both;
+}
+
+.articleMainImage {
+	margin-bottom: -1.9em;
+	width: 100%;
+	height: auto;
+}
+
+.articleHeader {
+	position: relative;
+	margin: 0 0 $gutter-width;
+	width: 80%;
+	font: 700 2.0em/1.0em $serif-fonts;
+	color: $font-color;
+	text-align: left;
+	background: #fff;
+}
+
+.articleByline {
+	margin: 0 0 $gutter-width;
+	font: 400 0.8em/0.4em $serif-fonts;
+	color: $font-color;
+}
