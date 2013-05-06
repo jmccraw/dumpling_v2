@@ -1,4 +1,5 @@
 @import "base";
+@include caviar-italic;
 
 .articleContainer {
 	position: relative;
@@ -16,15 +17,28 @@
 .articleHeader {
 	position: relative;
 	margin: 0 0 $gutter-width;
-	width: 80%;
+	width: 85%;
 	font: 700 2.0em/1.0em $serif-fonts;
 	color: $font-color;
 	text-align: left;
 	background: #fff;
 }
 
-.articleByline {
-	margin: 0 0 $gutter-width;
-	font: 400 0.8em/0.4em $serif-fonts;
+.articleContainer p {
+	margin: 0;
+	padding: 0 0 $gutter-width;
+	font: 400 1.1em/1.3em $serif-fonts;
 	color: $font-color;
+}
+
+.articleContainer p.articleByline {
+	margin: -$gutter-width 0 $gutter-width;
+	font: 400 0.8em/0.4em $serif-fonts;
+}
+
+.articleDek {
+	margin: 0 0 $gutter-width;
+	padding: 0;
+	font: 400 1.5em/1.1em "CaviarDreamsItalic", "Century Gothic", Arial, sans-serif;
+	color: #ccc;
 }

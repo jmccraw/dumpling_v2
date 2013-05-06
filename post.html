@@ -18,6 +18,7 @@
 		document.createElement("footer");
 		document.createElement("figure");
 		document.createElement("figcaption");
+		document.createElement("time");
 	</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" type="text/javascript"></script>
 </head>
@@ -69,15 +70,32 @@
 		<article class="articleContainer">
 			<img class="articleMainImage" src="http://placekitten.com/600/400" />
 			<h1 class="articleHeader">The Third Culture: The &ldquo;In-betweeners&rdquo;</h1>
-			<p class="articleByline">By <span class="articleAuthor">Isidora Torres</span></p>
-			<time class="articleDate">March 22, 2013</time>
+			<p class="articleByline">By <span class="articleAuthor">Isidora Torres</span> | <time class="articleDate" datetime="2013-03-22" pubdate>March 22, 2013</time></p>
+			<h4 class="articleDek">From a fairy tale, comes the stories of those left behind by culture.</h4>
+			<p>On her first day of high school, Christina Choi remembers applying makeup to cover her cystic acne. But applying makeup wasn’t only about finding the right shade, but also about helping to improve her self-esteem. Choi continued to experiment with the power of makeup and to what she calls hobby or side jobs working as a makeup artist at Hard Candy and M.A.C. Cosmetics throughout college.</p>
+			<p>After graduation, she realized her side passion could become a career enhancing women’s natural beauty. She worked nearly eight years at M.A.C., with the later time spent on the industry side at M.A.C. PRO, a division of the beauty company that works with people in the industry. From there, she went to Bare Escentuals, working her way up to designer of makeup artistry and national makeup artist, which allowed her to travel across the country giving women makeovers and teaching them about applying makeup. Choi wanted to take her career to the next level, so she took her years of artistry, education, business acumen and sharing and launched her eponymous cosmetics line of BB creams, brushes, eye shadows and lip glosses.</p>
 		</article>
 	</main>
 	<!-- END MAIN CONTENT -->
 	
 	<!-- LEFT POST CONTAINER -->
 	<section class="leftPostContainer">
+	    <div id="disqus_thread"></div>
+	    <script>
+	        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	        var disqus_shortname = 'dumplingmagazine'; // required: replace example with your forum shortname
+	        var disqus_url = "http://dumplingmag.com";
 	
+	        /* * * DON'T EDIT BELOW THIS LINE * * */
+	        (function() {
+	            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+// TODO FIXME get rid of http: part
+	            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+	            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	        })();
+	    </script>
+	    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 	</section>
 	<!-- END LEFT POST CONTAINER -->
 	
