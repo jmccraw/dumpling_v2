@@ -248,12 +248,12 @@ abbr {
 /* line 149, ../sass/screen.scss */
 .mainContent {
   position: relative;
-  margin: 0.5em auto;
-  padding: 0;
   width: 100%;
   float: left;
   margin-right: 4.16667%;
   display: inline;
+  margin: 0.5em auto;
+  padding: 0;
 }
 
 /* line 156, ../sass/screen.scss */
@@ -828,20 +828,21 @@ abbr {
   position: relative;
   margin: 0 auto;
   padding: 0;
+  width: 100%;
   clear: both;
 }
 
-/* line 11, ../sass/post.scss */
+/* line 12, ../sass/post.scss */
 .articleMainImage {
   margin-bottom: -1.9em;
   width: 100%;
   height: auto;
 }
 
-/* line 17, ../sass/post.scss */
+/* line 18, ../sass/post.scss */
 .articleHeader {
   position: relative;
-  margin: 0 0 1em;
+  margin: 0 0 1em -0.5em;
   width: 85%;
   font: 700 2em/1em Georgia, "Times New Roman", Times, serif;
   color: #333333;
@@ -849,7 +850,7 @@ abbr {
   background: #fff;
 }
 
-/* line 27, ../sass/post.scss */
+/* line 28, ../sass/post.scss */
 .articleContainer p {
   margin: 0;
   padding: 0 0 1em;
@@ -857,13 +858,13 @@ abbr {
   color: #333333;
 }
 
-/* line 34, ../sass/post.scss */
+/* line 35, ../sass/post.scss */
 .articleContainer p.articleByline {
   margin: -1em 0 1em;
-  font: 400 0.8em/0.4em Georgia, "Times New Roman", Times, serif;
+  font: 400 0.8em/0.4em Tahoma, Helvetica, Arial, sans-serif;
 }
 
-/* line 39, ../sass/post.scss */
+/* line 40, ../sass/post.scss */
 .articleDek {
   margin: 0 0 1em;
   padding: 0;
@@ -871,6 +872,32 @@ abbr {
   color: #ccc;
 }
 
+@media (min-width: 59em) {
+  /* line 59, ../sass/post.scss */
+  .articleContainer {
+    width: 57.62712%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 16.94915%;
+  }
+
+  /* line 64, ../sass/post.scss */
+  .leftPostContainer {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+    background: red;
+  }
+
+  /* line 69, ../sass/post.scss */
+  .rightPostContainer {
+    position: absolute;
+    width: 23.72881%;
+    float: right;
+    margin-right: 0;
+    margin-left: 59.32203%;
+  }
+}
 /* END POST CONTENT */
 /* FOOTER */
 /* line 601, ../sass/screen.scss */

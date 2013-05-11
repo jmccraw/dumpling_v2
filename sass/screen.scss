@@ -148,9 +148,9 @@ abbr {
 /* MAIN CONTENT */
 .mainContent {
 	position: relative;
+	@include span-columns($total-columns);
 	margin: ($gutter-width / 2) auto;
 	padding: 0;
-	@include span-columns($total-columns);
 }
 
 .ledeStory {

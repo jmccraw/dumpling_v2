@@ -5,6 +5,7 @@
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
+	width: 100%;
 	clear: both;
 }
 
@@ -16,7 +17,7 @@
 
 .articleHeader {
 	position: relative;
-	margin: 0 0 $gutter-width;
+	margin: 0 0 $gutter-width (-$gutter-width / 2);
 	width: 85%;
 	font: 700 2.0em/1.0em $serif-fonts;
 	color: $font-color;
@@ -33,7 +34,7 @@
 
 .articleContainer p.articleByline {
 	margin: -$gutter-width 0 $gutter-width;
-	font: 400 0.8em/0.4em $serif-fonts;
+	font: 400 0.8em/0.4em $sans-serif-fonts;
 }
 
 .articleDek {
@@ -41,4 +42,33 @@
 	padding: 0;
 	font: 400 1.5em/1.1em "CaviarDreamsItalic", "Century Gothic", Arial, sans-serif;
 	color: #ccc;
+}
+
+
+@include at-breakpoint($phone-portrait) {
+	
+}
+
+
+@include at-breakpoint($tablet) {
+	
+}
+
+
+@include at-breakpoint($computer) {
+	.articleContainer {
+		@include span-columns(7, $computer);
+		@include pre(2, $computer);
+	}
+	
+	.leftPostContainer {
+		@include span-columns(2, $computer);
+		background: red;
+	}
+	
+	.rightPostContainer {
+		position: absolute;
+		@include span-columns(3 omega, $computer);
+		@include pre(7, $computer);
+	}
 }
