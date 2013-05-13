@@ -44,9 +44,99 @@
 	color: #ccc;
 }
 
+.articleAd300x600,
+.articleAd300x250 {
+	position: relative;
+	margin: 0.5em auto $gutter-width;
+	width: 300px;
+	height: 600px;
+	background: transparent url(http://placehold.it/300x600) center center no-repeat;
+}
+
+.articleAd300x250 {
+	height: 250px;
+	background-image: url(http://placehold.it/300x250);
+}
+
+.articleAdTout {
+	position: absolute;
+	margin-top: -$gutter-width;
+	left: 31%;
+	font: 400 0.7em $sans-serif-fonts;
+	color: #777;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.authorElement {
+	position: relative;
+	margin: 0 auto $gutter-width;
+	padding: 0;
+	width: 100%;
+	height: 12.5em;
+	clear: both;
+}
+
+.authorImage {
+	float: left;
+	padding-right: 0.5em;
+	border: none;
+	border-right: 1px solid #ccc;
+}
+
+.authorInfo {
+	float: right;
+	width: 43%;
+}
+
+.authorName,
+.authorQuote,
+.authorBio {
+	display: block;
+	font: 400 1.0em/1.5em $sans-serif-fonts;
+	color: $font-color;
+}
+
+.authorName {
+	font-weight: 700;
+}
+
+.authorQuote {
+	margin-bottom: 0.3em;
+	font-style: italic;
+}
+
+.authorBio {
+	font-size: 0.8em;
+	line-height: 1.2em;
+}
+
+.authorSocialIcons {
+	margin-left: -2.5em;
+	width: 100%;
+	list-style: none;
+}
+
+.authorFacebook,
+.authorTwitter,
+.authorGoogle,
+.authorEmail {
+	float: left;
+	margin: 0;
+	padding: 0 0.5em 0 0;
+	width: 30px;
+	height: 30px;
+	background: transparent url(http://placehold.it/30) left center no-repeat;
+}
 
 @include at-breakpoint($phone-portrait) {
 	
+	.articleAd300x600,
+	.articleAd300x250 {
+		margin-right: $gutter-width;
+		margin-bottom: 0.5em;
+		float: left;
+	}
 }
 
 

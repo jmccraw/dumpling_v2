@@ -111,9 +111,11 @@
 	function enableMobileAds(width) {
 		if (width < 704) {
 			$("#rightHalfAd").attr("src", "http://placehold.it/280x60");
+			$(".articleAd300x600").addClass("articleAd300x250").removeClass("articleAd300x600");
 		}
 		else {
 			$("#rightHalfAd").attr("src", "http://placehold.it/304x300");
+			$(".articleAd300x250").addClass("articleAd300x600").removeClass("articleAd300x250");
 		}
 	};
 	
