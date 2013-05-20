@@ -1,12 +1,19 @@
 @import "base";
 @include caviar-italic;
 
-.articleContainer {
+.articleContainer,
+.articleHeaderContainer,
+.articleContentContainer {
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
 	width: 100%;
 	clear: both;
+}
+
+.articleHeaderContainer,
+.articleContentContainer {
+	margin: 0;
 }
 
 .articleMainImage {
@@ -28,7 +35,7 @@
 .articleContainer p {
 	margin: 0;
 	padding: 0 0 $gutter-width;
-	font: 400 1.1em/1.3em $serif-fonts;
+	font: 400 1.1em/1.4em $serif-fonts;
 	color: $font-color;
 }
 
@@ -42,6 +49,10 @@
 	padding: 0;
 	font: 400 1.5em/1.1em "CaviarDreamsItalic", "Century Gothic", Arial, sans-serif;
 	color: #ccc;
+}
+
+.articleContentImage {
+	
 }
 
 .articleAd300x600,
@@ -131,6 +142,7 @@
 	width: 30px;
 	height: 30px;
 	background: transparent url(http://placehold.it/30) left center no-repeat;
+	cursor: pointer;
 }
 
 @include at-breakpoint($phone-portrait) {
@@ -156,10 +168,14 @@
 		margin-bottom: 0;
 	}
 	
+	.articleHeaderContainer {
+		margin-left: -6.0em;
+		width: 117.5%;
+	}
+	
 	.articleHeader {
-		margin-top: 0.3em;
-		margin-bottom: 0.5em;
-		width: 103.5%;
+		margin: 0.3em 0 0.5em;
+		width: 100%;
 		font-size: 2.5em;
 		line-height: 1.1em;
 	}
@@ -167,11 +183,35 @@
 	.articleContainer p.articleByline,
 	.articleDek {
 		margin-top: -0.5em;
-		margin-left: -0.5em;
 	}
 	
 	.articleContainer p.articleByline {
-		margin-bottom: 1.0em;
+		margin-bottom: 1.3em;
+	}
+	
+	.articleContentContainer {
+		margin-left: -10em;
+		width: 129%;
+	}
+	
+	.articleContentLeft {
+		width: 77.5%;
+		float: left;
+	}
+	
+	.articleContentRight {
+		width: 77.5%;
+		float: right;
+	}
+	
+	.floatForAd {
+		width: 53%;
+	}
+	
+	.articleAd300x600,
+	.articleAd300x250 {
+		margin-left: 0;
+		float: left;
 	}
 	
 	.leftPostContainer {
@@ -205,11 +245,6 @@
 	.authorGoogle,
 	.authorEmail {
 		padding-right: 0.3em;
-	}
-	
-	.articleAd300x600,
-	.articleAd300x250 {
-		margin-left: -10em;
 	}
 }
 

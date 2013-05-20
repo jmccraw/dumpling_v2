@@ -7,8 +7,10 @@
   font-style: normal;
 }
 
-/* line 4, ../sass/post.scss */
-.articleContainer {
+/* line 6, ../sass/post.scss */
+.articleContainer,
+.articleHeaderContainer,
+.articleContentContainer {
   position: relative;
   margin: 0 auto;
   padding: 0;
@@ -16,14 +18,20 @@
   clear: both;
 }
 
-/* line 12, ../sass/post.scss */
+/* line 15, ../sass/post.scss */
+.articleHeaderContainer,
+.articleContentContainer {
+  margin: 0;
+}
+
+/* line 19, ../sass/post.scss */
 .articleMainImage {
   margin-bottom: -1.9em;
   width: 100%;
   height: auto;
 }
 
-/* line 18, ../sass/post.scss */
+/* line 25, ../sass/post.scss */
 .articleHeader {
   position: relative;
   margin: 0 0 1em -0.5em;
@@ -34,21 +42,21 @@
   background: #fff;
 }
 
-/* line 28, ../sass/post.scss */
+/* line 35, ../sass/post.scss */
 .articleContainer p {
   margin: 0;
   padding: 0 0 1em;
-  font: 400 1.1em/1.3em Georgia, "Times New Roman", Times, serif;
+  font: 400 1.1em/1.4em Georgia, "Times New Roman", Times, serif;
   color: #333333;
 }
 
-/* line 35, ../sass/post.scss */
+/* line 42, ../sass/post.scss */
 .articleContainer p.articleByline {
   margin: -1em 0 1em;
   font: 400 0.8em/0.4em Tahoma, Helvetica, Arial, sans-serif;
 }
 
-/* line 40, ../sass/post.scss */
+/* line 47, ../sass/post.scss */
 .articleDek {
   margin: 0 0 1em;
   padding: 0;
@@ -56,7 +64,7 @@
   color: #ccc;
 }
 
-/* line 48, ../sass/post.scss */
+/* line 59, ../sass/post.scss */
 .articleAd300x600,
 .articleAd300x250 {
   position: relative;
@@ -66,13 +74,13 @@
   background: transparent url(http://placehold.it/300x600) center center no-repeat;
 }
 
-/* line 56, ../sass/post.scss */
+/* line 67, ../sass/post.scss */
 .articleAd300x250 {
   height: 250px;
   background-image: url(http://placehold.it/300x250);
 }
 
-/* line 61, ../sass/post.scss */
+/* line 72, ../sass/post.scss */
 .articleAdTout {
   position: absolute;
   margin-top: -1em;
@@ -83,7 +91,7 @@
   text-align: center;
 }
 
-/* line 71, ../sass/post.scss */
+/* line 82, ../sass/post.scss */
 .authorElement {
   position: relative;
   margin: 0 auto 1em;
@@ -93,7 +101,7 @@
   clear: both;
 }
 
-/* line 80, ../sass/post.scss */
+/* line 91, ../sass/post.scss */
 .authorImage {
   float: left;
   padding-right: 0.5em;
@@ -103,14 +111,14 @@
   border-right: 1px solid #cccccc;
 }
 
-/* line 89, ../sass/post.scss */
+/* line 100, ../sass/post.scss */
 .authorInfo {
   float: left;
   margin-left: 0.5em;
   width: 59%;
 }
 
-/* line 97, ../sass/post.scss */
+/* line 108, ../sass/post.scss */
 .authorName,
 .authorQuote,
 .authorBio {
@@ -119,32 +127,32 @@
   color: #333333;
 }
 
-/* line 103, ../sass/post.scss */
+/* line 114, ../sass/post.scss */
 .authorName {
   font-weight: 700;
 }
 
-/* line 107, ../sass/post.scss */
+/* line 118, ../sass/post.scss */
 .authorQuote {
   margin-bottom: 0.3em;
   font-size: 0.9em;
   font-style: italic;
 }
 
-/* line 113, ../sass/post.scss */
+/* line 124, ../sass/post.scss */
 .authorBio {
   font-size: 0.8em;
   line-height: 1.2em;
 }
 
-/* line 118, ../sass/post.scss */
+/* line 129, ../sass/post.scss */
 .authorSocialIcons {
   margin-left: -2.5em;
   width: 100%;
   list-style: none;
 }
 
-/* line 127, ../sass/post.scss */
+/* line 138, ../sass/post.scss */
 .authorFacebook,
 .authorTwitter,
 .authorGoogle,
@@ -155,15 +163,16 @@
   width: 30px;
   height: 30px;
   background: transparent url(http://placehold.it/30) left center no-repeat;
+  cursor: pointer;
 }
 
 @media (min-width: 34em) {
-  /* line 137, ../sass/post.scss */
+  /* line 149, ../sass/post.scss */
   .authorInfo {
     width: 70%;
   }
 
-  /* line 142, ../sass/post.scss */
+  /* line 154, ../sass/post.scss */
   .articleAd300x600,
   .articleAd300x250 {
     margin-right: 1em;
@@ -172,40 +181,74 @@
   }
 }
 @media (min-width: 44em) {
-  /* line 151, ../sass/post.scss */
+  /* line 163, ../sass/post.scss */
   .mainContent {
     width: 77.27273%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 155, ../sass/post.scss */
+  /* line 167, ../sass/post.scss */
   .articleMainImage {
     margin-bottom: 0;
   }
 
-  /* line 159, ../sass/post.scss */
+  /* line 171, ../sass/post.scss */
+  .articleHeaderContainer {
+    margin-left: -6.0em;
+    width: 117.5%;
+  }
+
+  /* line 176, ../sass/post.scss */
   .articleHeader {
-    margin-top: 0.3em;
-    margin-bottom: 0.5em;
-    width: 103.5%;
+    margin: 0.3em 0 0.5em;
+    width: 100%;
     font-size: 2.5em;
     line-height: 1.1em;
   }
 
-  /* line 168, ../sass/post.scss */
+  /* line 184, ../sass/post.scss */
   .articleContainer p.articleByline,
   .articleDek {
     margin-top: -0.5em;
-    margin-left: -0.5em;
   }
 
-  /* line 173, ../sass/post.scss */
+  /* line 188, ../sass/post.scss */
   .articleContainer p.articleByline {
-    margin-bottom: 1.0em;
+    margin-bottom: 1.3em;
   }
 
-  /* line 177, ../sass/post.scss */
+  /* line 192, ../sass/post.scss */
+  .articleContentContainer {
+    margin-left: -10em;
+    width: 129%;
+  }
+
+  /* line 197, ../sass/post.scss */
+  .articleContentLeft {
+    width: 77.5%;
+    float: left;
+  }
+
+  /* line 202, ../sass/post.scss */
+  .articleContentRight {
+    width: 77.5%;
+    float: right;
+  }
+
+  /* line 207, ../sass/post.scss */
+  .floatForAd {
+    width: 53%;
+  }
+
+  /* line 212, ../sass/post.scss */
+  .articleAd300x600,
+  .articleAd300x250 {
+    margin-left: 0;
+    float: left;
+  }
+
+  /* line 217, ../sass/post.scss */
   .leftPostContainer {
     width: 20.45455%;
     float: left;
@@ -213,7 +256,7 @@
     margin: 0.5em 0 0;
   }
 
-  /* line 182, ../sass/post.scss */
+  /* line 222, ../sass/post.scss */
   .authorElement {
     min-height: 21.0em;
     height: auto;
@@ -221,39 +264,33 @@
     border-right: 1px solid #019875;
   }
 
-  /* line 189, ../sass/post.scss */
+  /* line 229, ../sass/post.scss */
   .authorInfo {
     margin-left: 0;
     width: 97%;
   }
 
-  /* line 194, ../sass/post.scss */
+  /* line 234, ../sass/post.scss */
   .authorName {
     margin-top: 0.3em;
   }
 
-  /* line 198, ../sass/post.scss */
+  /* line 238, ../sass/post.scss */
   .authorImage {
     padding-right: 0;
     border-right: none;
   }
 
-  /* line 206, ../sass/post.scss */
+  /* line 246, ../sass/post.scss */
   .authorFacebook,
   .authorTwitter,
   .authorGoogle,
   .authorEmail {
     padding-right: 0.3em;
   }
-
-  /* line 211, ../sass/post.scss */
-  .articleAd300x600,
-  .articleAd300x250 {
-    margin-left: -10em;
-  }
 }
 @media (min-width: 59em) {
-  /* line 218, ../sass/post.scss */
+  /* line 253, ../sass/post.scss */
   .articleContainer {
     width: 57.62712%;
     float: left;
@@ -261,7 +298,7 @@
     margin-left: 16.94915%;
   }
 
-  /* line 223, ../sass/post.scss */
+  /* line 258, ../sass/post.scss */
   .leftPostContainer {
     position: absolute;
     width: 15.25424%;
@@ -269,7 +306,7 @@
     margin-right: 1.69492%;
   }
 
-  /* line 228, ../sass/post.scss */
+  /* line 263, ../sass/post.scss */
   .rightPostContainer {
     position: absolute;
     width: 23.72881%;
