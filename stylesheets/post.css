@@ -64,7 +64,14 @@
   color: #ccc;
 }
 
-/* line 59, ../sass/post.scss */
+/* line 54, ../sass/post.scss */
+.articleContentImage {
+  margin: 0 1em 1.5em;
+  width: 100%;
+  height: auto;
+}
+
+/* line 61, ../sass/post.scss */
 .articleAd300x600,
 .articleAd300x250 {
   position: relative;
@@ -74,13 +81,13 @@
   background: transparent url(http://placehold.it/300x600) center center no-repeat;
 }
 
-/* line 67, ../sass/post.scss */
+/* line 69, ../sass/post.scss */
 .articleAd300x250 {
   height: 250px;
   background-image: url(http://placehold.it/300x250);
 }
 
-/* line 72, ../sass/post.scss */
+/* line 74, ../sass/post.scss */
 .articleAdTout {
   position: absolute;
   margin-top: -1em;
@@ -91,7 +98,7 @@
   text-align: center;
 }
 
-/* line 82, ../sass/post.scss */
+/* line 84, ../sass/post.scss */
 .authorElement {
   position: relative;
   margin: 0 auto 1em;
@@ -101,7 +108,7 @@
   clear: both;
 }
 
-/* line 91, ../sass/post.scss */
+/* line 93, ../sass/post.scss */
 .authorImage {
   float: left;
   padding-right: 0.5em;
@@ -111,14 +118,14 @@
   border-right: 1px solid #cccccc;
 }
 
-/* line 100, ../sass/post.scss */
+/* line 102, ../sass/post.scss */
 .authorInfo {
   float: left;
   margin-left: 0.5em;
   width: 59%;
 }
 
-/* line 108, ../sass/post.scss */
+/* line 110, ../sass/post.scss */
 .authorName,
 .authorQuote,
 .authorBio {
@@ -127,32 +134,32 @@
   color: #333333;
 }
 
-/* line 114, ../sass/post.scss */
+/* line 116, ../sass/post.scss */
 .authorName {
   font-weight: 700;
 }
 
-/* line 118, ../sass/post.scss */
+/* line 120, ../sass/post.scss */
 .authorQuote {
   margin-bottom: 0.3em;
   font-size: 0.9em;
   font-style: italic;
 }
 
-/* line 124, ../sass/post.scss */
+/* line 126, ../sass/post.scss */
 .authorBio {
   font-size: 0.8em;
   line-height: 1.2em;
 }
 
-/* line 129, ../sass/post.scss */
+/* line 131, ../sass/post.scss */
 .authorSocialIcons {
   margin-left: -2.5em;
   width: 100%;
   list-style: none;
 }
 
-/* line 138, ../sass/post.scss */
+/* line 140, ../sass/post.scss */
 .authorFacebook,
 .authorTwitter,
 .authorGoogle,
@@ -167,12 +174,12 @@
 }
 
 @media (min-width: 34em) {
-  /* line 149, ../sass/post.scss */
+  /* line 151, ../sass/post.scss */
   .authorInfo {
     width: 70%;
   }
 
-  /* line 154, ../sass/post.scss */
+  /* line 156, ../sass/post.scss */
   .articleAd300x600,
   .articleAd300x250 {
     margin-right: 1em;
@@ -181,25 +188,25 @@
   }
 }
 @media (min-width: 44em) {
-  /* line 163, ../sass/post.scss */
+  /* line 165, ../sass/post.scss */
   .mainContent {
     width: 77.27273%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 167, ../sass/post.scss */
+  /* line 169, ../sass/post.scss */
   .articleMainImage {
     margin-bottom: 0;
   }
 
-  /* line 171, ../sass/post.scss */
+  /* line 173, ../sass/post.scss */
   .articleHeaderContainer {
     margin-left: -6.0em;
     width: 117.5%;
   }
 
-  /* line 176, ../sass/post.scss */
+  /* line 178, ../sass/post.scss */
   .articleHeader {
     margin: 0.3em 0 0.5em;
     width: 100%;
@@ -207,48 +214,48 @@
     line-height: 1.1em;
   }
 
-  /* line 184, ../sass/post.scss */
+  /* line 186, ../sass/post.scss */
   .articleContainer p.articleByline,
   .articleDek {
     margin-top: -0.5em;
   }
 
-  /* line 188, ../sass/post.scss */
+  /* line 190, ../sass/post.scss */
   .articleContainer p.articleByline {
     margin-bottom: 1.3em;
   }
 
-  /* line 192, ../sass/post.scss */
+  /* line 194, ../sass/post.scss */
   .articleContentContainer {
     margin-left: -10em;
     width: 129%;
   }
 
-  /* line 197, ../sass/post.scss */
+  /* line 199, ../sass/post.scss */
   .articleContentLeft {
     width: 77.5%;
     float: left;
   }
 
-  /* line 202, ../sass/post.scss */
+  /* line 204, ../sass/post.scss */
   .articleContentRight {
     width: 77.5%;
     float: right;
   }
 
-  /* line 207, ../sass/post.scss */
+  /* line 209, ../sass/post.scss */
   .floatForAd {
     width: 53%;
   }
 
-  /* line 212, ../sass/post.scss */
+  /* line 214, ../sass/post.scss */
   .articleAd300x600,
   .articleAd300x250 {
     margin-left: 0;
     float: left;
   }
 
-  /* line 217, ../sass/post.scss */
+  /* line 219, ../sass/post.scss */
   .leftPostContainer {
     width: 20.45455%;
     float: left;
@@ -256,7 +263,7 @@
     margin: 0.5em 0 0;
   }
 
-  /* line 222, ../sass/post.scss */
+  /* line 224, ../sass/post.scss */
   .authorElement {
     min-height: 21.0em;
     height: auto;
@@ -264,54 +271,56 @@
     border-right: 1px solid #019875;
   }
 
-  /* line 229, ../sass/post.scss */
+  /* line 231, ../sass/post.scss */
   .authorInfo {
     margin-left: 0;
     width: 97%;
   }
 
-  /* line 234, ../sass/post.scss */
+  /* line 236, ../sass/post.scss */
   .authorName {
     margin-top: 0.3em;
   }
 
-  /* line 238, ../sass/post.scss */
+  /* line 240, ../sass/post.scss */
   .authorImage {
     padding-right: 0;
     border-right: none;
   }
 
-  /* line 246, ../sass/post.scss */
+  /* line 248, ../sass/post.scss */
   .authorFacebook,
   .authorTwitter,
   .authorGoogle,
   .authorEmail {
     padding-right: 0.3em;
   }
+
+  /* line 252, ../sass/post.scss */
+  .authorSocialIconsLast {
+    padding-right: 0;
+  }
 }
 @media (min-width: 59em) {
-  /* line 253, ../sass/post.scss */
-  .articleContainer {
+  /* line 259, ../sass/post.scss */
+  .mainContent {
     width: 57.62712%;
     float: left;
     margin-right: 1.69492%;
     margin-left: 16.94915%;
   }
 
-  /* line 258, ../sass/post.scss */
+  /* line 264, ../sass/post.scss */
   .leftPostContainer {
     position: absolute;
-    width: 15.25424%;
-    float: left;
-    margin-right: 1.69492%;
+    margin: 0.5em 0 0;
+    width: 8.95em;
   }
 
-  /* line 263, ../sass/post.scss */
+  /* line 270, ../sass/post.scss */
   .rightPostContainer {
     position: absolute;
-    width: 23.72881%;
-    float: right;
-    margin-right: 0;
-    margin-left: 59.32203%;
+    margin: 0.5em 0 0.5em 45em;
+    width: 14em;
   }
 }

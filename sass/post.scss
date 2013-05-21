@@ -52,7 +52,9 @@
 }
 
 .articleContentImage {
-	
+	margin: 0 $gutter-width 1.5em;
+	width: 100%;
+	height: auto;
 }
 
 .articleAd300x600,
@@ -246,23 +248,28 @@
 	.authorEmail {
 		padding-right: 0.3em;
 	}
+
+	.authorSocialIconsLast {
+		padding-right: 0;
+	}
 }
 
 
 @include at-breakpoint($computer) {
-	.articleContainer {
+	.mainContent {
 		@include span-columns(7, $computer);
 		@include pre(2, $computer);
 	}
 	
 	.leftPostContainer {
 		position: absolute;
-		@include span-columns(2, $computer);
+		margin: 0.5em 0 0;
+		width: 8.95em;
 	}
 	
 	.rightPostContainer {
 		position: absolute;
-		@include span-columns(3 omega, $computer);
-		@include pre(7, $computer);
+		margin: 0.5em 0 0.5em 45em;
+		width: 14em;
 	}
 }
