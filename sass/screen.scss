@@ -146,7 +146,8 @@ abbr {
 /* END FLOATING NAV */
 
 /* MAIN CONTENT */
-.mainContent {
+.mainContent,
+.mainContentPost {
 	position: relative;
 	@include span-columns($total-columns);
 	margin: ($gutter-width / 2) auto;
@@ -197,13 +198,17 @@ abbr {
 	text-align: right;
 }
 
-.quoteElement {
+.quoteElement,
+.articleQuoteElement {
+	position: relative;
 	margin: $gutter-width auto 0;
 	padding: 0;
 	width: 100%;
+	clear: both;
 }
 
-.quoteElement:after {
+.quoteElement:after,
+.articleQuoteElement:after {
 	content: "\201c";
 	position: absolute;
 	margin: -0.57em 0 0 0.05em;
@@ -215,7 +220,8 @@ abbr {
 	z-index: 1;
 }
 
-.quoteText {
+.quoteText,
+.articleQuoteText {
 	position: relative;
 	margin: 0;
 	padding: 0;
@@ -225,7 +231,8 @@ abbr {
 	z-index: 2;
 }
 
-.quoteAuthor {
+.quoteAuthor,
+.articleQuoteAuthor {
 	padding: 0;
 	font: 700 80% $serif-fonts;
 	text-align: right;
@@ -764,7 +771,6 @@ abbr {
 		@include transition-timing-function(ease-out);
 		background: #fff;
 		overflow: hidden;
-		background: red;
 		clear: both;
 	}
 	
@@ -819,6 +825,7 @@ abbr {
 	.topAd {
 		display: block;
 		@include span-columns(3 omega, $tablet);
+		margin-top: 1.3em;
 		height: 6em;
 		overflow: hidden;
 	}
@@ -1056,6 +1063,7 @@ abbr {
 
 	.topAd {
 		@include span-columns(5 omega, $computer);
+		margin-top: 2.0em;
 		height: $computer-height;
 	}
 	
@@ -1094,7 +1102,8 @@ abbr {
 		@include span-columns(3, $computer / 2);
 	}
 	
-	.quoteAuthor {
+	.quoteAuthor,
+	.articleQuoteAuthor {
 		@include span-columns(3 omega, $computer / 2);
 		@include pre(3, $computer / 2);
 		position: absolute;

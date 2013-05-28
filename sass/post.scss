@@ -51,6 +51,32 @@
 	color: #ccc;
 }
 
+.articleSectionHeader {
+	position: relative;
+	margin: 0 0 0.6em;
+	padding: ($gutter-width * 1.5) 0 0;
+	font: 700 1.5em/1 "CaviarDreamsBold", "Century Gothic", Arial, sans-serif;
+	clear: both;
+}
+
+.articleQuoteElement{
+	margin-bottom: 1.5em;
+}
+
+.articleQuoteElement:after {
+	margin: -20% 0 0 0.05em;
+	color: $background-color;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.articleQuoteText {
+	font-size: 120%;
+	line-height: 1;
+	color: rgb(237, 152, 100);
+	color: rgba(237, 152, 100, 0.7);
+}
+
 .articleContentImage {
 	margin: 0 $gutter-width 1.5em;
 	width: 100%;
@@ -63,7 +89,8 @@
 	margin: 0.5em auto $gutter-width;
 	width: 300px;
 	height: 600px;
-	background: transparent url(http://placehold.it/300x600) center center no-repeat;
+	/*background: transparent url(http://placehold.it/300x600) center center no-repeat;*/
+	border: none;
 }
 
 .articleAd300x250 {
@@ -151,6 +178,10 @@
 	.authorInfo {
 		width: 70%;
 	}
+
+	.articleQuoteElement:after {
+		margin-top: -12%;
+	}
 	
 	.articleAd300x600,
 	.articleAd300x250 {
@@ -162,7 +193,7 @@
 
 
 @include at-breakpoint($tablet) {
-	.mainContent {
+	.mainContentPost {
 		@include span-columns(7 omega, $tablet);
 	}
 	
@@ -208,6 +239,23 @@
 	
 	.floatForAd {
 		width: 53%;
+	}
+	
+	.articleQuoteElement {
+		margin-top: 1.5em;
+	}
+
+	.articleQuoteElement:after {
+		margin-top: -42%;
+		margin-left: -0.1em;
+		font-size: 4000%;
+		filter: alpha(opacity=100);
+		opacity: 1.0;
+	}
+	
+	.articleQuoteText {
+		font-size: 300%;
+		line-height: 1.1;
 	}
 	
 	.articleAd300x600,
@@ -256,9 +304,44 @@
 
 
 @include at-breakpoint($computer) {
-	.mainContent {
-		@include span-columns(7, $computer);
-		@include pre(2, $computer);
+	.mainContentPost {
+		float: left;
+		margin-bottom: $gutter-width * 2;
+		margin-left: 18.42373%;
+		width: 81.57627%;
+	}
+	
+	.articleHeaderContainer {
+		margin-left: -6.5em;
+		width: 113.4%;
+	}
+	
+	.articleHeader {
+		font-size: 3.0em;
+	}
+	
+	.articleContentContainer {
+		margin-left: -6.5em;
+		width: 100%;
+	}
+	
+	.floatForAd {
+		width: 57%;
+	}
+
+	.articleQuoteElement:after {
+		margin-top: -18%;
+		margin-left: -22%;
+		font-size: 6000%;
+	}
+	
+	.articleQuoteText {
+		float: right;
+		margin-bottom: 0.5em;
+		width: 78%;
+		font-size: 300%;
+		line-height: 1.1;
+		text-align: right;
 	}
 	
 	.leftPostContainer {
@@ -267,9 +350,13 @@
 		width: 8.95em;
 	}
 	
+	.authorElement {
+		padding-right: 0.8em;
+	}
+	
 	.rightPostContainer {
-		position: absolute;
-		margin: 0.5em 0 0.5em 45em;
-		width: 14em;
+		@include span-columns(7, $computer);
+		float: none;
+		margin: 0 auto;
 	}
 }
