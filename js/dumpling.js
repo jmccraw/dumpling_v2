@@ -171,4 +171,17 @@
 	
 	kickoff();
 	
+	/*
+	 * Load a modal for vidoes, other assets
+	 * @param{String} type The type of the modal to launch
+	 * @param{String} src The URL of the file to use
+	 */
+	function launchModal(type, src) {
+		$(".ancillaryLink").click(function(evt) {
+			
+		}).touchstart(function(evt) {
+		
+		});
+	};
+	
 })();
