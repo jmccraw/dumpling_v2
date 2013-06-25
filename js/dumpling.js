@@ -160,7 +160,7 @@
 		}
 	});
 	
-	function kickoff() {
+	function init() {
 		var width = $(".container").width();
 		enableMobileMenu(width);
 		enableMobileAds(width);
@@ -169,19 +169,68 @@
 		loadSpotify(width);
 	};
 	
-	kickoff();
+	init();
 	
 	/*
 	 * Load a modal for vidoes, other assets
+	 * @param{Object} self The clicked on element
 	 * @param{String} type The type of the modal to launch
 	 * @param{String} src The URL of the file to use
 	 */
-	function launchModal(type, src) {
-		$(".ancillaryLink").click(function(evt) {
-			
-		}).touchstart(function(evt) {
-		
-		});
+	function launchModal(self, type, src) {
+		var modalContainer = $(".modalContainer");
+		var modalCoverup = $(".modalCoverup");
+		modalContainer.css("display", "block");
+		modalCoverup.css("display", "block");
+		setTimeout(function() {
+			modalContainer.css({
+				"filter": "alpha(opacity=100)",
+				"opacity": "1.0"
+			});
+			modalCoverup.css({
+				"filter": "alpha(opacity=70)",
+				"opacity": "0.7"
+			});
+		}, 10);
 	};
+	
+	// Closes the modal
+	function closeModal() {
+		var modalContainer = $(".modalContainer");
+		var modalCoverup = $(".modalCoverup");
+		modalContainer.css({
+			"filter": "alpha(opacity=0)",
+			"opacity": "0"
+		});
+		modalCoverup.css({
+			"filter": "alpha(opacity=0)",
+			"opacity": "0"
+		});
+		setTimeout(function() {
+			modalContainer.css("display", "none");
+			modalCoverup.css("display", "none");
+		}, 600);
+	};
+	
+	$(".container").on("click.ancillaryClick", ".ancillaryLink", function(evt) {
+		if (evt.preventDefault) {
+			evt.preventDefault();
+		}
+		launchModal($(this), $(this).attr("data-type"), $(this).attr("data-src"));
+	}).on("touchend.ancillaryTouch", ".ancillaryLink", function(evt) {
+		if (evt.preventDefault) {
+			evt.preventDefault();
+		}
+		launchModal($(this), $(this).attr("data-type"), $(this).attr("data-src"));
+	});
+	
+	$(".modalContainer").on("click.modalClose", ".modalCloseButton", function() {
+		closeModal();
+	}).on("touchend.modalClose", ".modalCloseButton", function(evt) {
+		if (evt.preventDefault) {
+			evt.preventDefault();
+		}
+		closeModal();
+	});
 	
 })();

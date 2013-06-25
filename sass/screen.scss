@@ -55,6 +55,44 @@ abbr {
 	background: $background-compliment;
 }
 
+.modalCoverup {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	z-index: 555;
+	@include transition-property(all);
+	@include transition-duration(0.3s);
+	@include transition-timing-function(ease-in);
+}
+
+.modalContainer {
+	display: none;
+	position: fixed;
+	top: 5%;
+	right: 5%;
+	bottom: 5%;
+	left: 5%;
+	padding: 2%;
+	margin: 0 auto;
+	background: #f0f0f0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	z-index: 999;
+	@include transition-property(all);
+	@include transition-duration(0.5s);
+	@include transition-timing-function(ease-in);
+}
+
+.modalCloseButton {
+	
+}
+
 .container {
   @include container($total-columns, $phone-portrait, $tablet, $computer);
   @include susy-grid-background;
