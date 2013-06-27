@@ -160,6 +160,77 @@
 		}
 	});
 	
+	// Functions for the ModalViewer
+	var ModalViewer = {
+		modalContainer: $(".modalContainer"),
+		modalCoverup: $(".modalCoverup"),
+		/*
+		 * Load a modal for vidoes, other assets
+		 * @param{Object} self The clicked on element
+		 * @param{String} type The type of the modal to launch
+		 * @param{String} src The URL of the file to use
+		 */
+		launchModal: function(self, type, src) {
+			ModalViewer.modalContainer.css("display", "block");
+			ModalViewer.modalCoverup.css("display", "block");
+			setTimeout(function() {
+				ModalViewer.modalContainer.css({
+					"filter": "alpha(opacity=100)",
+					"opacity": "1.0"
+				});
+				ModalViewer.modalCoverup.css({
+					"filter": "alpha(opacity=70)",
+					"opacity": "0.7"
+				});
+			}, 10);
+		},
+		// Closes the modal
+		closeModal: function() {
+			ModalViewer.modalContainer.css({
+				"filter": "alpha(opacity=0)",
+				"opacity": "0"
+			});
+			ModalViewer.modalCoverup.css({
+				"filter": "alpha(opacity=0)",
+				"opacity": "0"
+			});
+			setTimeout(function() {
+				ModalViewer.modalContainer.css("display", "none");
+				ModalViewer.modalCoverup.css("display", "none");
+			}, 600);
+		},
+		initializeModalControls: function() {
+		
+			$(".container").on("click.ancillaryClick", ".ancillaryLink", function(evt) {
+				if (evt.preventDefault) {
+					evt.preventDefault();
+				}
+				ModalViewer.launchModal($(this), $(this).attr("data-type"), $(this).attr("data-src"));
+			}).on("touchend.ancillaryTouch", ".ancillaryLink", function(evt) {
+				if (evt.preventDefault) {
+					evt.preventDefault();
+				}
+				ModalViewer.launchModal($(this), $(this).attr("data-type"), $(this).attr("data-src"));
+			});
+			
+			// close the modal when you click off the modal and into the black area
+			$("body").on("click.modalCoverupClick", ".modalCoverup", function() {
+				ModalViewer.closeModal();
+			}).on("click.modalCoverupTouch", ".modalCoverup", function() {
+				ModalViewer.closeModal();
+			});
+			
+			$(".modalContainer").on("click.modalClose", ".modalCloseButton", function() {
+				ModalViewer.closeModal();
+			}).on("touchend.modalClose", ".modalCloseButton", function(evt) {
+				if (evt.preventDefault) {
+					evt.preventDefault();
+				}
+				ModalViewer.closeModal();
+			});
+		}
+	};
+	
 	function init() {
 		var width = $(".container").width();
 		enableMobileMenu(width);
@@ -167,70 +238,8 @@
 		loadSocialIcons();
 		loadSearchInputPushdown();
 		loadSpotify(width);
+		ModalViewer.initializeModalControls();
 	};
 	
 	init();
-	
-	/*
-	 * Load a modal for vidoes, other assets
-	 * @param{Object} self The clicked on element
-	 * @param{String} type The type of the modal to launch
-	 * @param{String} src The URL of the file to use
-	 */
-	function launchModal(self, type, src) {
-		var modalContainer = $(".modalContainer");
-		var modalCoverup = $(".modalCoverup");
-		modalContainer.css("display", "block");
-		modalCoverup.css("display", "block");
-		setTimeout(function() {
-			modalContainer.css({
-				"filter": "alpha(opacity=100)",
-				"opacity": "1.0"
-			});
-			modalCoverup.css({
-				"filter": "alpha(opacity=70)",
-				"opacity": "0.7"
-			});
-		}, 10);
-	};
-	
-	// Closes the modal
-	function closeModal() {
-		var modalContainer = $(".modalContainer");
-		var modalCoverup = $(".modalCoverup");
-		modalContainer.css({
-			"filter": "alpha(opacity=0)",
-			"opacity": "0"
-		});
-		modalCoverup.css({
-			"filter": "alpha(opacity=0)",
-			"opacity": "0"
-		});
-		setTimeout(function() {
-			modalContainer.css("display", "none");
-			modalCoverup.css("display", "none");
-		}, 600);
-	};
-	
-	$(".container").on("click.ancillaryClick", ".ancillaryLink", function(evt) {
-		if (evt.preventDefault) {
-			evt.preventDefault();
-		}
-		launchModal($(this), $(this).attr("data-type"), $(this).attr("data-src"));
-	}).on("touchend.ancillaryTouch", ".ancillaryLink", function(evt) {
-		if (evt.preventDefault) {
-			evt.preventDefault();
-		}
-		launchModal($(this), $(this).attr("data-type"), $(this).attr("data-src"));
-	});
-	
-	$(".modalContainer").on("click.modalClose", ".modalCloseButton", function() {
-		closeModal();
-	}).on("touchend.modalClose", ".modalCloseButton", function(evt) {
-		if (evt.preventDefault) {
-			evt.preventDefault();
-		}
-		closeModal();
-	});
-	
 })();
