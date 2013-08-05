@@ -396,7 +396,7 @@ abbr {
 
 .dimSumArticle,
 .dimSumReadMore {
-	margin: $gutter-width auto 0;
+	margin: ($gutter-width * 1.2) auto 0;
 	padding: 0;
 	width: 100%;
 	height: auto;
@@ -1139,19 +1139,26 @@ abbr {
 	}
 	
 	.quoteText {
-		@include span-columns(3, $computer / 2);
+		float: none;
+		width: 100%;
 	}
 	
 	.quoteAuthor,
 	.articleQuoteAuthor {
-		@include span-columns(3 omega, $computer / 2);
-		@include pre(3, $computer / 2);
-		position: absolute;
+		position: relative;
+		margin: 0 auto;
 		padding-top: 1.2em;
+		width: 100%;
 		font-family: "CaviarDreamsBold", "Century Gothic", Arial, sans-serif;
 		font-size: 1.5em;
-		text-align: center;
+		text-align: right;
 		clear: both;
+	}
+	
+	.quoteElement:after,
+	.articleQuoteElement:after {
+		top: -12%;
+		left: 50%;
 	}
 	
 	.secondLedeElement {
