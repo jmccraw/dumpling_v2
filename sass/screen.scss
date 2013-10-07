@@ -64,7 +64,7 @@ abbr {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: #000;
+	background: #fff;
 	filter: alpha(opacity=0);
 	opacity: 0;
 	z-index: 555;
@@ -77,12 +77,12 @@ abbr {
 	display: none;
 	position: fixed;
 	top: 5%;
-	right: 5%;
-	bottom: 5%;
-	left: 5%;
-	padding: 2%;
-	margin: 0 auto;
-	background: #222;
+	left: 50%;
+	margin: 0 0 0 -30.5em;
+	padding: 0;
+	width: 61em;
+	height: 45.75em;
+	background: #333;
 	filter: alpha(opacity=0);
 	opacity: 0;
 	z-index: 999;
@@ -98,7 +98,9 @@ abbr {
 	width: 50px;
 	height: 50px;
 	border: none;
+	@include border-radius(50%);
 	cursor: pointer;
+	outline: none;
 }
 
 .modalCloseButton:hover,
@@ -236,8 +238,7 @@ abbr {
 .ledeStoryLink:hover .ledeStoryHeader,
 .ledeStoryLink:hover span,
 .secondLedeLink:hover .secondLedeHeader {
-	color: $font-color;
-	text-shadow: 1px 1px 0 #fff;
+	color: $background-color;
 }
 
 .ledeStoryByline {
