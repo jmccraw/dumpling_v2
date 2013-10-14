@@ -174,6 +174,16 @@
 					"opacity": "0.7"
 				});
 			}, 10);
+			if (type === "youtube") {
+				var video = document.createElement("iframe");
+				video.setAttribute("href", src);
+				video.width = 975;
+				video.height = 731;
+				video.setAttribute("seamless", "true");
+				video.setAttribute("frameborder", 0);
+				video.setAttribute("scrolling", "no");
+				ModalViewer.modalContainer.append(video);
+			}
 		},
 		// Closes the modal
 		closeModal: function() {
@@ -196,7 +206,8 @@
 				if (evt.preventDefault) {
 					evt.preventDefault();
 				}
-				ModalViewer.launchModal($(this), $(this).attr("data-type"), $(this).attr("data-src"));
+				var self = $(this);
+				ModalViewer.launchModal(self, self.attr("data-type"), self.attr("data-src"));
 			});
 			
 			// close the modal when you click off the modal and into the black area

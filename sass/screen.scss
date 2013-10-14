@@ -87,7 +87,7 @@ abbr {
 	opacity: 0;
 	z-index: 999;
 	@include transition-property(all);
-	@include transition-duration(0.5s);
+	@include transition-duration(0.3s);
 	@include transition-timing-function(ease-in);
 }
 
@@ -220,6 +220,17 @@ abbr {
 .headerLink,
 .ancillaryLink {
 	text-decoration: none;
+}
+
+.ancillaryLink {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	text-align: left;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
 }
 
 .ledeStoryHeader {
@@ -1255,6 +1266,12 @@ abbr {
 		padding: 0;
 		font: 400 0.9em/1.2em "CaviarDreamsRegular", "Century Gothic", Arial, sans-serif;
 		color: $font-color;
+	}
+	
+	.ancillaryImage {
+		width: 144px;
+		height: 100px;
+		border: none;
 	}
 	
 	.topRightHalf,
