@@ -81,8 +81,8 @@ abbr {
 	margin: 0 0 0 -30.5em;
 	padding: 0;
 	width: 61em;
-	height: 45.75em;
-	background: #333;
+	height: 46.1em;
+	background: #000;
 	filter: alpha(opacity=0);
 	opacity: 0;
 	z-index: 999;
@@ -91,21 +91,30 @@ abbr {
 	@include transition-timing-function(ease-in);
 }
 
+.modalContainer iframe {
+	margin: 15px;
+}
+
 .modalCloseButton {
 	position: absolute;
-	top: 0;
-	right: 0;
-	width: 50px;
-	height: 50px;
+	top: -0.8em;
+	right: -0.8em;
+	width: 34px;
+	height: 34px;
+	font: 400 1.2em/0.4 Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #000;
 	border: none;
 	@include border-radius(50%);
 	cursor: pointer;
 	outline: none;
+	-webkit-font-smoothing: antialiased;
 }
 
 .modalCloseButton:hover,
 .modalCloseButton:active {
-	background: red;
+	color: #000;
+	background: #fff;
 }
 
 .container {

@@ -176,9 +176,10 @@
 			}, 10);
 			if (type === "youtube") {
 				var video = document.createElement("iframe");
-				video.setAttribute("href", src);
-				video.width = 975;
-				video.height = 731;
+				video.className = "modalContent";
+				video.src = src;
+				video.width = 945;
+				video.height = 709;
 				video.setAttribute("seamless", "true");
 				video.setAttribute("frameborder", 0);
 				video.setAttribute("scrolling", "no");
@@ -187,6 +188,7 @@
 		},
 		// Closes the modal
 		closeModal: function() {
+			$(".modalContent").remove();
 			ModalViewer.modalContainer.css({
 				"filter": "alpha(opacity=0)",
 				"opacity": "0"
