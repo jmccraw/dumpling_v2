@@ -165,21 +165,15 @@
 			ModalViewer.modalContainer.css("display", "block");
 			ModalViewer.modalCoverup.css("display", "block");
 			setTimeout(function() {
-				ModalViewer.modalContainer.css({
-					"filter": "alpha(opacity=100)",
-					"opacity": "1.0"
-				});
-				ModalViewer.modalCoverup.css({
-					"filter": "alpha(opacity=70)",
-					"opacity": "0.7"
-				});
+				ModalViewer.modalContainer.addClass("modalReveal");
+				ModalViewer.modalCoverup.addClass("modalReveal");
 			}, 10);
 			if (type === "youtube") {
 				var video = document.createElement("iframe");
 				video.className = "modalContent";
 				video.src = src;
 				video.width = 945;
-				video.height = 709;
+				video.height = 546;
 				video.setAttribute("seamless", "true");
 				video.setAttribute("frameborder", 0);
 				video.setAttribute("scrolling", "no");
@@ -191,14 +185,8 @@
 		// Closes the modal
 		closeModal: function() {
 			$(".modalContent").remove();
-			ModalViewer.modalContainer.css({
-				"filter": "alpha(opacity=0)",
-				"opacity": "0"
-			});
-			ModalViewer.modalCoverup.css({
-				"filter": "alpha(opacity=0)",
-				"opacity": "0"
-			});
+			ModalViewer.modalContainer.removeClass("modalReveal");
+			ModalViewer.modalCoverup.removeClass("modalReveal");
 			setTimeout(function() {
 				ModalViewer.modalContainer.css("display", "none");
 				ModalViewer.modalCoverup.css("display", "none");
