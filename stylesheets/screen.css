@@ -1774,14 +1774,127 @@ a {
     background: #fff;
   }
 
-  /* line 968, ../sass/screen.scss */
+  /* line 970, ../sass/screen.scss */
+  .mainContent .ledeStoryLink:hover .ledeStoryHeader, .mainContent .featureStoriesLink:hover .ledeStoryHeader, .mainContent .dimSumLink:hover .ledeStoryHeader, .mainContent .musicReelLink:hover .ledeStoryHeader,
+  .mainContent .movieReelLink:hover .ledeStoryHeader,
+  .mainContent .foodReelLink:hover .ledeStoryHeader,
+  .mainContent .eventReelLink:hover .ledeStoryHeader, .mainContent .ledeStoryLink:hover .secondLedeHeader, .mainContent .featureStoriesLink:hover .secondLedeHeader, .mainContent .dimSumLink:hover .secondLedeHeader, .mainContent .musicReelLink:hover .secondLedeHeader,
+  .mainContent .movieReelLink:hover .secondLedeHeader,
+  .mainContent .foodReelLink:hover .secondLedeHeader,
+  .mainContent .eventReelLink:hover .secondLedeHeader, .mainContent .ledeStoryLink:hover .featureHeader, .mainContent .featureStoriesLink:hover .featureHeader, .mainContent .dimSumLink:hover .featureHeader, .mainContent .musicReelLink:hover .featureHeader,
+  .mainContent .movieReelLink:hover .featureHeader,
+  .mainContent .foodReelLink:hover .featureHeader,
+  .mainContent .eventReelLink:hover .featureHeader, .mainContent .ledeStoryLink:hover .dimSumHeader, .mainContent .featureStoriesLink:hover .dimSumHeader, .mainContent .dimSumLink:hover .dimSumHeader, .mainContent .musicReelLink:hover .dimSumHeader,
+  .mainContent .movieReelLink:hover .dimSumHeader,
+  .mainContent .foodReelLink:hover .dimSumHeader,
+  .mainContent .eventReelLink:hover .dimSumHeader, .mainContent .ledeStoryLink:hover .musicReelHeader, .mainContent .featureStoriesLink:hover .musicReelHeader, .mainContent .dimSumLink:hover .musicReelHeader, .mainContent .musicReelLink:hover .musicReelHeader,
+  .mainContent .movieReelLink:hover .musicReelHeader,
+  .mainContent .foodReelLink:hover .musicReelHeader,
+  .mainContent .eventReelLink:hover .musicReelHeader,
+  .mainContent .ledeStoryLink:hover .movieReelHeader,
+  .mainContent .featureStoriesLink:hover .movieReelHeader,
+  .mainContent .dimSumLink:hover .movieReelHeader,
+  .mainContent .musicReelLink:hover .movieReelHeader,
+  .mainContent .movieReelLink:hover .movieReelHeader,
+  .mainContent .foodReelLink:hover .movieReelHeader,
+  .mainContent .eventReelLink:hover .movieReelHeader,
+  .mainContent .ledeStoryLink:hover .foodReelHeader,
+  .mainContent .featureStoriesLink:hover .foodReelHeader,
+  .mainContent .dimSumLink:hover .foodReelHeader,
+  .mainContent .musicReelLink:hover .foodReelHeader,
+  .mainContent .movieReelLink:hover .foodReelHeader,
+  .mainContent .foodReelLink:hover .foodReelHeader,
+  .mainContent .eventReelLink:hover .foodReelHeader,
+  .mainContent .ledeStoryLink:hover .eventReelHeader,
+  .mainContent .featureStoriesLink:hover .eventReelHeader,
+  .mainContent .dimSumLink:hover .eventReelHeader,
+  .mainContent .musicReelLink:hover .eventReelHeader,
+  .mainContent .movieReelLink:hover .eventReelHeader,
+  .mainContent .foodReelLink:hover .eventReelHeader,
+  .mainContent .eventReelLink:hover .eventReelHeader,
+  .mainContent .ledeStoryLink:hover span,
+  .mainContent .featureStoriesLink:hover span,
+  .mainContent .dimSumLink:hover span,
+  .mainContent .musicReelLink:hover span,
+  .mainContent .movieReelLink:hover span,
+  .mainContent .foodReelLink:hover span,
+  .mainContent .eventReelLink:hover span,
+  .secondLedeLink:hover .secondLedeHeader {
+    color: #fff;
+  }
+
+  /* line 975, ../sass/screen.scss */
+  .mainContent .ledeStoryLink:hover .ledeStoryHeader, .mainContent .featureStoriesLink:hover .ledeStoryHeader, .mainContent .dimSumLink:hover .ledeStoryHeader, .mainContent .musicReelLink:hover .ledeStoryHeader,
+  .mainContent .movieReelLink:hover .ledeStoryHeader,
+  .mainContent .foodReelLink:hover .ledeStoryHeader,
+  .mainContent .eventReelLink:hover .ledeStoryHeader, .mainContent .ledeStoryLink:hover .secondLedeHeader, .mainContent .featureStoriesLink:hover .secondLedeHeader, .mainContent .dimSumLink:hover .secondLedeHeader, .mainContent .musicReelLink:hover .secondLedeHeader,
+  .mainContent .movieReelLink:hover .secondLedeHeader,
+  .mainContent .foodReelLink:hover .secondLedeHeader,
+  .mainContent .eventReelLink:hover .secondLedeHeader, .mainContent .ledeStoryLink:hover .featureHeader, .mainContent .featureStoriesLink:hover .featureHeader, .mainContent .dimSumLink:hover .featureHeader, .mainContent .musicReelLink:hover .featureHeader,
+  .mainContent .movieReelLink:hover .featureHeader,
+  .mainContent .foodReelLink:hover .featureHeader,
+  .mainContent .eventReelLink:hover .featureHeader, .mainContent .ledeStoryLink:hover .dimSumHeader, .mainContent .featureStoriesLink:hover .dimSumHeader, .mainContent .dimSumLink:hover .dimSumHeader, .mainContent .musicReelLink:hover .dimSumHeader,
+  .mainContent .movieReelLink:hover .dimSumHeader,
+  .mainContent .foodReelLink:hover .dimSumHeader,
+  .mainContent .eventReelLink:hover .dimSumHeader, .mainContent .ledeStoryLink:hover .musicReelHeader, .mainContent .featureStoriesLink:hover .musicReelHeader, .mainContent .dimSumLink:hover .musicReelHeader, .mainContent .musicReelLink:hover .musicReelHeader,
+  .mainContent .movieReelLink:hover .musicReelHeader,
+  .mainContent .foodReelLink:hover .musicReelHeader,
+  .mainContent .eventReelLink:hover .musicReelHeader,
+  .mainContent .ledeStoryLink:hover .movieReelHeader,
+  .mainContent .featureStoriesLink:hover .movieReelHeader,
+  .mainContent .dimSumLink:hover .movieReelHeader,
+  .mainContent .musicReelLink:hover .movieReelHeader,
+  .mainContent .movieReelLink:hover .movieReelHeader,
+  .mainContent .foodReelLink:hover .movieReelHeader,
+  .mainContent .eventReelLink:hover .movieReelHeader,
+  .mainContent .ledeStoryLink:hover .foodReelHeader,
+  .mainContent .featureStoriesLink:hover .foodReelHeader,
+  .mainContent .dimSumLink:hover .foodReelHeader,
+  .mainContent .musicReelLink:hover .foodReelHeader,
+  .mainContent .movieReelLink:hover .foodReelHeader,
+  .mainContent .foodReelLink:hover .foodReelHeader,
+  .mainContent .eventReelLink:hover .foodReelHeader,
+  .mainContent .ledeStoryLink:hover .eventReelHeader,
+  .mainContent .featureStoriesLink:hover .eventReelHeader,
+  .mainContent .dimSumLink:hover .eventReelHeader,
+  .mainContent .musicReelLink:hover .eventReelHeader,
+  .mainContent .movieReelLink:hover .eventReelHeader,
+  .mainContent .foodReelLink:hover .eventReelHeader,
+  .mainContent .eventReelLink:hover .eventReelHeader,
+  .secondLedeLink:hover .secondLedeHeader {
+    background: rgba(1, 152, 117, 0.3);
+    -webkit-transition-property: background;
+    -moz-transition-property: background;
+    -o-transition-property: background;
+    transition-property: background;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+
+  /* line 982, ../sass/screen.scss */
+  .secondLedeLink:hover .secondLedeHeader {
+    width: 100%;
+  }
+
+  /* line 986, ../sass/screen.scss */
   .ledeStory {
     width: 54.54545%;
     float: left;
     margin-right: 2.27273%;
   }
 
-  /* line 972, ../sass/screen.scss */
+  /* line 990, ../sass/screen.scss */
+  .mainContent .ledeStory {
+    padding: 0;
+  }
+
+  /* line 994, ../sass/screen.scss */
   .ledeStoryHeader, .secondLedeHeader, .featureHeader, .dimSumHeader, .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -1789,7 +1902,23 @@ a {
     font-size: 2.5em;
   }
 
-  /* line 976, ../sass/screen.scss */
+  /* line 998, ../sass/screen.scss */
+  .mainContent .ledeStoryHeader, .mainContent .secondLedeHeader, .mainContent .featureHeader, .mainContent .dimSumHeader, .mainContent .musicReelHeader,
+  .mainContent .movieReelHeader,
+  .mainContent .foodReelHeader,
+  .mainContent .eventReelHeader {
+    padding: 0.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 1003, ../sass/screen.scss */
+  .mainContent .ledeStoryByline {
+    margin: -2em 2em 0 0;
+  }
+
+  /* line 1007, ../sass/screen.scss */
   .ledeRightHalf {
     position: absolute;
     width: 43.18182%;
@@ -1798,32 +1927,32 @@ a {
     margin-left: 56.81818%;
   }
 
-  /* line 982, ../sass/screen.scss */
+  /* line 1013, ../sass/screen.scss */
   .quoteElement {
     height: 6em;
   }
 
-  /* line 986, ../sass/screen.scss */
+  /* line 1017, ../sass/screen.scss */
   .secondLedeElement {
     height: 8em;
     clear: both;
   }
 
-  /* line 991, ../sass/screen.scss */
+  /* line 1022, ../sass/screen.scss */
   .secondLedeHeader {
     padding-top: 4.5%;
     width: 90%;
     font-size: 1.4em;
   }
 
-  /* line 997, ../sass/screen.scss */
+  /* line 1028, ../sass/screen.scss */
   .featureStoriesReel {
     width: 31.81818%;
     float: left;
     margin-right: 2.27273%;
   }
 
-  /* line 1004, ../sass/screen.scss */
+  /* line 1035, ../sass/screen.scss */
   .featureOne,
   .featureTwo,
   .featureThree,
@@ -1832,19 +1961,19 @@ a {
     width: 100%;
   }
 
-  /* line 1010, ../sass/screen.scss */
+  /* line 1041, ../sass/screen.scss */
   .featureTwo,
   .featureFour {
     float: left;
   }
 
-  /* line 1014, ../sass/screen.scss */
+  /* line 1045, ../sass/screen.scss */
   .featureHeader {
     padding-top: 3.0em;
     font-size: 1.2em;
   }
 
-  /* line 1019, ../sass/screen.scss */
+  /* line 1050, ../sass/screen.scss */
   .dimSumNews {
     position: absolute;
     width: 20.45455%;
@@ -1854,7 +1983,7 @@ a {
     padding-top: 0.5em;
   }
 
-  /* line 1026, ../sass/screen.scss */
+  /* line 1057, ../sass/screen.scss */
   .dimSumNewsTote, .musicReelTote,
   .movieReelTote,
   .foodReelTote,
@@ -1862,22 +1991,22 @@ a {
     font-size: 1.2em;
   }
 
-  /* line 1030, ../sass/screen.scss */
+  /* line 1061, ../sass/screen.scss */
   .dimSumHeader {
     font-size: 0.9em;
   }
 
-  /* line 1034, ../sass/screen.scss */
+  /* line 1065, ../sass/screen.scss */
   .dimSumReadMoreHeader {
     font-size: 0.8em;
   }
 
-  /* line 1038, ../sass/screen.scss */
+  /* line 1069, ../sass/screen.scss */
   .dimSumExcerpt {
     font-size: 0.9em;
   }
 
-  /* line 1042, ../sass/screen.scss */
+  /* line 1073, ../sass/screen.scss */
   .rightHalf {
     position: absolute;
     width: 43.18182%;
@@ -1886,7 +2015,7 @@ a {
     margin-left: 56.81818%;
   }
 
-  /* line 1050, ../sass/screen.scss */
+  /* line 1081, ../sass/screen.scss */
   .topRightHalf,
   .midRightHalf,
   .rightHalfAd {
@@ -1895,19 +2024,19 @@ a {
     max-width: 20em;
   }
 
-  /* line 1056, ../sass/screen.scss */
+  /* line 1087, ../sass/screen.scss */
   .topRightHalf {
     margin-top: -0.9em;
   }
 
-  /* line 1060, ../sass/screen.scss */
+  /* line 1091, ../sass/screen.scss */
   #spotifyElement {
     float: left;
     margin-top: -0.5em;
     margin-right: 1em;
   }
 
-  /* line 1069, ../sass/screen.scss */
+  /* line 1100, ../sass/screen.scss */
   .facebookElement,
   .twitterElement,
   .mailElement,
@@ -1915,18 +2044,18 @@ a {
     margin: 1em 0.7em 1.3em 0;
   }
 
-  /* line 1073, ../sass/screen.scss */
+  /* line 1104, ../sass/screen.scss */
   .facebookElement {
     margin-left: 0;
   }
 
-  /* line 1077, ../sass/screen.scss */
+  /* line 1108, ../sass/screen.scss */
   #rightHalfAd {
     float: left;
     width: auto;
   }
 
-  /* line 1085, ../sass/screen.scss */
+  /* line 1116, ../sass/screen.scss */
   .farLeft,
   .interiorLeft,
   .interiorRight,
@@ -1937,13 +2066,13 @@ a {
     max-height: 20em;
   }
 
-  /* line 1093, ../sass/screen.scss */
+  /* line 1124, ../sass/screen.scss */
   .interiorLeft,
   .farRight {
     float: left;
   }
 
-  /* line 1100, ../sass/screen.scss */
+  /* line 1131, ../sass/screen.scss */
   .musicReelHeader,
   .movieReelHeader,
   .foodReelHeader,
@@ -1951,7 +2080,7 @@ a {
     font-size: 0.9em;
   }
 
-  /* line 1107, ../sass/screen.scss */
+  /* line 1138, ../sass/screen.scss */
   .musicReelArticle,
   .movieReelArticle,
   .foodReelArticle,
@@ -1959,18 +2088,18 @@ a {
     padding: 0 0.5em;
   }
 
-  /* line 1111, ../sass/screen.scss */
+  /* line 1142, ../sass/screen.scss */
   .footer {
     margin-bottom: 3em;
   }
 }
 @media (min-width: 59em) {
-  /* line 1117, ../sass/screen.scss */
+  /* line 1148, ../sass/screen.scss */
   .header {
     height: 7em;
   }
 
-  /* line 1121, ../sass/screen.scss */
+  /* line 1152, ../sass/screen.scss */
   .logo {
     font-size: 6.1em;
     width: 49.15254%;
@@ -1978,7 +2107,7 @@ a {
     margin-right: 1.69492%;
   }
 
-  /* line 1126, ../sass/screen.scss */
+  /* line 1157, ../sass/screen.scss */
   #searchBar {
     width: 6.77966%;
     float: left;
@@ -1986,28 +2115,28 @@ a {
     height: 7em;
   }
 
-  /* line 1131, ../sass/screen.scss */
+  /* line 1162, ../sass/screen.scss */
   .searchBarIcon {
     margin-top: 1.9em;
   }
 
-  /* line 1135, ../sass/screen.scss */
+  /* line 1166, ../sass/screen.scss */
   #searchInputPushdown {
     width: 59em;
   }
 
-  /* line 1139, ../sass/screen.scss */
+  /* line 1170, ../sass/screen.scss */
   #searchInput {
     font-size: 6.2em;
     line-height: 1.1em;
   }
 
-  /* line 1144, ../sass/screen.scss */
+  /* line 1175, ../sass/screen.scss */
   .searchInputVisible {
     height: 6.7em;
   }
 
-  /* line 1148, ../sass/screen.scss */
+  /* line 1179, ../sass/screen.scss */
   .topAd {
     width: 40.67797%;
     float: right;
@@ -2016,31 +2145,31 @@ a {
     height: 7em;
   }
 
-  /* line 1154, ../sass/screen.scss */
+  /* line 1185, ../sass/screen.scss */
   #topAdFrame {
     width: 100%;
     height: 100%;
   }
 
-  /* line 1159, ../sass/screen.scss */
+  /* line 1190, ../sass/screen.scss */
   .floatingNav {
     max-width: 59em;
   }
 
-  /* line 1163, ../sass/screen.scss */
+  /* line 1194, ../sass/screen.scss */
   .floatingNav a {
     padding-left: 0.5em;
     padding-right: 0.5em;
   }
 
-  /* line 1168, ../sass/screen.scss */
+  /* line 1199, ../sass/screen.scss */
   .ledeStory {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 1172, ../sass/screen.scss */
+  /* line 1203, ../sass/screen.scss */
   .ledeRightHalf {
     width: 49.15254%;
     float: right;
@@ -2048,23 +2177,23 @@ a {
     margin-left: 50.84746%;
   }
 
-  /* line 1177, ../sass/screen.scss */
+  /* line 1208, ../sass/screen.scss */
   .quoteElement {
     height: 7em;
   }
 
-  /* line 1181, ../sass/screen.scss */
+  /* line 1212, ../sass/screen.scss */
   .quoteElement:after {
     margin: -0.1em 0 0 -1.5em;
   }
 
-  /* line 1185, ../sass/screen.scss */
+  /* line 1216, ../sass/screen.scss */
   .quoteText {
     float: none;
     width: 100%;
   }
 
-  /* line 1191, ../sass/screen.scss */
+  /* line 1222, ../sass/screen.scss */
   .quoteAuthor,
   .articleQuoteAuthor {
     position: relative;
@@ -2077,32 +2206,32 @@ a {
     clear: both;
   }
 
-  /* line 1203, ../sass/screen.scss */
+  /* line 1234, ../sass/screen.scss */
   .quoteElement:after,
   .articleQuoteElement:after {
     top: -12%;
     left: 50%;
   }
 
-  /* line 1208, ../sass/screen.scss */
+  /* line 1239, ../sass/screen.scss */
   .secondLedeElement {
     margin-top: 0;
   }
 
-  /* line 1212, ../sass/screen.scss */
+  /* line 1243, ../sass/screen.scss */
   .secondLedeHeader {
     padding-top: 5%;
     font-size: 1.5em;
   }
 
-  /* line 1217, ../sass/screen.scss */
+  /* line 1248, ../sass/screen.scss */
   .featureStoriesReel {
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%;
   }
 
-  /* line 1224, ../sass/screen.scss */
+  /* line 1255, ../sass/screen.scss */
   .featureOne,
   .featureTwo,
   .featureThree,
@@ -2111,20 +2240,20 @@ a {
     width: 14em;
   }
 
-  /* line 1230, ../sass/screen.scss */
+  /* line 1261, ../sass/screen.scss */
   .featureTwo,
   .featureFour {
     float: left;
   }
 
-  /* line 1234, ../sass/screen.scss */
+  /* line 1265, ../sass/screen.scss */
   .featureHeader {
     padding-top: 3.0em;
     font-size: 1.2em;
     z-index: 2;
   }
 
-  /* line 1240, ../sass/screen.scss */
+  /* line 1271, ../sass/screen.scss */
   .dimSumNews {
     width: 23.72881%;
     float: left;
@@ -2133,7 +2262,7 @@ a {
     padding-top: 0.5em;
   }
 
-  /* line 1246, ../sass/screen.scss */
+  /* line 1277, ../sass/screen.scss */
   .dimSumNewsTote, .musicReelTote,
   .movieReelTote,
   .foodReelTote,
@@ -2141,27 +2270,27 @@ a {
     font-size: 1.2em;
   }
 
-  /* line 1250, ../sass/screen.scss */
+  /* line 1281, ../sass/screen.scss */
   .dimSumHeader {
     font-size: 0.9em;
   }
 
-  /* line 1254, ../sass/screen.scss */
+  /* line 1285, ../sass/screen.scss */
   .dimSumReadMoreHeader {
     font-size: 0.8em;
   }
 
-  /* line 1258, ../sass/screen.scss */
+  /* line 1289, ../sass/screen.scss */
   .dimSumExcerpt {
     font-size: 0.9em;
   }
 
-  /* line 1262, ../sass/screen.scss */
+  /* line 1293, ../sass/screen.scss */
   .desktopMode {
     display: block;
   }
 
-  /* line 1266, ../sass/screen.scss */
+  /* line 1297, ../sass/screen.scss */
   .rightHalf {
     position: absolute;
     width: 49.15254%;
@@ -2170,7 +2299,7 @@ a {
     margin-left: 50.84746%;
   }
 
-  /* line 1272, ../sass/screen.scss */
+  /* line 1303, ../sass/screen.scss */
   .leftColumnHalf {
     width: 31.03448%;
     float: left;
@@ -2181,13 +2310,13 @@ a {
     clear: both;
   }
 
-  /* line 1280, ../sass/screen.scss */
+  /* line 1311, ../sass/screen.scss */
   .ancillaryEntry {
     padding: 0;
     margin: 0 auto 1em;
   }
 
-  /* line 1285, ../sass/screen.scss */
+  /* line 1316, ../sass/screen.scss */
   .ancillaryTitle {
     margin: 0.2em 0 0;
     padding: 0;
@@ -2195,14 +2324,14 @@ a {
     color: #333333;
   }
 
-  /* line 1292, ../sass/screen.scss */
+  /* line 1323, ../sass/screen.scss */
   .ancillaryImage {
     width: 144px;
     height: 100px;
     border: none;
   }
 
-  /* line 1300, ../sass/screen.scss */
+  /* line 1331, ../sass/screen.scss */
   .topRightHalf,
   .midRightHalf,
   .rightHalfAd {
@@ -2213,23 +2342,23 @@ a {
     margin-left: 34.48276%;
   }
 
-  /* line 1306, ../sass/screen.scss */
+  /* line 1337, ../sass/screen.scss */
   .facebookElement {
     margin-left: 0.1em;
   }
 
-  /* line 1310, ../sass/screen.scss */
+  /* line 1341, ../sass/screen.scss */
   .midRightHalf {
     margin-top: 5em;
   }
 
-  /* line 1314, ../sass/screen.scss */
+  /* line 1345, ../sass/screen.scss */
   #spotifyElement {
     margin-top: 0;
     margin-right: 0;
   }
 
-  /* line 1319, ../sass/screen.scss */
+  /* line 1350, ../sass/screen.scss */
   .rightHalfAd {
     margin-top: 30em;
   }

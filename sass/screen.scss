@@ -965,12 +965,43 @@ abbr {
 		background: #fff;
 	}
 	
+	.mainContent .ledeStoryLink:hover .ledeStoryHeader,
+	.mainContent .ledeStoryLink:hover span,
+	.secondLedeLink:hover .secondLedeHeader {
+		color: #fff;
+	}
+	
+	.mainContent .ledeStoryLink:hover .ledeStoryHeader,
+	.secondLedeLink:hover .secondLedeHeader {
+		background: rgba(1, 152, 117, 0.3);
+		@include transition-property(background);
+		@include transition-duration(0.3s);
+		@include transition-timing-function(ease-out);
+	}
+	
+	.secondLedeLink:hover .secondLedeHeader {
+		width: 100%;
+	}
+	
 	.ledeStory {
 		@include span-columns(5, $tablet);
 	}
 	
+	.mainContent .ledeStory {
+		padding: 0;
+	}
+	
 	.ledeStoryHeader {
 		font-size: 2.5em;
+	}
+	
+	.mainContent .ledeStoryHeader {
+		padding: 0.5em;
+		@include box-sizing(border-box);
+	}
+	
+	.mainContent .ledeStoryByline {
+		margin: -2em 2em 0 0;
 	}
 	
 	.ledeRightHalf {
