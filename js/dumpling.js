@@ -210,8 +210,8 @@
 			// close the modal when you click off the modal and into the black area
 			$("body").on("click.modalCoverupClick touchend.modalCoverupTouch", ".modalCoverup", function() {
 				ModalViewer.closeModal();
-				console.log("_trackEvent", "Modal", "Close In Black");
-				_gaq.push(["_trackEvent", "Modal", "Close In Black"]);
+				console.log("_trackEvent", "Modal", "Close, In Black");
+				_gaq.push(["_trackEvent", "Modal", "Close, In Black"]);
 			});
 			
 			$(".modalContainer").on("click.modalClose touchend.modalClose", ".modalCloseButton", function(evt) {
@@ -219,9 +219,18 @@
 					evt.preventDefault();
 				}
 				ModalViewer.closeModal();
-				console.log("_trackEvent", "Modal", "Close Button");
-				_gaq.push(["_trackEvent", "Modal", "Close Button"]);
+				console.log("_trackEvent", "Modal", "Close, Button");
+				_gaq.push(["_trackEvent", "Modal", "Close, Button"]);
 			});
+			
+			$(document).on("keyup.escKeyed", function(key) {
+				if (key.keyCode == 27) {
+					ModalViewer.closeModal();
+					console.log("_trackEvent", "Modal", "Close, Esc. Key");
+					_gaq.push(["_trackEvent", "Modal", "Close, Esc. Key"]);
+				}
+			});
+
 		}
 	};
 	
