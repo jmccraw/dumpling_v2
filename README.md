@@ -13,6 +13,6 @@ Uses:
   + Sass/Compass
 
 ### To see an example ahead of launch:
-[http://5minfork.com/jmccraw/dumpling_v2]
+[http://5minfork.com/jmccraw/dumpling_v2/static/]
 
-[http://5minfork.com/jmccraw/dumpling_v2]: http://5minfork.com/jmccraw/dumpling_v2
+[http://5minfork.com/jmccraw/dumpling_v2/static]: http://5minfork.com/jmccraw/dumpling_v2/static/index.html
