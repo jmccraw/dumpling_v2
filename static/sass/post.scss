@@ -1,0 +1,362 @@
+@import "base";
+@include caviar-italic;
+
+.articleContainer,
+.articleHeaderContainer,
+.articleContentContainer {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	clear: both;
+}
+
+.articleHeaderContainer,
+.articleContentContainer {
+	margin: 0;
+}
+
+.articleMainImage {
+	margin-bottom: -1.9em;
+	width: 100%;
+	height: auto;
+}
+
+.articleHeader {
+	position: relative;
+	margin: 0 0 $gutter-width (-$gutter-width / 2);
+	width: 85%;
+	font: 700 2.0em/1.0em $serif-fonts;
+	color: $font-color;
+	text-align: left;
+	background: #fff;
+}
+
+.articleContainer p {
+	margin: 0;
+	padding: 0 0 $gutter-width;
+	font: 400 1.1em/1.4em $serif-fonts;
+	color: $font-color;
+}
+
+.articleContainer p.articleByline {
+	margin: -$gutter-width 0 $gutter-width;
+	font: 400 0.8em/0.4em $sans-serif-fonts;
+}
+
+.articleDek {
+	margin: 0 0 $gutter-width;
+	padding: 0;
+	font: 400 1.5em/1.1em "CaviarDreamsItalic", "Century Gothic", Arial, sans-serif;
+	color: #ccc;
+}
+
+.articleSectionHeader {
+	position: relative;
+	margin: 0 0 0.6em;
+	padding: ($gutter-width * 1.5) 0 0;
+	font: 700 1.5em/1 "CaviarDreamsBold", "Century Gothic", Arial, sans-serif;
+	clear: both;
+}
+
+.articleQuoteElement{
+	margin-bottom: 1.5em;
+}
+
+.articleQuoteElement:after {
+	margin: -20% 0 0 0.05em;
+	color: $background-color;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.articleQuoteText {
+	font-size: 120%;
+	line-height: 1;
+	color: rgb(237, 152, 100);
+	color: rgba(237, 152, 100, 0.7);
+}
+
+.articleContentImage {
+	margin: 0 $gutter-width 1.5em;
+	width: 100%;
+	height: auto;
+}
+
+.articleAd300x600,
+.articleAd300x250 {
+	position: relative;
+	margin: 0.5em auto $gutter-width;
+	width: 300px;
+	height: 600px;
+	/*background: transparent url(http://placehold.it/300x600) center center no-repeat;*/
+	border: none;
+}
+
+.articleAd300x250 {
+	height: 250px;
+	background-image: url(http://placehold.it/300x250);
+}
+
+.articleAdTout {
+	position: absolute;
+	margin-top: -$gutter-width;
+	left: 31%;
+	font: 400 0.7em $sans-serif-fonts;
+	color: #777;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.authorElement {
+	position: relative;
+	margin: 0 auto $gutter-width;
+	padding: 0;
+	width: 100%;
+	height: 8.8em;
+	clear: both;
+}
+
+.authorImage {
+	float: left;
+	padding-right: 0.5em;
+	width: 140px;
+	height: auto;
+	border: none;
+	border-right: 1px solid #ccc;
+}
+
+.authorInfo {
+	float: left;
+	margin-left: 0.5em;
+	width: 59%;
+}
+
+.authorName,
+.authorQuote,
+.authorBio {
+	display: block;
+	font: 400 1.0em/1.4em $sans-serif-fonts;
+	color: $font-color;
+}
+
+.authorName {
+	font-weight: 700;
+}
+
+.authorQuote {
+	margin-bottom: 0.3em;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.authorBio {
+	font-size: 0.8em;
+	line-height: 1.2em;
+}
+
+.authorSocialIcons {
+	margin-left: -2.5em;
+	width: 100%;
+	list-style: none;
+}
+
+.authorFacebook,
+.authorTwitter,
+.authorGoogle,
+.authorEmail {
+	float: left;
+	margin: 0;
+	padding: 0 0.5em 0 0;
+	width: 30px;
+	height: 30px;
+	background: transparent url(http://placehold.it/30) left center no-repeat;
+	cursor: pointer;
+}
+
+@include at-breakpoint($phone-portrait) {
+	.authorInfo {
+		width: 70%;
+	}
+
+	.articleQuoteElement:after {
+		margin-top: -12%;
+	}
+	
+	.articleAd300x600,
+	.articleAd300x250 {
+		margin-right: $gutter-width;
+		margin-bottom: 0.5em;
+		float: left;
+	}
+}
+
+
+@include at-breakpoint($tablet) {
+	.mainContentPost {
+		@include span-columns(7 omega, $tablet);
+	}
+	
+	.articleMainImage {
+		margin-bottom: 0;
+	}
+	
+	.articleHeaderContainer {
+		margin-left: -6.0em;
+		width: 117.5%;
+	}
+	
+	.articleHeader {
+		margin: 0.3em 0 0.5em;
+		width: 100%;
+		font-size: 2.5em;
+		line-height: 1.1em;
+	}
+	
+	.articleContainer p.articleByline,
+	.articleDek {
+		margin-top: -0.5em;
+	}
+	
+	.articleContainer p.articleByline {
+		margin-bottom: 1.3em;
+	}
+	
+	.articleContentContainer {
+		margin-left: -10em;
+		width: 129%;
+	}
+	
+	.articleContentLeft {
+		width: 77.5%;
+		float: left;
+	}
+	
+	.articleContentRight {
+		width: 77.5%;
+		float: right;
+	}
+	
+	.floatForAd {
+		width: 53%;
+	}
+	
+	.articleQuoteElement {
+		margin-top: 1.5em;
+	}
+
+	.articleQuoteElement:after {
+		margin-top: -42%;
+		margin-left: -0.1em;
+		font-size: 4000%;
+		filter: alpha(opacity=100);
+		opacity: 1.0;
+	}
+	
+	.articleQuoteText {
+		font-size: 300%;
+		line-height: 1.1;
+	}
+	
+	.articleAd300x600,
+	.articleAd300x250 {
+		margin-left: 0;
+		float: left;
+	}
+	
+	.leftPostContainer {
+		@include span-columns(2, $tablet);
+		margin: 0.5em 0 0;
+	}
+	
+	.authorElement {
+		min-height: 21.0em;
+		height: auto;
+		padding-right: 0.35em;
+		border-right: 1px solid $background-color;
+	}
+	
+	.authorInfo {
+		margin-left: 0;
+		width: 97%;
+	}
+	
+	.authorName {
+		margin-top: 0.3em;
+	}
+	
+	.authorImage {
+		padding-right: 0;
+		border-right: none;
+	}
+	
+	.authorFacebook,
+	.authorTwitter,
+	.authorGoogle,
+	.authorEmail {
+		padding-right: 0.3em;
+	}
+
+	.authorSocialIconsLast {
+		padding-right: 0;
+	}
+}
+
+
+@include at-breakpoint($computer) {
+	.mainContentPost {
+		float: left;
+		margin-bottom: $gutter-width * 2;
+		margin-left: 18.42373%;
+		width: 81.57627%;
+	}
+	
+	.articleHeaderContainer {
+		margin-left: -6.5em;
+		width: 113.4%;
+	}
+	
+	.articleHeader {
+		font-size: 3.0em;
+	}
+	
+	.articleContentContainer {
+		margin-left: -6.5em;
+		width: 100%;
+	}
+	
+	.floatForAd {
+		width: 57%;
+	}
+
+	.articleQuoteElement:after {
+		margin-top: -18%;
+		margin-left: -22%;
+		font-size: 6000%;
+	}
+	
+	.articleQuoteText {
+		float: right;
+		margin-bottom: 0.5em;
+		width: 78%;
+		font-size: 300%;
+		line-height: 1.1;
+		text-align: right;
+	}
+	
+	.leftPostContainer {
+		position: absolute;
+		margin: 0.5em 0 0;
+		width: 8.95em;
+	}
+	
+	.authorElement {
+		padding-right: 0.8em;
+	}
+	
+	.rightPostContainer {
+		@include span-columns(7, $computer);
+		float: none;
+		margin: 0 auto;
+	}
+}
