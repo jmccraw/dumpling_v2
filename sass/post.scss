@@ -16,6 +16,10 @@
 	margin: 0;
 }
 
+.archiveContent .articleHeaderContainer {
+	margin: 1em;
+}
+
 .articleMainImage {
 	margin-bottom: -1.9em;
 	width: 100%;
@@ -32,6 +36,18 @@
 	background: #fff;
 }
 
+.archiveContent .articleHeader,
+.pageContent .articleHeader {
+	text-transform: uppercase;
+}
+
+.pageContent .articleHeader {
+	margin-top: 0.8em;
+	margin-left: 0;
+	width: 100%;
+	text-align: center;
+}
+
 .articleContainer p {
 	margin: 0;
 	padding: 0 0 $gutter-width;
@@ -42,6 +58,12 @@
 .articleContainer p.articleByline {
 	margin: -$gutter-width 0 $gutter-width;
 	font: 400 0.8em/0.4em $sans-serif-fonts;
+}
+
+.pageContent strong {
+	margin-right: 0.5em;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .articleDek {
@@ -205,12 +227,23 @@
 		margin-left: -6.0em;
 		width: 117.5%;
 	}
+
+	.archiveContent .articleHeaderContainer,
+	.pageContent .articleHeaderContainer {
+		margin-top: 1em;
+		margin-left: 0;
+		width: 100%;
+	}
 	
 	.articleHeader {
 		margin: 0.3em 0 0.5em;
 		width: 100%;
 		font-size: 2.5em;
 		line-height: 1.1em;
+	}
+
+	.pageContent .articleHeader {
+		margin-top: 0.3em;
 	}
 	
 	.articleContainer p.articleByline,
@@ -225,6 +258,11 @@
 	.articleContentContainer {
 		margin-left: -10em;
 		width: 129%;
+	}
+
+	.pageContent p {
+		padding-right: 17%;
+		padding-left: 17%;
 	}
 	
 	.articleContentLeft {
@@ -355,8 +393,11 @@
 	}
 	
 	.rightPostContainer {
+		position: relative;
 		@include span-columns(7, $computer);
 		float: none;
 		margin: 0 auto;
+		clear: both;
+		z-index: 2;
 	}
 }

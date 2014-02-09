@@ -231,7 +231,8 @@ abbr {
 
 /* MAIN CONTENT */
 .mainContent,
-.mainContentPost {
+.mainContentPost,
+.archiveContent {
 	position: relative;
 	@include span-columns($total-columns);
 	margin: ($gutter-width / 2) auto;
@@ -243,7 +244,9 @@ abbr {
 	padding: 1.25em;
 	height: $column-width * 4;
 	@include box-sizing(border-box);
-	background: transparent url(http://placekitten.com/600/330) center center no-repeat;
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 .ledeStoryLink,
@@ -337,7 +340,9 @@ abbr {
 	padding: 0;
 	width: 100%;
 	height: $column-width * 1.5;
-	background: transparent url(http://placekitten.com/550/150) center center no-repeat;
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 .secondLedeHeader {
@@ -376,7 +381,7 @@ abbr {
 .rightHalf {
 	float: left;
 	clear: both;
-	margin: 0 auto $gutter-width;
+	margin: 0 auto ($gutter-width * 4);
 	padding: 0;
 	width: 100%;
 }
@@ -396,6 +401,10 @@ abbr {
 	@include transition-property(background);
 	@include transition-duration(0.3s);
 	@include transition-timing-function(ease-out);
+}
+
+.archiveContent .featureOne {
+	min-height: $gutter-width * 12;
 }
 
 .featureTwo,
@@ -744,6 +753,11 @@ abbr {
 	.featureFour {
 		max-height: $gutter-width * 12;
 	}
+
+	.archiveContent .featureOne {
+		min-height: $gutter-width * 13;
+		max-height: $gutter-width * 15;
+	}
 	
 	.featureHeader {
 		padding-top: 3.8em;
@@ -1047,6 +1061,11 @@ abbr {
 		width: 100%;
 	}
 
+	.archiveContent .featureOne {
+		margin: 0.5em 0.65em 0.5em 0;
+		width: 14em;
+	}
+
 	.featureTwo,
 	.featureFour {
 		float: left;
@@ -1265,6 +1284,10 @@ abbr {
 	.featureFour {
 		max-height: $gutter-width * 12;
 		width: ($column-width * 3) + ($gutter-width * 2);
+	}
+
+	.archiveContent .featureOne {
+		margin: 0.5em 0.7em 0.5em 0;
 	}
 	
 	.featureTwo,

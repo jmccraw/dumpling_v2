@@ -108,6 +108,27 @@
 			$("#searchInput").blur();
 		}
 	};
+
+	/**
+	  * Watch for user search inputs
+	  */
+	function watchForSearch() {
+		$("#searchInput").on("keydown.searchKeydown", function(e) {
+			if (e.which === 13) {
+				window.location.host += "?s=" + $(this).val();
+			}
+		});
+	};
+	
+	// Load the search field (pushdown for tablet and desktop)
+	function loadSearchInputPushdown() {
+		$(".header").on("click.searchClick touchend.searchTouch", ".searchBarIcon", function(evt) {
+			if (evt.preventDefault) {
+				evt.preventDefault();
+			}
+			enableDisableSearch();
+		});
+	};
 	
 	/*
 	 * Enables mobile/desktop ads
@@ -122,16 +143,6 @@
 			$("#rightHalfAd").attr("src", "http://placehold.it/304x300");
 			$(".articleAd300x250").addClass("articleAd300x600").removeClass("articleAd300x250");
 		}
-	};
-	
-	// Load the search field (pushdown for tablet and desktop)
-	function loadSearchInputPushdown() {
-		$(".header").on("click.searchClick touchend.searchTouch", ".searchBarIcon", function(evt) {
-			if (evt.preventDefault) {
-				evt.preventDefault();
-			}
-			enableDisableSearch();
-		});
 	};
 	
 	$(window).resize(function() {
@@ -240,6 +251,7 @@
 		enableMobileAds(width);
 		loadSocialIcons();
 		loadSearchInputPushdown();
+		watchForSearch();
 		loadSpotify(width);
 		ModalViewer.initializeModalControls();
 	};
