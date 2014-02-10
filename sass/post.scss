@@ -20,15 +20,20 @@
 	margin: 1em;
 }
 
-.articleMainImage {
+.articleMainImage,
+.emptyMainImage {
 	margin-bottom: -1.9em;
 	width: 100%;
 	height: auto;
 }
 
+.emptyMainImage {
+	height: 1.5em;
+}
+
 .articleHeader {
 	position: relative;
-	margin: 0 0 $gutter-width (-$gutter-width / 2);
+	margin: 0 0 $gutter-width 0;
 	width: 85%;
 	font: 700 2.0em/1.0em $serif-fonts;
 	color: $font-color;
@@ -48,6 +53,11 @@
 	text-align: center;
 }
 
+.articleContentContainer img {
+	width: 100%;
+	height: auto;
+}
+
 .articleContainer p {
 	margin: 0;
 	padding: 0 0 $gutter-width;
@@ -58,6 +68,24 @@
 .articleContainer p.articleByline {
 	margin: -$gutter-width 0 $gutter-width;
 	font: 400 0.8em/0.4em $sans-serif-fonts;
+}
+
+.articleContainer a {
+	color: $background-color;
+	text-decoration: none;
+}
+
+.articleContainer a:hover {
+	text-decoration: underline;
+}
+
+.articleContainer a:active {
+	text-decoration: none;
+}
+
+.articleContainer a:visited {
+	color: #f5cc3f;
+	text-decoration: underline;
 }
 
 .pageContent strong {
@@ -108,22 +136,20 @@
 .articleAd300x600,
 .articleAd300x250 {
 	position: relative;
-	margin: 0.5em auto $gutter-width;
+	margin: 1em auto $gutter-width;
 	width: 300px;
 	height: 600px;
-	/*background: transparent url(http://placehold.it/300x600) center center no-repeat;*/
 	border: none;
 }
 
 .articleAd300x250 {
 	height: 250px;
-	background-image: url(http://placehold.it/300x250);
 }
 
 .articleAdTout {
-	position: absolute;
-	margin-top: -$gutter-width;
-	left: 31%;
+	display: block;
+	margin-top: -$gutter-width * 1.5;
+	left: 0;
 	font: 400 0.7em $sans-serif-fonts;
 	color: #777;
 	text-transform: uppercase;
@@ -151,7 +177,7 @@
 .authorInfo {
 	float: left;
 	margin-left: 0.5em;
-	width: 59%;
+	width: 48%;
 }
 
 .authorName,
@@ -190,15 +216,108 @@
 	float: left;
 	margin: 0;
 	padding: 0 0.5em 0 0;
-	width: 30px;
-	height: 30px;
-	background: transparent url(http://placehold.it/30) left center no-repeat;
+	width: 28px;
+	height: 28px;
+	background: #4c66a4 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAY0lEQVRIx+3WsQ2AMAxE0YzACB6BETJaNskIjJDRPj2CIIoLoNyXXL/CLpySc52AFSjHUYILsHGREq50UqHBTSo4n1gVCPVB5WE7nQ8GGg96C27TwcVXbdiw4c/BMey5c79uByDqRC9sfv4dAAAAAElFTkSuQmCC) center center no-repeat;
 	cursor: pointer;
 }
 
+.authorTwitter {
+	background-color: #55acee;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAyklEQVRIDe3BXXGEMBgAwE8CEk4CEiIBCZFQCXFQCUhAAhIi4SQgYfvQzvQ6ZY7w88huxO12W4EBBQVDvEAXrZCQYwM6zP6rGDCiRiuMvuV4A7P3FmSkaIHZrxIr0Guz4BEtMPnriYwufuDDtoo+WiFZt2BCwadtJfZARnVeiT0wuUaKPZBdo4u9MDpnjiPQYXRcjiPQYXFMjTOQHdPHWegx4qlNjivggVGbHEchoWBE1eaJFGchYbKtIsfV0CGhoKCgYMAjbrfbiy8dEPrXcxN67QAAAABJRU5ErkJggg==);
+}
+
+.authorGoogle {
+	background-color: #dc4937;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABGElEQVRIx+1VUQ3FIAychEmYhElAwiRMAhJw8CRMwiQgAQlImAQeS8rLjXQ8MmBfXNIsoaVHabkNQ0eHh3NOeFMJW5lYUUI4e7NkZzLtrvh4k95G2KPIp0pIDyLFxBKINbOvmDhUJxmfAfLzgCtce9inYU3kkk6QeGH8WDXXghgql1ikNlGVSFytYkxsb2LYG6nRYwvJZeRb7g5Vc6odfSX039DanHjzxe94Z4aFJW2pYAHmbem8qNYbhBP1Ln6vWyuyDQZMk5lm5CQIv2lGrQb/gbJZq9KA9am6PSEOAuAyYvcmxGf1f2K3mleNf549ETdSn3WtwRqjybV0mBnUTNK6iQevBrmKJtdFh1FDS1CFAmwaOjoy8AWU7xi6O/2oQwAAAABJRU5ErkJggg==);
+}
+
+.authorEmail {
+	background-color: #fe9901;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAX0lEQVRIx2NgGAVkgv///3MCsTEerEgri3X/4wdLRy0etXjUYmItlgbimXhw8qAreeSAOI2G2AmXxd7/aQuWDjqLByaoBzJxjbw4tgHiMzTELaMFyGgBMkIKkFEwbAEAGXktO8ehwkcAAAAASUVORK5CYII=);
+}
+
+.authorFacebook:hover,
+.authorFacebook:active,
+.authorTwitter:hover,
+.authorTwitter:active,
+.authorGoogle:hover,
+.authorGoogle:active,
+.authorEmail:hover,
+.authorEmail:active {
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.authorFacebook,
+	.authorTwitter,
+	.authorGoogle,
+	.authorEmail {
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAArElEQVRo3u3YURGDMBAAUSQgoRKQgJRKiIQ4qKRIQAISKmGroG2AD+YuuzMn4H3dJdNkZmZmlj3gARSg8b93dGzlYFGhM7BxoqjgxskiYp9cKCJ4HwYMLFwsGrh0uiqwAvMIa6hkOjJqyrUjWLBgwdFOx/Zleq6s9mNeKZ58B2qjgavg5OB1NPAyFDjNx1xnu4eHYMGCBQsWLFiwYMGCBQsWLFiwYDMzM7M7+gD3yU/SAMpAhQAAAABJRU5ErkJggg==);
+		background-size: contain;
+	}
+
+	.authorTwitter {
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAANlBMVEX///8AAAD///////////////////////////////////////////////////////////////9TvwflAAAAEXRSTlMAAL8Qn9/vQGCAMCDPj1Bwrz9HW5MAAAELSURBVHhe7dI7rsMwDETRDPX/WM7sf7OvCYzAoqjg1b4di9MM+LJ6enrCqnoI2X36nA0qdk6hTvhJKoDqRce+z7pGXsV8BDLpmJy0C7zloeLEWfvJtlNWmKF+28Z7gUxLTJYvfHIuw8AM+cKHZlXsyIt/hpM7jRU6/l4n+ty0vQQ6nuYJcsjvGJlGNi6Sj3/jwX1lhRv35RWG7HFb4rS1AUuM7V6HgeFp1yyMESwrsHAtpRs4mbjRSmBie7K6wa5b32VhW3dsMVCiamMz8dVQfKz4DaduWBsP4VSvsLEDkLIPnHs7bHCJ1AsD2GE4lYcM7DEAl9+3nfyYqPUko7wlkBTxZ4Lay+jp6ekPD0c7CwGsW8QAAAAASUVORK5CYII=);
+	}
+
+	.authorGoogle {
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAANlBMVEX///8AAAD///////////////////////////////////////////////////////////////9TvwflAAAAEXRSTlMAAL9A74AQn8/fYDAgj1Bwr2XqeewAAAFuSURBVHhe7dTLjsMgDEDRMdjmmaT+/58dwOogJCo5nW3uKoscYSHgx97TE7wr5FBmghl6TsTB6DP2TtaIwYoPkXQCMGGHsSi04dAs6/BDJ7ZjasCD5qUXzLg2m+BdGLpacViWKgNfUNwIRVC/9lhaBH+ljl2ff22H9a9j4uM2dhOfik1jK8aJq2LThimWc+qOgxHXgd2KsxFDHNqr1EkSWPE5cGTQqOHThuehCqoZdWgTnjr2yX2cdukjhgsHR4cyrRUD51dseN4oK57Fjv2XWHr0H4zlO/xSnb/CXrTjNvaZKIoW7uByRFkKZpxTBy/yLRKNbJhdkykzaEVnQLbgivNSjDgMfVlwX8jB0tAvA87SKivm1LAz4Kiv31o2Ytn9V41jy25lMG6Y7G5habgacNrNTSIBDJg2p7GgJLZgTvPx0yCjYAELhqJa0nFWAPaURGIFGwY+ZA3pzmNQKU7qLgYz1qqnXvYKttjc09Mv2A0kU0+KuCUAAAAASUVORK5CYII=);
+	}
+
+	.authorEmail {
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAQAAACQ9RH5AAAAf0lEQVR4Ae3VsQ1AUBSF4WMCS1hDDECpsoFOaRAxCRvYQGUP/dVqvES4eRH/WeBr3vtvokgDvjFgS5UptE37Cbb35FKTQsu1AAMDAwMD/wX2v8dPB9yrdrW6q8c1qnWFK83AkeFGhSs8aOUffyIgBASYgBAQAgJMQAgIMDAw8AG5vn0GDOp8uwAAAABJRU5ErkJggg==);
+	}
+}
+
+.nextPosts,
+.prevPosts {
+	float: right;
+	margin: $gutter-width 0;
+	font: 400 1.0em/1.3em $sans-serif-fonts;
+	color: $font-color;
+	text-decoration: none;
+}
+
+.prevPosts {
+	float: left;
+}
+
+.nextPosts:hover,
+.nextPosts:active,
+.prevPosts:hover,
+.prevPosts:active {
+	text-decoration: underline;
+}
+
+.articleContainer .tagList {
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+.imageWrapper {
+	position: relative;
+	margin: 0 auto $gutter-width;
+	padding: 0;
+	clear: both;
+}
+
 @include at-breakpoint($phone-portrait) {
+	.emptyMainImage {
+		height: 2em;
+	}
+
 	.authorInfo {
 		width: 70%;
+	}
+
+	.authorFacebook,
+	.authorTwitter,
+	.authorGoogle,
+	.authorEmail {
+		width: 30px;
+		height: 30px;
 	}
 
 	.articleQuoteElement:after {
@@ -208,7 +327,7 @@
 	.articleAd300x600,
 	.articleAd300x250 {
 		margin-right: $gutter-width;
-		margin-bottom: 0.5em;
+		margin-bottom: 1em;
 		float: left;
 	}
 }
@@ -219,8 +338,13 @@
 		@include span-columns(7 omega, $tablet);
 	}
 	
-	.articleMainImage {
+	.articleMainImage,
+	.emptyMainImage {
 		margin-bottom: 0;
+	}
+
+	.emptyMainImage {
+		height: 22em;
 	}
 	
 	.articleHeaderContainer {
@@ -236,7 +360,7 @@
 	}
 	
 	.articleHeader {
-		margin: 0.3em 0 0.5em;
+		margin: 1.3em 0 0.5em;
 		width: 100%;
 		font-size: 2.5em;
 		line-height: 1.1em;
@@ -281,12 +405,13 @@
 	
 	.articleQuoteElement {
 		margin-top: 1.5em;
+		min-height: 8em;
 	}
 
 	.articleQuoteElement:after {
-		margin-top: -42%;
+		margin-top: -28%;
 		margin-left: -0.1em;
-		font-size: 4000%;
+		font-size: 3000%;
 		filter: alpha(opacity=100);
 		opacity: 1.0;
 	}
@@ -338,6 +463,11 @@
 	.authorSocialIconsLast {
 		padding-right: 0;
 	}
+
+	.imageWrapper {
+		float: left;
+		clear: none;
+	}
 }
 
 
@@ -348,6 +478,11 @@
 		margin-left: 18.42373%;
 		width: 81.57627%;
 	}
+
+	.emptyMainImage {
+		width: auto;
+		height: 26.5em;
+	}
 	
 	.articleHeaderContainer {
 		margin-left: -6.5em;
@@ -355,6 +490,7 @@
 	}
 	
 	.articleHeader {
+		margin-top: 1.3em;
 		font-size: 3.0em;
 	}
 	
@@ -367,14 +503,24 @@
 		width: 57%;
 	}
 
+	.articeQuoteElement {
+		min-height: 15.5em;
+	}
+
+	.articleQuoteElement {
+		min-height: 16em;
+	}
+
 	.articleQuoteElement:after {
+		top: -12%;
+		left: 19%;
 		margin-top: -18%;
 		margin-left: -22%;
 		font-size: 6000%;
 	}
 	
 	.articleQuoteText {
-		float: right;
+		float: left;
 		margin-bottom: 0.5em;
 		width: 78%;
 		font-size: 300%;
